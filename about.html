@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>REINIGEN | ABOUT US </title>
+
+<style>
+
+:root{--bg:#ffffff; --card:#fff; --accent:#2b6cb0; --muted:#6b6b6b; --glass: rgba(0,0,0,0.06); --radius:12px; --error:#ff0000; --cart-glow:#15c02b; --wa-green:#25D366; --outlook-blue:#0078d4; --maxw:none;}
+*{box-sizing:border-box}
+html,body{height:100%;width:100%;overflow-x:hidden}
+body{margin:0; background:var(--bg); color:#111; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,system-ui; -webkit-font-smoothing:antialiased;}
+.wrap{ width:100%; max-width:calc(100% - 36px); margin:0 auto; padding-left:2px; padding-right: 2px; max-width:var(--maxw);}
+
+
+/* Menubar */
+.topbar{display:flex; align-items:center; height:100px; justify-content:space-between; gap:10px; background: linear-gradient(180deg, #32adff, #8fdfff, #b7ebff);}
+
+
+/* Logo */
+.logo-placeholder{ width:300px; height:150px; display:flex; align-items:center; justify-content:center; padding-top: 5px; padding-bottom: 5px;}
+.logo-placeholder img {max-width: 100%; max-height: 100%; object-fit: contain; display: block; filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff) drop-shadow(0 0 3px #fff);}
+
+/* Menus */
+.menu-right{ display:flex; gap:20px; align-items:center;}
+.menu-right a{ font-family: Georgia, "Times New Roman", serif; color:var(--accent); text-decoration:none; text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px  2px 0 #fff, 2px  2px 0 #fff; font-weight:700; padding:10px 10px; border-radius:6px; font-size:25px;}
+.menu-right a:hover{ font-family: Georgia, "Times New Roman", serif; background:#2b6cb0; text-shadow:none; color:#ffffff }
+
+@media (max-width:768px)
+{
+.topbar{ padding:8px 12px; gap:12px; }
+.logo-placeholder{ width:240px; height:120px; font-size:20px; }
+.menu-right a{ font-size:14px; padding:5px 8px; }
+}
+
+@media (max-width:480px)
+{
+.topbar{ padding:6px 10px; height:75px; gap:10px; }
+.logo-placeholder{ width:240px; height:120px; font-size:20px; }
+.menu-right{ gap:0.5px; }
+.menu-right a{ font-size:10px; padding:3px 3px; text-shadow:none; font-weight: 500; -webkit-text-stroke: 0.2px var(--accent); text-shadow: 0 0 10px #ffffff,0 0 10px #ffffff;  }
+}
+
+
+/* Header Cover */
+.cover-placeholder{ width:100%; height:250px; display:flex; align-items:center; justify-content:center; position: relative; overflow: hidden; background-image: none;}
+.cover-placeholder::before{ content: ""; position: absolute; inset: 0; background-image: url('LOGO/COVERIMAGE.png'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; filter: blur(8px) brightness(0.9); transform: scale(1.03); z-index: 0; pointer-events: none;}
+.cover-placeholder > * { position: relative; z-index: 1;}
+.cover-placeholder .cover-content{ width: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 0 18px; text-align: center; color: #ffffff; pointer-events: auto;}
+.cover-placeholder .cover-content h1{ font-family: Georgia, "Times New Roman", serif; margin: 0; font-size: 45px; line-height: 1.05; font-weight: 800; letter-spacing: -0.01em; text-shadow: 0 0 0 #007ecc, 1px 1px 0 #007ecc, -1px -1px 0 #007ecc, 1px -1px 0 #007ecc, -1px 1px 0 #007ecc, 0 0 4px rgba(0,126,204,0.85), 0 0 8px rgba(0,126,204,0.65), 0 0 16px rgba(0,126,204,0.36), 0 0 28px rgba(0,126,204,0.18), 0 0 48px rgba(0,126,204,0.10);}
+.cover-placeholder .cover-content p{ font-family: Georgia, "Times New Roman", serif; margin: 0; font-size: 20px; color: rgba(255,255,255,0.96); text-shadow: 0 4px 10px #00a6ff;}
+
+@media (max-width:480px)
+{
+.cover-placeholder::before {filter: blur(10px)brightness(1.1);}
+.cover-placeholder{ height: 120px; }
+.cover-placeholder .cover-content{ gap:6px; padding: 0 12px; }
+.cover-placeholder .cover-content h1{ font-size: 25px; }
+.cover-placeholder .cover-content p{font-size: 10px;}
+}
+
+
+html, body { -webkit-overflow-scrolling: touch; overflow-x:hidden; }
+
+/* About Us Content Sections */
+.about-section { padding: 10px 10px; max-width: none; margin: 0 auto; background: #fff; border-radius: 12px;  }
+main { width: 100%; max-width: none; }
+.about-section h2 { font-family: Georgia, "Times New Roman", serif; font-size: 36px; color: var(--accent); text-align: center; margin-bottom: 30px; font-weight: 700; }
+.about-content { font-family: Georgia, "Times New Roman", serif; line-height: 1.7; font-size: 16px; color: #333; overflow: hidden; }
+.about-image-left { float: left; width: 300px; height: 300px; margin: 20px; border-radius: 12px; box-shadow: 0 0 15px #767676; object-fit: cover; }
+.about-image-right { float: right; width: 300px; height: 300px; margin: 20px; border-radius: 12px; box-shadow: 0 8px 15px #767676; object-fit: cover; }
+.about-content h3 { font-family: Georgia, "Times New Roman", serif; font-size: 24px; color: #1a1a1a; margin-bottom: 15px; font-weight: 600; }
+.about-content p { margin-bottom: 18px; }
+.about-content strong { color: var(--accent); font-weight: 700; }
+.timeline-item { margin-bottom: 15px; }
+.timeline-item strong { color: var(--accent); }
+.trust-points { margin-top: 10px; }
+.trust-points li { margin-bottom: 2px; }
+
+.trust-points ul {list-style: none; padding-left: 20px;}
+.trust-points li::before {content: "✔"; color: #16bc00; font-weight: bold; display: inline-block; width: 2em; margin-left: -1em;}
+
+.products-trust-combined { background: #fff; border-radius: 12px; margin-bottom: 30px; }
+.about-section strong {color: #1a1a1a;}
+
+@media (max-width: 768px) 
+{
+.about-section { padding: 25px 15px; margin-bottom: 20px; }
+.about-section h2 { font-size: 28px; margin-bottom: 20px; }
+.about-content { font-size: 15px; }
+.about-image-left, .about-image-right { float: none; display: block; width: 280px; height: 280px; margin: 25px auto 50px auto; }
+.about-content h3 { font-size: 20px; }
+.trust-points ul {padding-left: 13px;}
+.trust-points ul {padding-left: 3px;}
+.trust-points li::before {width: 1.4em; margin-left: 1px;}
+}
+
+
+/* Complete Footer CSS */
+
+.footer-bg { width: 100%; box-sizing: border-box; margin: 0; padding: 0; background: linear-gradient(180deg, #32adff 0%, #32adff 33%, #01b7ff 66%, #5cd1ff 100%); background-repeat: no-repeat; background-size: auto 100% ;  position: relative; z-index: 0;}
+.footer-bg .footer-hub,.footer-bg .footer-1,.footer-bg .footer-2,.footer-bg .footer-3 { background: transparent; background-color: transparent; margin: 0; box-shadow: none; z-index: 1;}
+.footer-bg > * { background: transparent; }
+.footer-bg::before {content: "" ; display: block ; position: absolute ; inset: 0 ; z-index: 0 ; pointer-events: none ;}
+.footer-bg .footer-hub, .footer-bg .footer-hub * {position: relative ; z-index: 2 ;}
+
+/* Footer Hub */
+.footer-hub {box-sizing: border-box; font-family: Georgia, "Times New Roman", serif; color: #ffffff;  padding: 24px 28px; margin: 0;}
+
+/* Basic Resets Used by All Layers */
+.footer-hub ul { list-style: none; margin: 0; padding: 0; }
+.footer-hub a { color: #ffffff; text-decoration: none; display:inline-block; transition: all 160ms ease; }
+.footer-hub h3 { margin: 0 0 12px 0; font-size: 18px; line-height: 1.1; font-weight: 600; color: #fff; }
+.footer-inner-max { max-width: none; margin: 0 auto; box-sizing: border-box; }
+
+/* Footer 1 */
+.footer-1 { }
+.footer-1 .footer1-inner {display: flex; gap: 24px; align-items: flex-start; justify-content: space-between; box-sizing: border-box;}
+.footer-1 .footer-1-col-1,.footer-1 .footer-1-col-2,.footer-1 .footer-1-col-3 { flex: 1 1 0; min-width: 0; box-sizing: border-box;}
+
+/* Footer 1 - Column 1 (Who We Serve) */
+.footer-1 .footer-1-col-1 h3 { font-size:18px; margin-bottom:12px; }
+.footer-1 .footer-1-col-1 li { margin-bottom:10px; }
+
+/* Footer 1 - Column 2 (Quick Links) */
+.footer-1 .footer-1-col-2 h3 { font-size:18px; margin-bottom:12px; }
+.footer-1 .footer-1-col-2 li { margin-bottom:10px; }
+.footer-1 .footer-1-col-2 a { color:#ffffff; }
+.footer-1 .footer-1-col-2 a:hover { color:#2b6cb0; background: #ffffff; }
+
+/* Footer 1 - Column 3 (Social) */
+.footer-1 .footer-1-col-3 h3 { font-size:18px; margin-bottom:12px; }
+.footer-1 .footer-1-col-3 ul { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.footer-1 .footer-1-col-3 li { margin:0; padding:0; }
+.footer-1 .footer-1-col-3 img {display:block;  width: clamp(36px, 7vw, 56px);  height: clamp(36px, 7vw, 56px); object-fit: contain; border-radius:8px; padding:6px; background:transparent; border:1px solid rgba(255,255,255,0.12); transition: transform .16s ease, box-shadow .16s ease; filter: drop-shadow(2px 2px 2px #fff) drop-shadow(2px 2px 4px #fff) drop-shadow(2px 2px 6px #fff);}
+.footer-1 .footer-1-col-3 a:hover img { transform: translateY(-4px); filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff); }
+
+@media (max-width:768px) 
+{
+.footer-1 .footer1-inner { flex-direction: column; gap:12px; padding: 12px 8px; }
+.footer-1 .footer-1-col-1,.footer-1 .footer-1-col-2,.footer-1 .footer-1-col-3 { width:100%; padding:6px 4px; }
+.footer-1 .footer-1-col-3 img { width: clamp(32px, 12vw, 48px); height: clamp(32px, 12vw, 48px); padding:4px; }
+}
+
+/* Footer 2 */
+.footer-2 { }
+.footer-2 .footer2-inner { display:flex; gap:20px; align-items:stretch; box-sizing:border-box; width:100%; max-width:1200px; margin:0 auto;}
+
+/* Footer 2 - Column 1 (Logo) */
+.footer-2 .footer-2-col-1 {box-sizing:border-box; flex: 0 1 50%; min-width:220px; display:flex; align-items:center; justify-content:flex-end; padding:6px;}
+.footer-2 .footer-2-col-1 .footer2-logo-wrap {width:100%; display:flex; align-items:center; justify-content:flex-end; box-sizing:border-box;}
+.footer-2 .footer2-logo-image { display: block; width: 100%; height: auto; max-height: 240px; filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #fff)drop-shadow(0 0 3px #fff); border-radius: 6px; margin: 0; box-sizing: border-box;}
+
+
+@media (max-width:1024px) 
+{
+footer-2 .footer2-logo-image {max-height: 200px; }
+}
+
+/* Footer 2 - Column 2 (Address) */
+.footer-2 .footer-2-col-2 {box-sizing:border-box; flex: 0 1 50%; min-width:200px; display:flex; align-items:center; justify-content:flex-start; padding:6px;}
+.footer-2 .footer-2-col-2 .footer2-address-wrap { width:100%; display:flex; align-items:center; justify-content:flex-start; box-sizing:border-box;}
+.footer-2 .footer-2-col-2 .footer2-address-content { box-sizing:border-box; text-align:left; color:#ffffff; line-height:1.5; font-size:14px; max-width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); min-height:auto;}
+.footer-2 .footer-2-col-2 .footer2-address-content address { font-style: normal; }
+
+
+@media (max-width:1024px) 
+{
+  .footer-2 .footer2-address-content { font-size:13px; line-height:1.45; }
+}
+
+
+@media (max-width:768px) 
+{
+.footer-2 .footer2-inner {flex-direction: column; gap: 8px; padding: 10px 8px; align-items: center;}
+.footer-2 .footer-2-col-1 {width: 100%; justify-content: center; padding: 6px 4px; display: flex; align-items: center;}
+.footer-2 .footer2-logo-wrap { justify-content: center; width:100%; display:flex; }
+.footer-2 .footer2-logo-image {width: 90% ; max-width: 350px ; height: auto ; max-height: 220px ; margin: 0 auto 6px auto ; display: block ; box-sizing: border-box ;}
+.footer-2 .footer-2-col-2 { width: 100%;justify-content: center; padding: 4px 4px; display: flex; flex-direction: column; align-items: center;}
+.footer-2 .footer2-address-wrap { justify-content: center; width:100%; display:flex; }
+.footer-2 .footer-2-col-2 .footer2-address-content {margin: 0 auto; text-align: center; max-width: 92%; padding: 6px 8px; font-size: 13px; box-sizing: border-box;}
+}
+
+/* Footer 3 (Copyright Centered) */
+.footer-3 { text-align:center; padding:12px 16px; }
+.footer-3 .footer3-inner { max-width:1200px; margin:0 auto; font-size:13px; line-height:1.5; }
+@media (max-width:768px) 
+{ 
+.footer-3 .footer3-inner { font-size:12px; padding:6px 4px; } 
+}
+
+.footer-bg .footer-1,.footer-bg .footer-2,.footer-bg .footer-3 {border: 0 ; box-shadow: none ; background: transparent ;}
+
+
+
+/* Customer Reviews Section */
+#customer-reviews-section {width: 100%; box-sizing: border-box; padding: 1px 1px; max-width: none; margin: 0 auto; background: #fff; border-radius: 12px; margin-bottom: 5px;}
+#customer-reviews-section h2 {font-family: Georgia, "Times New Roman", serif; font-size: 36px; color: #2b6cb0; text-align: center; margin-bottom: 30px; font-weight: 700;}
+.reviews-container {position: relative; display: flex; align-items: center; justify-content: center; gap: 20px; padding: 20px 0; box-sizing: border-box; width: 100%; max-width: none; margin: 0 auto;}
+.reviews-viewport {overflow: hidden; width: 100%; padding: 0; margin: 0; box-sizing: border-box; flex: 1;}
+.reviews-track {display: flex; flex-wrap: nowrap; gap: 24px; transition: transform 700ms cubic-bezier(0.25, 0.8, 0.25, 1); will-change: transform; align-items: stretch; box-sizing: border-box; padding: 10px 0;}
+.review-card {background: linear-gradient(145deg, #ffffff 0%, #f8fbff 100%); border-radius: 16px; box-shadow: 0 12px 28px rgba(0, 123, 255, 0.333); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 32px 24px 24px; box-sizing: border-box; height: 420px; min-height: 420px; max-height: 420px; position: relative; overflow: hidden; border: 2px solid rgba(43, 108, 176, 0.08); transition: all 0.3s ease;}
+.review-card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 20px 40px rgba(43, 108, 176, 0.25); border-color: rgb(52, 222, 0);}
+.review-card img { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 16px; box-shadow: 0 8px 24px rgba(43, 108, 176, 0.2); background: #f0f4f8; border: 4px solid #ffffff; flex-shrink: 0;}
+.review-body { display: flex; flex-direction: column; gap: 12px; text-align: center; flex: 1; width: 100%; box-sizing: border-box; justify-content: flex-start;}
+.review-name { margin: 0; font-size: 22px; color: #1a365d; font-weight: 700; font-family: Georgia, "Times New Roman", serif; text-align: center; line-height: 1.2; flex-shrink: 0;}
+.review-rating { font-size: 16px; font-weight: 700; color: #f59e0b; display: flex; gap: 8px; align-items: center; justify-content: center; line-height: 1; flex-shrink: 0;}
+.rating-stars { font-size: 18px; letter-spacing: 2px;}
+.rating-num { font-size: 15px; color: #2b6cb0; font-weight: 600; background: rgba(43, 108, 176, 0.1); padding: 4px 8px; border-radius: 12px;}
+.review-text { margin: 0; color: #4a5568; font-family: Georgia, "Times New Roman", serif; line-height: 1.6; font-size: 15px; text-align: center; flex: 1; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; max-height: 96px;}
+.review-arrow { width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(145deg, #2b6cb0, #1e4d72); color: #ffffff; border: 0; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700; box-shadow: 0 8px 24px rgba(43, 108, 176, 0.3); cursor: pointer; z-index: 50; transition: all 0.2s ease; flex-shrink: 0; user-select: none;}
+.review-arrow:hover, .review-arrow:focus { transform: translateY(-4px) scale(1.05); box-shadow: 0 12px 32px rgba(43, 108, 176, 0.4); outline: none; background: linear-gradient(145deg, #3b8dcc, #2b6cb0);}
+.review-arrow:active { transform: translateY(-2px) scale(1.02);}
+.review-prev { order: 1;}
+.reviews-viewport { order: 2;}
+.review-next { order: 3;}
+.review-arrow:focus { box-shadow: 0 0 0 4px rgba(43, 108, 176, 0.2), 0 8px 24px rgba(43, 108, 176, 0.3);}
+
+@media (max-width: 900px) 
+{
+.reviews-track { gap: 20px;}
+.review-card { height: 380px; min-height: 380px; max-height: 380px; padding: 28px 20px 20px;}
+.review-card img { width: 80px; height: 80px; margin-bottom: 14px; border: 3px solid #ffffff;}
+.review-name {font-size: 20px;}
+.review-text { font-size: 14px; max-height: 84px; -webkit-line-clamp: 4;}
+.review-arrow { width: 50px; height: 50px; font-size: 22px;}
+.reviews-container { gap: 16px;}
+}
+
+@media (max-width: 480px) 
+{
+#customer-reviews-section { padding: 25px 15px;}
+#customer-reviews-section h2 { font-size: 28px; margin-bottom: 20px;}
+.reviews-track {gap: 0px}
+.reviews-container { gap: 12px; padding: 16px 0;}
+.review-card { height: 360px; min-height: 360px; max-height: 360px; padding: 24px 16px 18px; width: 100%; flex: 0 0 100%;}
+.review-card img { width: 72px; height: 72px; margin-bottom: 12px; border: 3px solid #ffffff;}
+.review-name { font-size: 18px;}
+.review-text { font-size: 13px; max-height: 78px; -webkit-line-clamp: 4; line-height: 1.5;}
+.review-arrow { width: 46px; height: 46px; font-size: 20px;}
+}
+
+@media (prefers-reduced-motion: reduce) 
+{
+.reviews-track {transition: none;}
+.review-card {transition: none;}
+.review-arrow { transition: none;}
+}
+
+
+
+/* KPI / Highlights section */
+.kpi-stats { width: 100%; max-width: none; margin: 28px auto; display: flex; gap: 20px; align-items: center; justify-content: space-between; padding: 12px 18px; box-sizing: border-box;}
+.kpi-stats .stat-item { position: relative; flex: 1 1 0; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 10px 18px; box-sizing: border-box; transition: transform .18s ease;}
+.kpi-stats .stat-item:hover { transform: translateY(-6px); }
+.kpi-stats .stat-item + .stat-item::before {content: ""; position: absolute; left: 0; top: 12%; bottom: 12%; width: 2px; border-radius: 2px; background: linear-gradient(180deg, rgba(43,108,176,0.12), rgba(43,108,176,0.06)); transform: translateX(-50%);}
+.kpi-stats .stat-number { font-family: Georgia, "Times New Roman", serif; color: var(--accent); font-weight: 800; line-height: 0.92; letter-spacing: -0.01em; font-size: clamp(48px, 8.5vw, 96px); display: inline-flex; align-items: flex-start; gap: 6px; justify-content: center;}
+.kpi-stats .stat-number .stat-suffix { font-size: .36em; margin-top: 6px; font-weight: 700; letter-spacing: 0;}
+
+/* Caption Under Number */
+.kpi-stats .stat-caption { margin-top: 50px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(14px, 1.6vw, 20px); color: #222; font-weight: 600;}
+
+@media (max-width: 700px) 
+{
+.kpi-stats .stat-caption { margin-top: 20px;}
+.kpi-stats { flex-direction: column; gap: 12px; padding: 8px 14px; align-items: center;}
+.kpi-stats .stat-item + .stat-item::before { display: none; }
+.kpi-stats .stat-number { font-size: clamp(40px, 12vw, 64px); }
+}
+
+
+
+
+
+
+
+/* Service Table Section */
+.cs-section { width:100%; max-width:none; margin:28px auto; box-sizing:border-box; padding:14px; }
+.cs-table-container { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:6px; }
+.cs-grid { width:100%; border-collapse: collapse; table-layout: fixed; min-width: 920px; background: #fff; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); overflow: hidden; }
+.cs-grid thead th {background: #2b6cb0; color: #ffff; font-weight: 700; padding: 18px 14px; text-align: center; font-family: Georgia, "Times New Roman", serif; font-size: 16px; border-bottom: 2px solid rgba(43, 107, 176, 0.843); border-right-color: #ffff;}
+.cs-grid thead th[scope="col"] {border-color: #ffff;}
+.cs-grid thead th:first-child {  text-align: left; padding-left:22px; min-width:260px; border-color: #ffff;}
+.cs-grid tbody td { padding: 16px 14px; vertical-align: top; font-family: Georgia, "Times New Roman", serif; font-size: 15px; color: #222; line-height: 1.45; border-bottom: 1px solid rgba(43, 107, 176, 0.843); word-wrap: break-word;}
+.cs-grid tbody td:first-child { font-weight: 700; color: #ffff; text-align: left; padding-left:22px; width: 260px; background-color: #2b6cb0; border-color: #ffff; }
+
+
+.cs-grid th + th, .cs-grid td + td { border-left: 1px solid rgba(43, 107, 176, 0.843); }
+
+
+
+
+.cs-cards { display:none; gap:16px; }
+
+.cs-mini { width:100%; border-collapse: collapse; background: #fff; border-radius: 12px; box-shadow: 0 8px 22px rgba(0,0,0,0.06); overflow: hidden;}
+.cs-mini caption { caption-side: top; text-align: left; padding: 12px 14px; font-family: Georgia, "Times New Roman", serif; font-weight: 700; color: #ffff; font-size: 18px; background: #2b6cb0;}
+.cs-mini td, .cs-mini th { padding: 12px 14px; border-bottom: 1px solid #2b6cb0; font-family: Georgia, "Times New Roman", serif; font-size: 15px; color: #222;  }
+.cs-mini th { text-align:left; color: #ffff; background-color: #2b6cb0; border: 1px solid #ffff;  width:42%; font-weight:700; }
+
+.cs-mini td { white-space: normal; }
+
+
+@media (max-width: 960px) 
+{
+.cs-table-container { display:none; }
+.cs-cards { display:flex; flex-direction:column; gap:30px; } 
+.cs-mini { width: 94%; margin: 0 auto; }
+.cs-mini caption { text-align: center; }
+}
+
+
+.cs-grid tbody tr:hover { background: linear-gradient(90deg, rgba(43,108,176,0.015), rgba(0,0,0,0.00)); transition: background 180ms ease; }
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+  <div class="wrap">
+    <!-- topbar: logo left, menu right -->
+    <div class="topbar">
+      <div class="logo-placeholder" id="logoSpace"><img src="LOGO/REINIGENLOGO.png"> </div>
+      <nav class="menu-right" id="menuRight">
+        <a href="index.html">Products</a>
+        <a href="#">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <!-- cover placeholder for header image (you will replace this) -->
+    <div class="cover-placeholder" id="coverPlaceholder">
+  <div class="cover-content" role="banner" aria-label="Header content">
+  <h1>Your Trusted Cleaning Chemicals Manufacturer</h1>
+    <p><b>Delivering ISO - Certified, Eco - Friendly Solutions for Homes, Offices &amp; Industries</b></p>
+  
+  </div>
+</div>
+
+  </div>
+
+  <main>
+    
+    
+    <section class="kpi-stats" aria-label="Company highlights">
+  <div class="stat-item">
+    <div class="stat-number">500<span class="stat-suffix">+</span></div>
+    <div class="stat-caption">Customers</div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-number">970<span class="stat-suffix">+</span></div>
+    <div class="stat-caption">Tonnes Cleaning Chemicals Produced Per Annum </div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-number">100<span class="stat-suffix">+</span></div>
+    <div class="stat-caption">Products</div>
+  </div>
+</section>
+    
+    
+    <!-- About Us Content -->
+      
+      <!-- Who We Are Section -->
+      <section class="about-section">
+        <h2>Who We Are</h2>
+        <div class="about-content">
+          <img src="ICONS/SHOPL.png" alt="Reinigen manufacturing facility" class="about-image-left">
+          <h3>Reinigen Cleaning Chemicals & Supplies ( A Brand of Mrinesh Associates )</h3>
+          <p>Reinigen Cleaning Chemicals & Supplies is a home-grown manufacturer of cleaning chemicals and supplies based in Coimbatore, Tamil Nadu, India. Founded in 2010, we make practical, reliable products for homes, offices, hospitals and industrial spaces.</p>
+          <p>From a small beginning with just two employees and five products, we now operate two manufacturing units (Coimbatore and Erode), have around 15 employees and serve about 500 customers across retailers, wholesalers and B2B clients. Reinigen is ISO - certified and produces eco-friendly formulations designed for everyday use.</p>
+        </div>
+      </section>
+
+      <!-- Our History Section -->
+      <section class="about-section">
+        <h2>Our History</h2>
+        <div class="about-content">
+          <img src="ABOUT/our-history.jpg" alt="Reinigen journey timeline" class="about-image-right">
+          <div class="timeline-item">
+            <p><strong>2010 - THE BEGINNING:</strong> Began as a small-scale business with a small manufacturing unit and five basic cleaning items.</p>
+          </div>
+          <div class="timeline-item">
+            <p><strong>EARLY YEARS WITH STEADY GROWTH:</strong> As customers appreciated our quality and value, we expanded our product range and production capacity.</p>
+          </div>
+          <div class="timeline-item">
+            <p><strong>POST - COVID AWARENESS:</strong> The pandemic increased public focus on hygiene, demand for dependable cleaning products rose and we responded by strengthening supply and quality control.</p>
+          </div>
+          <div class="timeline-item">
+            <p><strong>TODAY:</strong> Two manufacturing units, a broader product range, a committed team and a growing base of loyal customers.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Motto & Philosophy Section -->
+      <section class="about-section">
+        <h2>Our Motto & Philosophy</h2>
+        <div class="about-content">
+          <img src="ABOUT/motto-philosophy.jpg" alt="Clean living healthy living" class="about-image-left">
+          <h3><strong>"Clean living, healthy living."</strong></h3>
+          <p>Just as a home is incomplete without cooking, a home cannot be truly healthy without regular cleaning. Good hygiene prevents disease, brings peace of mind and improves quality of life.</p>
+          <p>Reinigen exists to make cleanliness simple and dependable for every household and workplace.</p>
+        </div>
+      </section>
+
+      <!-- Our Vision & Commitment Section -->
+      <section class="about-section">
+        <h2>Our Vision & Commitment</h2>
+        <div class="about-content">
+          <img src="ABOUT/vision-commitment.jpg" alt="ISO certified quality commitment" class="about-image-right">
+          <p>We aim to make trusted hygiene products accessible and affordable across India. Quality and safety are central to everything we do - our ISO certification underlines this commitment.</p>
+          <p>We follow documented quality checks from raw material sourcing to final packing to deliver consistent, safe products. We are also committed to eco-friendly practices in our formulations and continually work to improve product performance while keeping people and the environment in mind.</p>
+        </div>
+      </section>
+
+      <!-- Our Products & Customers' Trust Section (Combined visual container) -->
+      <div class="products-trust-combined">
+        <section class="about-section" style="box-shadow: none; margin-bottom: 0; background: transparent;">
+          <h2>Our Products & Our Customers' Trust</h2>
+          <div class="about-content">
+            <img src="ABOUT/products-trust.jpg" alt="Reinigen product range" class="about-image-left">
+            <p>We manufacture a wide range of cleaning chemicals and supplies: Glass Cleaner, Hand Wash Liquid, Floor Cleaner, Cloth Washing Gel, Fabric Softener, Dish Washing Liquid, Soap Oil, Phenyle, Masks, Dustbin Covers, Mop, Tissue, Gloves, Brushes and more.</p>
+            <p>We serve households (direct customers), retailers and wholesalers, hospitals, schools, offices and industrial customers.</p>
+          </div>
+        </section>
+
+        <!-- Trust Points Section (appears continuous but separate) -->
+        <section class="about-section" style="padding-top: 0; box-shadow: none; margin-bottom: 0; background: transparent;">
+          <div class="about-content">
+            <h3><strong>Why Customers Trust Reinigen:</strong></h3>
+            <div class="trust-points">
+              <ul>
+                <li>Local manufacturing with hands-on quality checks.</li>
+                <li>ISO-certified processes that ensure safety and consistency.</li>
+                <li>Eco-friendly product formulations.</li>
+                <li>Practical, easy-to-use products made for everyday life.</li>
+                <li>A customer-first approach with reliable supply and support.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+
+
+<section class="about-section" id="customer-reviews-section" aria-label="Customer reviews">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-container">
+    <button class="review-arrow review-prev" aria-label="Previous reviews">‹</button>
+    
+    <div class="reviews-viewport">
+      <div class="reviews-track" id="reviewsTrack">
+        
+        <!-- Review 1 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Priya Sharma</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.9</span>
+            </div>
+            <p class="review-text">Excellent cleaning products! The floor cleaner works amazingly well and leaves a fresh scent. Highly recommend for daily use.</p>
+          </div>
+        </article>
+
+        <!-- Review 2 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Rajesh Kumar</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.8</span>
+            </div>
+            <p class="review-text">Great quality products at reasonable prices. The dish washing liquid is particularly good and gentle on hands.</p>
+          </div>
+        </article>
+
+        <!-- Review 3 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Meera Patel</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">5.0</span>
+            </div>
+            <p class="review-text">Outstanding service and product quality. Fast delivery and eco-friendly packaging. Will definitely order again.</p>
+          </div>
+        </article>
+
+        <!-- Review 4 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Anil Reddy</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★☆</span>
+              <span class="rating-num">4.7</span>
+            </div>
+            <p class="review-text">Very satisfied with the glass cleaner. Leaves no streaks and works perfectly on all surfaces.</p>
+          </div>
+        </article>
+
+        <!-- Review 5 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Sunita Joshi</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.9</span>
+            </div>
+            <p class="review-text">Love the fabric softener! Makes clothes smell wonderful and feel incredibly soft. Great value for money.</p>
+          </div>
+        </article>
+
+        <!-- Review 6 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Vikram Singh</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★☆</span>
+              <span class="rating-num">4.6</span>
+            </div>
+            <p class="review-text">Reliable products with consistent quality. The hand wash liquid is gentle yet effective for daily use.</p>
+          </div>
+        </article>
+
+        <!-- Review 7 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Kavitha Nair</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.8</span>
+            </div>
+            <p class="review-text">The phenyl is very effective and has a pleasant fragrance. Perfect for maintaining household hygiene.</p>
+          </div>
+        </article>
+
+        <!-- Review 8 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Deepak Gupta</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.9</span>
+            </div>
+            <p class="review-text">Exceptional customer service and prompt delivery. The cleaning supplies are top-notch quality.</p>
+          </div>
+        </article>
+
+        <!-- Review 9 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Latha Krishnan</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★☆</span>
+              <span class="rating-num">4.7</span>
+            </div>
+            <p class="review-text">Great range of products. The cloth washing gel works wonderfully and is gentle on all fabric types.</p>
+          </div>
+        </article>
+
+        <!-- Review 10 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Rohit Malhotra</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.8</span>
+            </div>
+            <p class="review-text">Impressed with the eco-friendly approach. Products are effective and safe for the environment.</p>
+          </div>
+        </array>
+        </article>
+
+        <!-- Review 11 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Shalini Iyer</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.9</span>
+            </div>
+            <p class="review-text">Amazing quality control and packaging. Every product arrives in perfect condition and works as expected.</p>
+          </div>
+        </article>
+
+        <!-- Review 12 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Arjun Menon</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★☆</span>
+              <span class="rating-num">4.6</span>
+            </div>
+            <p class="review-text">Good value products with reliable performance. The mops and brushes are particularly durable.</p>
+          </div>
+        </article>
+
+        <!-- Review 13 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Neha Agarwal</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.8</span>
+            </div>
+            <p class="review-text">Perfect for office cleaning needs. Bulk orders are handled professionally with timely delivery.</p>
+          </div>
+        </article>
+
+        <!-- Review 14 -->
+        <article class="review-card">
+          <img src="" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Suresh Babu</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span class="rating-num">4.9</span>
+            </div>
+            <p class="review-text">Consistently high quality and excellent customer support. Truly a reliable cleaning solutions provider.</p>
+          </div>
+        </article>
+
+        <!-- Review 15 -->
+        <article class="review-card">
+          <img src="ICONS/SHOPL.png" alt="Customer photo">
+          <div class="review-body">
+            <h4 class="review-name">Pooja Rao</h4>
+            <div class="review-rating">
+              <span class="rating-stars">★★★★☆</span>
+              <span class="rating-num">4.7</span>
+            </div>
+            <p class="review-text">Love the variety of products available. Everything from soaps to sanitizers - all in excellent quality.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    
+    <button class="review-arrow review-next" aria-label="Next reviews">›</button>
+  </div>
+</section>
+
+
+<section class="about-section cs-section" aria-label="Service levels by customer type">
+  <h2>Customer Offerings & Commercial Terms</h2>
+  
+  <br>
+<br>
+  <!-- Desktop / Tablet comparative table -->
+  <div class="cs-table-container" role="region" aria-label="Comparison table">
+    <table class="cs-grid" role="table" aria-label="Service comparison">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Direct Customers</th>
+          <th scope="col">Retailers</th>
+          <th scope="col">Wholesalers</th>
+          <th scope="col">B2B Clients<br><small>(Hospitals, Offices, Industries)</small></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td scope="row">Minimum Order Quantity</td>
+          <td>No minimum order</td>
+          <td>Minimum 1 case per product type</td>
+          <td>Minimum 10 cases per product type</td>
+          <td>Flexible — based on agreement</td>
+        </tr>
+
+        <tr>
+          <td scope="row">Delivery Service</td>
+          <td>Standard delivery charges apply. Free delivery on orders above ₹2,000.</td>
+          <td>Free delivery on orders above ₹10,000.</td>
+          <td>Free delivery on orders above ₹40,000.</td>
+          <td>Free delivery on all bulk orders.</td>
+        </tr>
+
+        <tr>
+          <td scope="row">Packaging &amp; Labeling</td>
+          <td>Standard consumer-friendly packaging.</td>
+          <td>Standard consumer packaging with barcodes.</td>
+          <td>Bulk packaging in drums and large containers.</td>
+          <td>Customizable packaging sizes and labeling.</td>
+        </tr>
+
+        <tr>
+          <td scope="row">Product Customization</td>
+          <td>Standard formulations only.</td>
+          <td>Standard formulations only.</td>
+          <td>Standard formulations only.</td>
+          <td>On-demand customized formulations (as agreed).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile: individual 2-column tables per customer type -->
+  <div class="cs-cards" aria-hidden="false">
+    <!-- Direct Customers -->
+    <table class="cs-mini" role="table" aria-label="Direct customers service">
+      <caption>Direct Customers</caption>
+      <tbody>
+        <tr><th>Minimum Order Quantity</th><td>No minimum order</td></tr>
+        <tr><th>Delivery Service</th><td>Standard delivery charges apply. Free delivery on orders above ₹2,000.</td></tr>
+        <tr><th>Packaging &amp; Labeling</th><td>Standard consumer-friendly packaging.</td></tr>
+        <tr><th>Product Customization</th><td>Standard formulations only.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Retailers -->
+    <table class="cs-mini" role="table" aria-label="Retailers service">
+      <caption>Retailers</caption>
+      <tbody>
+        <tr><th>Minimum Order Quantity</th><td>Minimum 1 case per product type</td></tr>
+        <tr><th>Delivery Service</th><td>Free delivery on orders above ₹10,000.</td></tr>
+        <tr><th>Packaging &amp; Labeling</th><td>Standard consumer packaging with barcodes.</td></tr>
+        <tr><th>Product Customization</th><td>Standard formulations only.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Wholesalers -->
+    <table class="cs-mini" role="table" aria-label="Wholesalers service">
+      <caption>Wholesalers</caption>
+      <tbody>
+        <tr><th>Minimum Order Quantity</th><td>Minimum 10 cases per product type</td></tr>
+        <tr><th>Delivery Service</th><td>Free delivery on orders above ₹40,000.</td></tr>
+        <tr><th>Packaging &amp; Labeling</th><td>Bulk packaging in drums and large containers.</td></tr>
+        <tr><th>Product Customization</th><td>Standard formulations only.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- B2B Clients -->
+    <table class="cs-mini" role="table" aria-label="B2B clients service">
+      <caption>B2B Clients (Hospitals, Offices, Industries)</caption>
+      <tbody>
+        <tr><th>Minimum Order Quantity</th><td>Flexible — based on agreement</td></tr>
+        <tr><th>Delivery Service</th><td>Free delivery on all bulk orders.</td></tr>
+        <tr><th>Packaging &amp; Labeling</th><td>Customizable packaging sizes and labeling.</td></tr>
+        <tr><th>Product Customization</th><td>On-demand customized formulations (as agreed).</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+    
+  </main>
+
+
+
+<div class="footer-bg">
+
+  <footer class="footer-hub footer-1" aria-label="Footer layer 1">
+    <div class="footer1-inner footer-inner-max">
+      <div class="footer-1-col-1">
+        <h3>Whom We Serve</h3>
+        <br>
+        <ul>
+          <li>To B2B Clients</li>
+          <li>To Wholesalers</li>
+          <li>To Retailers</li>
+          <li>To Direct Customers</li>
+        </ul>
+      </div>
+
+      <div class="footer-1-col-2">
+        <h3>Quick Links</h3>
+        <br>
+        <ul>
+          <li><a href="index.html" title="Products">Products</a></li>
+          <li><a href="#" title="About">About</a></li>
+          <li><a href="resources.html" title="Resources">Resources</a></li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-1-col-3">
+        <h3>Connect With Us</h3>
+        <br>
+        <ul>
+          <li><a href="tel:+918144744481" rel="noopener" aria-label="Phone"><img src="SOCIAL MEDIAS/PHONE.png" alt="Phone"></a></li>
+          <li><a href="https://wa.me/918144744481" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="SOCIAL MEDIAS/WA.png" alt="WhatsApp"></a></li>
+          <li><a href="mailto:information.reinigen@gmail.com " rel="noopener" aria-label="Mail"><img src="SOCIAL MEDIAS/MAIL.png" alt="Mail"></a></li>
+          <li><a href="https://www.instagram.com/reinigen.cleaning.chemicals/" target="_blank" rel="noopener" aria-label="Instagram"><img src="SOCIAL MEDIAS/INSTA.png" alt="Instagram"></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61581408448137" target="_blank" rel="noopener" aria-label="Facebook"><img src="SOCIAL MEDIAS/FACEBOOK.png" alt="Facebook"></a></li>
+          <li><a href=" " target="_blank" rel="noopener" aria-label="Facebook"><img src="SOCIAL MEDIAS/YOUTUBE.png" alt="YouTube"></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-hub footer-2" aria-label="Footer layer 2">
+    <div class="footer2-inner">
+      <div class="footer-2-col-1">
+        <div class="footer2-logo-wrap">
+          <img class="footer2-logo-image" src="LOGO/REINIGENLOGO.png" alt="Reinigen logo">
+        </div>
+      </div>
+
+      <div class="footer-2-col-2">
+        <div class="footer2-address-wrap">
+          <div class="footer2-address-content">
+            <address>
+              <b>Reinigen Cleaning Chemicals and Supplies</b><br>
+              6 / 133E, Kowsik Nagar,<br>
+              Opposite to CSI Church, L &amp; T Bye Pass,<br>
+              Pattanam Village, Coimbatore - 641016,<br>
+              Tamil Nadu, India.
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-hub footer-3" aria-label="Footer layer 3">
+    <div class="footer3-inner">© 2025 Reinigen — All rights reserved.</div>
+  </footer>
+
+</div>
+
+
+
+<script>
+// Enhanced Customer Reviews Carousel with Precise Timing Control
+(function() {
+  const track = document.getElementById('reviewsTrack');
+  const viewport = document.querySelector('.reviews-viewport');
+  const prevBtn = document.querySelector('.review-prev');
+  const nextBtn = document.querySelector('.review-next');
+  
+  if (!track || !viewport || !prevBtn || !nextBtn) {
+    console.error('Reviews carousel: Required elements not found');
+    return;
+  }
+
+  // Configuration
+  let currentIndex = 0;
+  let slidesPerView = 3;
+  let autoplayInterval = null;
+  let autoplayDelay = 10000; // 10 seconds for desktop
+  let isTransitioning = false;
+  
+  // Get all review cards
+  const cards = Array.from(track.querySelectorAll('.review-card'));
+  const totalCards = cards.length;
+
+  // Determine slides per view and autoplay delay based on screen size
+  function updateConfiguration() {
+    const width = window.innerWidth;
+    
+    if (width <= 480) {
+      slidesPerView = 1;
+      autoplayDelay = 4000; // 4 seconds for mobile
+    } else if (width <= 900) {
+      slidesPerView = 2;
+      autoplayDelay = 7000; // 7 seconds for tablet
+    } else {
+      slidesPerView = 3;
+      autoplayDelay = 10000; // 10 seconds for desktop
+    }
+  }
+
+  // Calculate card width and gap - ensure perfect single box view
+  function calculateDimensions() {
+    const viewportWidth = viewport.offsetWidth;
+    let gap, cardWidth;
+    
+    if (slidesPerView === 1) {
+      // For single view: no gap, card takes full width
+      gap = 0;
+      cardWidth = viewportWidth;
+    } else {
+      // For multiple views: use gap
+      gap = 24;
+      cardWidth = (viewportWidth - (gap * (slidesPerView - 1))) / slidesPerView;
+    }
+    
+    cards.forEach(card => {
+      card.style.width = cardWidth + 'px';
+      card.style.flexShrink = '0';
+    });
+    
+    // Update track gap
+    track.style.gap = gap + 'px';
+    
+    return { cardWidth, gap };
+  }
+
+  // Update carousel position
+  function updatePosition() {
+    if (isTransitioning) return;
+    
+    const { cardWidth, gap } = calculateDimensions();
+    const offset = currentIndex * (cardWidth + gap);
+    
+    isTransitioning = true;
+    track.style.transform = `translateX(-${offset}px)`;
+    
+    // Reset transition flag after animation completes
+    setTimeout(() => {
+      isTransitioning = false;
+    }, 700);
+  }
+
+  // Navigate to next set of reviews - move one at a time regardless of view
+  function nextReviews() {
+    if (isTransitioning) return;
+    
+    const maxIndex = Math.max(0, totalCards - slidesPerView);
+    
+    if (slidesPerView === 1) {
+      // Move one card at a time for single view
+      currentIndex = currentIndex >= totalCards - 1 ? 0 : currentIndex + 1;
+    } else {
+      // Move by slidesPerView for multi-card views
+      currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + slidesPerView;
+    }
+    
+    updatePosition();
+    resetAutoplay();
+  }
+
+  // Navigate to previous set of reviews - move one at a time regardless of view
+  function prevReviews() {
+    if (isTransitioning) return;
+    
+    const maxIndex = Math.max(0, totalCards - slidesPerView);
+    
+    if (slidesPerView === 1) {
+      // Move one card at a time for single view
+      currentIndex = currentIndex <= 0 ? totalCards - 1 : currentIndex - 1;
+    } else {
+      // Move by slidesPerView for multi-card views  
+      currentIndex = currentIndex <= 0 ? maxIndex : Math.max(0, currentIndex - slidesPerView);
+    }
+    
+    updatePosition();
+    resetAutoplay();
+  }
+
+  // Start autoplay
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayInterval = setInterval(nextReviews, autoplayDelay);
+  }
+
+  // Stop autoplay
+  function stopAutoplay() {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+      autoplayInterval = null;
+    }
+  }
+
+  // Reset autoplay (stop and start)
+  function resetAutoplay() {
+    stopAutoplay();
+    // Small delay before restarting to give user time to interact
+    setTimeout(startAutoplay, 1000);
+  }
+
+  // Event listeners
+  nextBtn.addEventListener('click', nextReviews);
+  prevBtn.addEventListener('click', prevReviews);
+
+  // Pause autoplay on hover/interaction
+  const reviewsContainer = document.querySelector('.reviews-container');
+  reviewsContainer.addEventListener('mouseenter', stopAutoplay);
+  reviewsContainer.addEventListener('mouseleave', startAutoplay);
+  
+  // Touch events for mobile
+  reviewsContainer.addEventListener('touchstart', stopAutoplay, { passive: true });
+  reviewsContainer.addEventListener('touchend', () => {
+    setTimeout(startAutoplay, 2000);
+  }, { passive: true });
+
+  // Handle window resize
+  let resizeTimeout;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function() {
+      const oldSlidesPerView = slidesPerView;
+      updateConfiguration();
+      
+      // Reset position if slides per view changed
+      if (oldSlidesPerView !== slidesPerView) {
+        currentIndex = 0;
+      }
+      
+      // Ensure currentIndex doesn't exceed bounds
+      const maxIndex = Math.max(0, totalCards - slidesPerView);
+      currentIndex = Math.min(currentIndex, maxIndex);
+      
+      updatePosition();
+      resetAutoplay();
+    }, 250);
+  });
+
+  // Keyboard navigation for accessibility
+  document.addEventListener('keydown', function(e) {
+    if (e.target.closest('.reviews-container')) {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevReviews();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        nextReviews();
+      }
+    }
+  });
+
+  // Initialize
+  updateConfiguration();
+  calculateDimensions();
+  updatePosition();
+  
+  // Start autoplay after a brief delay
+  setTimeout(startAutoplay, 2000);
+
+})();
+</script>
+
+
+
+
+
+
+</body>
+</html>

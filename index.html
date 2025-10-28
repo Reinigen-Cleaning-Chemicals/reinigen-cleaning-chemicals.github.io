@@ -1,0 +1,2071 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>REINIGEN | PRODUCTS </title>
+
+<style>
+
+:root{--bg:#ffffff; --card:#fff; --accent:#2b6cb0; --muted:#6b6b6b; --glass: rgba(0,0,0,0.06); --radius:12px; --error:#ff0000; --cart-glow:#15c02b; --wa-green:#25D366; --outlook-blue:#0078d4; --maxw:none;}
+*{box-sizing:border-box}
+html,body{height:100%;width:100%;overflow-x:hidden}
+body{margin:0; background:var(--bg); color:#111; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,system-ui; -webkit-font-smoothing:antialiased;}
+.wrap{ width:100%; max-width:calc(100% - 36px); margin:0 auto; padding-left:2px; padding-right: 2px; max-width:var(--maxw);}
+
+
+/* Menubar */
+.topbar{display:flex; align-items:center; height:100px; justify-content:space-between; gap:10px; background: linear-gradient(180deg, #32adff, #8fdfff, #b7ebff);}
+
+
+/* Logo */
+.logo-placeholder{ width:300px; height:150px; display:flex; align-items:center; justify-content:center; padding-top: 5px; padding-bottom: 5px;}
+.logo-placeholder img {max-width: 100%; max-height: 100%; object-fit: contain; display: block; filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff) drop-shadow(0 0 3px #fff);}
+
+/* Menus */
+.menu-right{ display:flex; gap:20px; align-items:center;}
+.menu-right a{ font-family: Georgia, "Times New Roman", serif; color:var(--accent); text-decoration:none; text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px  2px 0 #fff, 2px  2px 0 #fff; font-weight:700; padding:10px 10px; border-radius:6px; font-size:25px;}
+.menu-right a:hover{ font-family: Georgia, "Times New Roman", serif; background:#2b6cb0; text-shadow:none; color:#ffffff }
+
+@media (max-width:768px)
+{
+.topbar{ padding:8px 12px; gap:12px; }
+.logo-placeholder{ width:240px; height:120px; font-size:20px; }
+.menu-right a{ font-size:14px; padding:5px 8px; }
+}
+
+@media (max-width:480px)
+{
+.topbar{ padding:6px 10px; height:75px; gap:10px; }
+.logo-placeholder{ width:240px; height:120px; font-size:20px; }
+.menu-right{ gap:0.5px; }
+.menu-right a{ font-size:10px; padding:3px 3px; font-weight: 500; -webkit-text-stroke: 0.2px var(--accent); text-shadow: 0 0 10px #ffffff,0 0 10px #ffffff;  }
+}
+
+
+/* Header Cover */
+.cover-placeholder{ width:100%; height:250px; display:flex; align-items:center; justify-content:center; position: relative; overflow: hidden; background-image: none;}
+.cover-placeholder::before{ content: ""; position: absolute; inset: 0; background-image: url('LOGO/COVERIMAGE.png'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; filter: blur(8px) brightness(0.9); transform: scale(1.03); z-index: 0; pointer-events: none;}
+.cover-placeholder > * { position: relative; z-index: 1;}
+.cover-placeholder .cover-content{ width: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 0 18px; text-align: center; color: #ffffff; pointer-events: auto;}
+.cover-placeholder .cover-content h1{ font-family: Georgia, "Times New Roman", serif; margin: 0; font-size: 45px; line-height: 1.05; font-weight: 800; letter-spacing: -0.01em; text-shadow: 0 0 0 #007ecc, 1px 1px 0 #007ecc, -1px -1px 0 #007ecc, 1px -1px 0 #007ecc, -1px 1px 0 #007ecc, 0 0 4px rgba(0,126,204,0.85), 0 0 8px rgba(0,126,204,0.65), 0 0 16px rgba(0,126,204,0.36), 0 0 28px rgba(0,126,204,0.18), 0 0 48px rgba(0,126,204,0.10);}
+.cover-placeholder .cover-content p{ font-family: Georgia, "Times New Roman", serif; margin: 0; font-size: 20px; color: rgba(255,255,255,0.96); text-shadow: 0 4px 10px #00a6ff;}
+
+@media (max-width:480px)
+{
+.cover-placeholder::before {filter: blur(10px)brightness(1.1);}
+.cover-placeholder{ height: 120px; }
+.cover-placeholder .cover-content{ gap:6px; padding: 0 12px; }
+.cover-placeholder .cover-content h1{ font-size: 25px; }
+.cover-placeholder .cover-content p{font-size: 10px;}
+}
+
+
+/* Product Catalog Text Section */
+.header{width: 100%; display: flex; flex-direction: column; box-sizing: border-box; padding-left: 12px; padding-right: 12px;}
+.header h1{ font-family: Georgia, "Times New Roman", serif; font-size: 30px; }
+.sub { font-family: Georgia, "Times New Roman", serif; font-size: 16px;  line-height: 1.7; }
+
+
+@media (max-width:900px)
+{
+.header h1{font-size: 25px;}
+.sub {font-size: 12px; text-align: left; letter-spacing: 0.4px; line-height: 1.5;}
+}
+
+/* Filter */
+.filter-row {display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 14px; flex-wrap: nowrap; width: 100%; box-sizing: border-box; padding: 0 8px; overflow: hidden;}
+
+/* Chip buttons: inline size, shrink text if needed */
+.chip {font-family: Georgia, "Times New Roman", serif; font-size: clamp(10px, 1.5vw, 18px); padding: clamp(4px, 0.6vw, 8px) clamp(8px, 1.2vw, 14px); font-weight: 400; border-radius: 999px; background: #fff; border: 1px solid #eee; color: var(--muted); cursor: pointer; flex: 0 0 auto;  white-space: nowrap;  box-sizing: border-box;}
+
+/* Active chip */
+.chip.active {background: var(--accent); color: #fff; border-color: transparent;}
+
+
+@media (max-width:480px) 
+{
+.filter-row { gap: 4px; padding: 0 6px; }
+.chip { font-size: clamp(9px, 3.2vw, 13px); padding: 3px 6px;}
+.filter-icon { display: none; }
+}
+
+
+/* Product Card */
+.grid{ font-family: Georgia, "Times New Roman", serif; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start; justify-content:flex-start; width:100%;}
+
+@media (max-width:1024px)
+{
+.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; justify-items:center; align-items:start;}
+}
+
+@media (max-width:480px)
+{
+.grid{display:grid; grid-template-columns:1fr; gap:12px; justify-items:center; align-items:start;}
+}
+
+.card{ background:var(--card); padding:14px; border-radius:10px; box-shadow:0 8px 20px #8fdfff; display:flex; flex-direction:column; align-items:center; gap:8px; flex:1 1 calc((100%/3) - 20px); min-width:260px; max-width:calc((100%/3) - 20px);}
+
+/* Product Row 2 Count Display */
+@media (max-width:1200px)
+{
+.card{ flex:1 1 calc((100%/2) - 20px); max-width:calc((100%/2) - 20px); }
+@media (max-width:1024px)
+{
+.card{ max-width:520px; width:100%; margin:0 auto; }
+}
+}
+
+/* Mobile Card Adjustments Next to Card Rule */
+@media (max-width:480px)
+{
+.card{ width:calc(100% - 8px); max-width:560px; margin:0 auto; padding:12px; }
+}
+
+
+/* Thumbnails - Grid, Modal and Cart Will Reuse Same Image URL */
+.thumb{width:100%; max-width:320px; height:220px; border-radius:8px; background:#fff; border:2px dashed #e6e6e6; display:flex; align-items:center; justify-content:center; color:#bdbdbd; font-weight:600; overflow:hidden;}
+.thumb img{ width:auto; height:auto; max-width: 100%; max-height: 100%; object-fit:contain; display:block; }
+
+
+@media (max-width:480px)
+{
+.thumb{ height: auto; padding-top: 62%; position: relative; overflow: hidden;}
+.thumb img{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; object-position: center; display: block;
+}
+}
+
+
+/* Product Info */
+.pname{ font-family: Georgia, "Times New Roman", serif; font-weight:700; margin-top:6px; text-align:center; }
+.pinfo{ font-family: Georgia, "Times New Roman", serif; font-size:13px; color:var(--muted); text-align:center; line-height: 1.5; }
+
+
+/* Controls & Buttons (Base) */
+.controls{ font-family: Georgia, "Times New Roman", serif; display:flex; gap:10px; align-items:center; margin-top:8px; flex-wrap:wrap; justify-content:center; }
+.btn{ font-family: Georgia, "Times New Roman", serif; padding:8px 12px; border-radius:8px; border:0; background:var(--accent); color:#fff; cursor:pointer; font-weight:600; display:inline-flex; align-items:center; gap:8px;}
+.btn.ghost{ font-family: Georgia, "Times New Roman", serif; background:#fff; border:1px solid #ddd; color:var(--muted); }
+.btn.wa{ font-family: Georgia, "Times New Roman", serif; background:var(--wa-green); }
+.btn.mail{ font-family: Georgia, "Times New Roman", serif; background:var(--outlook-blue); }
+
+
+/* small logo next to button text (base) */
+.logo-small{width:22px; height:22px; border-radius:4px; display:inline-flex; align-items:center; justify-content:center; flex:0 0 22px; font-size:12px; background:#fff; border:1px solid rgba(0,0,0,0.05);}
+
+
+/* Qty controls */
+.qty{ font-family: Georgia, "Times New Roman", serif; display:flex; align-items:center; gap:6px; }
+.qty .qbtn{ font-family: Georgia, "Times New Roman", serif; padding:6px 9px; border-radius:6px; border:1px solid #ddd; background:#fff; cursor:pointer; }
+.qty .count{ font-family: Georgia, "Times New Roman", serif; min-width:26px; text-align:center; font-weight:700; }
+.remove-btn{ font-family: Georgia, "Times New Roman", serif; background:#fff; border:1px solid #f44336; color:#f44336; padding:6px 8px; border-radius:6px; cursor:pointer; }
+
+
+/* Floating Cart */
+.cart-float{ font-family: Georgia, "Times New Roman", serif; position:fixed; right:18px; bottom:18px; background:linear-gradient(180deg,#fff,#f7fbff); padding:10px; border-radius:28px; box-shadow:0 12px 30px rgba(0,0,0,0.12), 0 0 30px 6px #1fff3d96; cursor:pointer; display:flex; align-items:center; gap:10px; z-index:60;}
+.cart-count{ font-family: Georgia, "Times New Roman", serif; background:var(--accent); color:#fff; padding:6px 8px; border-radius:999px; font-weight:700; }
+
+@media (max-width:480px)
+{
+.cart-float{ right:12px; bottom:12px; padding:8px; border-radius:22px; gap:8px; box-shadow:0 10px 24px rgba(0,0,0,0.12), 0 0 20px 4px #1fff3d80; }
+.cart-count{ padding:5px 7px; font-size:13px; }
+.remove-btn{font-size: 10px; padding:3px 3px;}
+
+}
+
+
+/* Overlays, Modals, Cart List */
+.overlay{ font-family: Georgia, "Times New Roman", serif; position:fixed; inset:0; background:rgba(0,0,0,0.4); display:none; align-items:center; justify-content:center; z-index:120; padding:18px; }
+.overlay.show{ display:flex; }
+.modal{ font-family: Georgia, "Times New Roman", serif; background:var(--card); border-radius:10px; padding:18px; max-width:980px; width:100%; max-height:88vh; overflow:auto; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.18);}
+.modal .close { position: absolute; top: 12px; right: 12px; display: inline-flex; align-items: center; justify-content: center; z-index: 60; border: 0; background: none; font-size: 20px; font-weight: 700; padding: 10px 10px; cursor: pointer; float: right; color: #ffff; text-shadow:-2px -2px 0 #ff0000, 2px -2px 0 #ff0000, -2px  2px 0 #ff0000, 2px  2px 0 #ff0000, -2px  0   0 #ff0000, 2px  0   0 #ff0000, 0 -2px 0 #ff0000,   0 2px 0 #ff0000;}
+.modal h2{ font-family: Georgia, "Times New Roman", serif; color: #2b6cb0; margin-top:0; text-align:center; }
+
+@media (max-width:500px)
+{
+.modal h2{ font-size: 18px; margin-top: 5px; margin-bottom: 10px; }
+.modal .close{ position:sticky;  align-items: right; justify-content: right; text-align: right; margin-right: 5px; top:4px; border:0; background:none; font-size:20px; font-weight: 700; cursor:pointer; }
+}
+
+
+/* Product Modal Layout + Image Area */
+.product-modal{ font-family: Georgia, "Times New Roman", serif; width:100%; max-width:1200px; height:80vh; display:flex; gap:18px; padding:18px; padding-top: 42px; padding-right: 42px; box-sizing:border-box; }
+.product-modal .left{ flex:1; display:flex; align-items:center; justify-content:center; }
+.product-modal .left .modal-img {width: 500px; max-width: 90vw; height: 500px; max-height: 70vh; display: flex; align-items: center; justify-content: center; border-radius: 8px; overflow: hidden; background: #fff; border: 1px solid #eee; margin: 0 auto; box-sizing: border-box;}
+.product-modal .left .modal-img img { max-width: 100%; max-height: 100%; width: auto; height: auto; display: block; object-fit: contain; object-position: center; margin: 0;}
+.product-modal .right{ flex:1; display:flex; flex-direction:column; gap:10px; }
+
+@media (max-width:1024px)
+{
+.product-modal .left .modal-img{ max-width:70%; align-items: center; align-content:center ; }
+}
+@media (max-width:480px)
+{
+.product-modal{ flex-direction:column; height:auto; padding:5px;gap:1px; }
+.product-modal .left .modal-img{ width:70%; max-width:70%; height: 50%; align-items: center; align-content:center ; margin-bottom:1px; margin-top: 1px; }
+.product-modal .right{ align-items: center; align-content:center ; gap:1px;}
+}
+
+
+/* Cart List/Table Inside Cart Modal */
+.cart-list{ max-height:56vh; overflow:auto; padding-right:8px; }
+.cart-list table{ width:100%; border-collapse:collapse; }
+.cart-list th{ font-weight:800; }
+.cart-list th:nth-child(1), .cart-list td:nth-child(1){text-align: center;}
+.cart-list th:nth-child(2), .cart-list td:nth-child(2){text-align: center; padding: 30px;}
+.cart-list th:nth-child(3){text-align: left;} 
+.cart-list td:nth-child(3){text-align: left;}
+.cart-list th:nth-child(4), .cart-list td:nth-child(4){text-align: left;}
+.cart-list th:nth-child(5){text-align: center;}
+.cart-list td:nth-child(5) { text-align: right;}
+
+
+/* Cart Item Image Thumbnail */
+.cart-item-img{ width:64px; height:64px; border-radius:8px; overflow:hidden; display:inline-block; object-fit:contain; background:#f3f6fb; }
+.cart-item-img img{ width:100%; height:auto; max-width: 100%; object-position: center; align-items: center; align-content: center; max-height: 100%; object-fit:contain; display:block; }
+
+@media (max-width:480px)
+{
+.cart-item-img{ display:none; width:0; height:0; margin:0; padding:0; }
+.cart-list td:nth-child(2), .cart-list th:nth-child(2){ display:none; }
+.cart-list td, .cart-list th{ padding:8px 6px; font-size:14px; }
+}
+
+
+/* Cart Modal Sticky Layout */
+#cartModal .modal {display: flex; flex-direction: column; overflow: hidden ;  max-height: 88vh; box-sizing: border-box;}
+#cartModal .modal .cart-header { flex: 0 0 auto; padding-right: 8px; } /* Pad to align with scrollbar */
+#cartModal .modal .cart-list {flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; } /* No padding, scrollbar lives here */
+#cartModal .modal .cart-total { flex: 0 0 auto; padding-right: 8px; } /* Pad to align with scrollbar */
+#cartModal .modal > div:last-child { flex: 0 0 auto; z-index: 10; background: transparent; padding-top: 12px;}
+#cartHeader table { width:100%; border-collapse:collapse; }
+#cartHeader th { padding:8px; text-align:left; vertical-align:middle; font-weight:800; }
+@media (max-width:480px) { #cartHeader th:nth-child(2) { display:none; } #cartHeader th { padding:8px 6px; font-size:14px; } }
+
+
+/* CART MODAL - ORDER BUTTONS (no awkward wrap)*/
+#cartModal .modal { --cart-actions-gap:12px; }
+#cartModal .modal > div:last-child { display:flex; gap:var(--cart-actions-gap); align-items:center; justify-content:space-between; flex-wrap:wrap; }
+#cartModal .controls-row{ display:flex; gap:10px; align-items:center; justify-content:flex-end; flex-wrap:wrap; }
+
+@media (max-width:1024px)
+{
+.logo-small{ width:26px; height:26px; flex:0 0 26px; font-size:12px; border-radius:5px; }
+#cartModal .btn{ font-size:14px; padding:8px 11px; }
+}
+
+@media (max-width:480px)
+{
+#cartModal .modal { padding:12px; max-width:96vw; }
+#cartModal .modal > div:last-child { flex-direction:column; gap:10px; align-items:stretch; }
+#cartModal .controls-row{ display:flex; gap:10px; align-items:center; justify-content:center; white-space:nowrap; flex-wrap:nowrap; }
+#cartModal .btn{ font-size:13px; padding:8px 10px; min-width:110px; justify-content:center; gap:10px; }
+.logo-small{ width:34px; height:34px; flex:0 0 34px; font-size:14px; border-radius:6px; }
+.btn.mail .logo-small, .btn.wa .logo-small{ background:#fff; border:1px solid rgba(0,0,0,0.06); display:inline-flex; align-items:center; justify-content:center; }
+#cartModal .btn span{ display:inline-block; max-width:6.5rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:middle; }
+}
+
+
+/* Failed Popup, Refresh Overlay, etc. */
+.screen-refresh{ position:fixed; inset:0; background:#fff; opacity:0; pointer-events:none; transition:opacity .35s ease; z-index:250; }
+.screen-refresh.show{ opacity:1; pointer-events:auto; }
+.failed-popup{ background:#fff; padding:18px; border:2px solid var(--error); border-radius:8px; min-width:320px; text-align:center; box-shadow:0 12px 30px rgba(0,0,0,0.12); }
+.failed-actions{ display:flex; gap:10px; justify-content:center; margin-top:12px; }
+.btn.ghost{ background:#fff; color:var(--muted); border:1px solid #e5e7eb; }
+
+
+/* Launch Modal Pieces */
+.launch-graphic{ width:160px; height:160px; margin:10px auto; display:flex; align-items:center; justify-content:center; }
+.launch-title{ font-size:20px; font-weight:750; text-align:center; margin-top:6px; letter-spacing: 0.5px;}
+.launch-sub{ color:var(--muted); text-align:center; margin-top:8px; }
+
+
+/* Form and Field Basics */
+.form-row{ display:flex; gap:12px; margin-bottom:6px; flex-wrap:wrap; }
+.field{  flex:1; min-width:220px; }
+label{ display:block; font-size:13px; color: #2b6cb0; margin-bottom:4px; font-weight:700; text-transform:none; }
+.rule{ font-size:12px; color:#555; margin-bottom:6px; }
+input[type=text], textarea{ width:100%; padding:10px; border-radius:6px; border:1px solid #e5e7eb; font-size:14px; transition:border-color .12s, box-shadow .12s, background .12s; }
+input.invalid, textarea.invalid{ border-color:var(--error); background:#fff6f6; box-shadow:0 0 0 3px rgba(185,28,28,0.06); }
+.field-error{ display:none; margin-top:6px; color:#ff0101; font-family:'Times New Roman', Times, serif; font-weight:700; font-size:12px; letter-spacing:0.03em; word-spacing:0.08em; display:flex; align-items:center; gap:8px; }
+.field-error svg{ width:8px; height:8px; flex:0 0 18px; }
+button:focus, input:focus, textarea:focus { outline: 3px solid rgba(43,108,176,0.12); outline-offset:2px; }
+
+#pDesc {
+  white-space: pre-line;  /* makes \n show as line breaks */
+}
+
+html, body { -webkit-overflow-scrolling: touch; overflow-x:hidden; }
+
+
+/* Complete Footer CSS */
+
+.footer-bg { width: 100%; box-sizing: border-box; margin: 0; padding: 0; background: linear-gradient(180deg, #32adff 0%, #32adff 33%, #01b7ff 66%, #5cd1ff 100%); background-repeat: no-repeat; background-size: auto 100% ;  position: relative; z-index: 0;}
+.footer-bg .footer-hub,.footer-bg .footer-1,.footer-bg .footer-2,.footer-bg .footer-3 { background: transparent; background-color: transparent; margin: 0; box-shadow: none; z-index: 1;}
+.footer-bg > * { background: transparent; }
+.footer-bg::before {content: "" ; display: block ; position: absolute ; inset: 0 ; z-index: 0 ; pointer-events: none ;}
+.footer-bg .footer-hub, .footer-bg .footer-hub * {position: relative ; z-index: 2 ;}
+
+/* Footer Hub */
+.footer-hub {box-sizing: border-box; font-family: Georgia, "Times New Roman", serif; color: #ffffff;  padding: 24px 28px; margin: 0;}
+
+/* Basic Resets Used by All Layers */
+.footer-hub ul { list-style: none; margin: 0; padding: 0; }
+.footer-hub a { color: #ffffff; text-decoration: none; display:inline-block; transition: all 160ms ease; }
+.footer-hub h3 { margin: 0 0 12px 0; font-size: 18px; line-height: 1.1; font-weight: 600; color: #fff; }
+.footer-inner-max { max-width: none; margin: 0 auto; box-sizing: border-box; }
+
+/* Footer 1 */
+.footer-1 { }
+.footer-1 .footer1-inner {display: flex; gap: 24px; align-items: flex-start; justify-content: space-between; box-sizing: border-box;}
+.footer-1 .footer-1-col-1,.footer-1 .footer-1-col-2,.footer-1 .footer-1-col-3 { flex: 1 1 0; min-width: 0; box-sizing: border-box;}
+
+/* Footer 1 - Column 1 (Who We Serve) */
+.footer-1 .footer-1-col-1 h3 { font-size:18px; margin-bottom:12px; }
+.footer-1 .footer-1-col-1 li { margin-bottom:10px; }
+
+/* Footer 1 - Column 2 (Quick Links) */
+.footer-1 .footer-1-col-2 h3 { font-size:18px; margin-bottom:12px; }
+.footer-1 .footer-1-col-2 li { margin-bottom:10px; }
+.footer-1 .footer-1-col-2 a { color:#ffffff; }
+.footer-1 .footer-1-col-2 a:hover { color:#2b6cb0; background: #ffffff; }
+
+/* Footer 1 - Column 3 (Social) */
+.footer-1 .footer-1-col-3 h3 { font-size:18px; margin-bottom:12px; }
+.footer-1 .footer-1-col-3 ul { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.footer-1 .footer-1-col-3 li { margin:0; padding:0; }
+.footer-1 .footer-1-col-3 img {display:block;  width: clamp(36px, 7vw, 56px);  height: clamp(36px, 7vw, 56px); object-fit: contain; border-radius:8px; padding:6px; background:transparent; border:1px solid rgba(255,255,255,0.12); transition: transform .16s ease, box-shadow .16s ease; filter: drop-shadow(2px 2px 2px #fff) drop-shadow(2px 2px 4px #fff) drop-shadow(2px 2px 6px #fff);}
+.footer-1 .footer-1-col-3 a:hover img { transform: translateY(-4px); filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff); }
+
+@media (max-width:768px) 
+{
+.footer-1 .footer1-inner { flex-direction: column; gap:12px; padding: 12px 8px; }
+.footer-1 .footer-1-col-1,.footer-1 .footer-1-col-2,.footer-1 .footer-1-col-3 { width:100%; padding:6px 4px; }
+.footer-1 .footer-1-col-3 img { width: clamp(32px, 12vw, 48px); height: clamp(32px, 12vw, 48px); padding:4px; }
+}
+
+/* Footer 2 */
+.footer-2 { }
+.footer-2 .footer2-inner { display:flex; gap:20px; align-items:stretch; box-sizing:border-box; width:100%; max-width:1200px; margin:0 auto;}
+
+/* Footer 2 - Column 1 (Logo) */
+.footer-2 .footer-2-col-1 {box-sizing:border-box; flex: 0 1 50%; min-width:220px; display:flex; align-items:center; justify-content:flex-end; padding:6px;}
+.footer-2 .footer-2-col-1 .footer2-logo-wrap {width:100%; display:flex; align-items:center; justify-content:flex-end; box-sizing:border-box;}
+.footer-2 .footer2-logo-image { display: block; width: 100%; height: auto; max-height: 240px; filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #fff)drop-shadow(0 0 3px #fff); border-radius: 6px; margin: 0; box-sizing: border-box;}
+
+
+@media (max-width:1024px) 
+{
+footer-2 .footer2-logo-image {max-height: 200px; }
+}
+
+/* Footer 2 - Column 2 (Address) */
+.footer-2 .footer-2-col-2 {box-sizing:border-box; flex: 0 1 50%; min-width:200px; display:flex; align-items:center; justify-content:flex-start; padding:6px;}
+.footer-2 .footer-2-col-2 .footer2-address-wrap { width:100%; display:flex; align-items:center; justify-content:flex-start; box-sizing:border-box;}
+.footer-2 .footer-2-col-2 .footer2-address-content { box-sizing:border-box; text-align:left; color:#ffffff; line-height:1.5; font-size:14px; max-width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); min-height:auto;}
+.footer-2 .footer-2-col-2 .footer2-address-content address { font-style: normal; }
+
+
+@media (max-width:1024px) 
+{
+  .footer-2 .footer2-address-content { font-size:13px; line-height:1.45; }
+}
+
+
+@media (max-width:768px) 
+{
+.footer-2 .footer2-inner {flex-direction: column; gap: 8px; padding: 10px 8px; align-items: center;}
+.footer-2 .footer-2-col-1 {width: 100%; justify-content: center; padding: 6px 4px; display: flex; align-items: center;}
+.footer-2 .footer2-logo-wrap { justify-content: center; width:100%; display:flex; }
+.footer-2 .footer2-logo-image {width: 90% ; max-width: 350px ; height: auto ; max-height: 220px ; margin: 0 auto 6px auto ; display: block ; box-sizing: border-box ;}
+.footer-2 .footer-2-col-2 { width: 100%;justify-content: center; padding: 4px 4px; display: flex; flex-direction: column; align-items: center;}
+.footer-2 .footer2-address-wrap { justify-content: center; width:100%; display:flex; }
+.footer-2 .footer-2-col-2 .footer2-address-content {margin: 0 auto; text-align: center; max-width: 92%; padding: 6px 8px; font-size: 13px; box-sizing: border-box;}
+}
+
+/* Footer 3 (Copyright Centered) */
+.footer-3 { text-align:center; padding:12px 16px; }
+.footer-3 .footer3-inner { max-width:1200px; margin:0 auto; font-size:13px; line-height:1.5; }
+@media (max-width:768px) 
+{ 
+.footer-3 .footer3-inner { font-size:12px; padding:6px 4px; } 
+}
+
+
+.footer-bg .footer-1,.footer-bg .footer-2,.footer-bg .footer-3 {border: 0 ; box-shadow: none ; background: transparent ;}
+
+
+#launchGraphic,.launch-graphic { display: none ; width: 0 ; height: 0 ; margin: 0 ; padding: 0 ;}
+.launch-title {margin: 0; padding: 0; line-height: 1.15;}
+
+
+.launch-title img { display: block; margin: 0 auto 8px; width: 300px; height: 200px; object-fit: contain; max-width: 100%;}
+
+@media (max-width:480px) 
+{
+.launch-title img {width: 275px; height: 137.5px;}
+}
+
+
+
+ button.btn {padding: 5px 5px ; margin: 8px 0 ; font-size: 15px ; border-radius: 8px ; text-align: center;}
+
+
+@media (max-width:768px) 
+{
+button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 8px ; text-align: center;}
+}
+
+
+.cart-review{display: block; margin-top: 1px; padding: 2px 2px; color: var(--muted, #6b7280); font-weight: 600; font-size: clamp(14px, 4vw, 16px); line-height: 1; text-align: left; background: transparent; border-radius: 2px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+
+@media (max-width:500px)
+{
+.cart-review{ font-size: 13px; padding-top: 2px; padding-bottom: 2px; }
+}
+
+
+.cart-list td,.cart-list td > div,.cart-list tbody td {font-weight: normal !important;}
+
+@media (max-width: 600px) 
+{ 
+#cartHeader th,.cart-list th {font-size: 13px !important; font-weight: 700 !important; padding: 6px 6px !important;}
+.cart-list td,.cart-list td > div,.cart-list tbody td { font-size: 11px !important; padding: 6px 6px !important; line-height: 1.2 !important; font-weight: normal !important;}
+.cart-item-img { display: none !important; width:0; height:0; }
+.cart-title, #cartModal .modal .cart-title, #cartTotal div,.cart-total {font-size: 13px !important;font-weight: 700 !important;}
+#cartModal .modal { padding: 10px !important; max-width: 96vw !important; box-sizing: border-box; }
+#cartModal .btn, #cartModal button { font-size: 12px !important; padding: 6px 8px !important; }
+}
+
+
+  
+/* Settings Icon */
+.settings-icon {display: inline-block; margin-left: 10px; cursor: pointer;font-size: 16px; color: var(--accent); transition: transform 0.2s;}
+.settings-icon:hover {transform: scale(1.1);}
+
+/* Admin Settings Modal */
+.admin-modal-overlay {display: none;position: fixed;inset: 0; background: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center; padding: 20px;}
+.admin-modal-overlay.show { display: flex;}
+.admin-modal-content { background: white; border-radius: 12px; width: 100%; max-width: 600px; max-height: 90vh; overflow-y: auto; box-shadow: 0 10px 40px rgba(0,0,0,0.3);}
+.admin-modal-header { padding: 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center;}
+.admin-modal-header h2 { margin: 0; font-size: 24px; color: var(--accent);}
+.admin-close { cursor: pointer; font-size: 28px; color: #999; background: none; border: none; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;}
+.admin-close:hover { color: #333;}
+.admin-modal-body { padding: 20px;}
+.admin-password-section { margin-bottom: 20px;}
+.admin-password-section input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px; box-sizing: border-box;}
+.admin-password-section button { margin-top: 10px; width: 100%; padding: 12px; background: var(--accent); color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;}
+.admin-password-section button:hover { background: #1e4d7e;}
+.admin-products-section { display: none;}
+.admin-products-section.show { display: block;}
+.admin-product-item { border: 1px solid #eee; border-radius: 8px; padding: 15px; margin-bottom: 15px; background: #f9f9f9;}
+.admin-product-name { font-weight: bold; margin-bottom: 10px; color: var(--accent); font-size: 16px;}
+.admin-product-controls { display: flex; gap: 15px; align-items: center; flex-wrap: wrap;}
+.admin-price-input { flex: 1; min-width: 150px;}
+.admin-price-input label { display: block; font-size: 14px; margin-bottom: 5px; color: #666;}
+.admin-price-input input { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;}
+.admin-availability { display: flex; align-items: center; gap: 10px;}
+.admin-availability label { font-size: 14px; color: #666;}
+.toggle-switch { position: relative; width: 50px; height: 24px; background: #ccc; border-radius: 12px; cursor: pointer; transition: background 0.3s;}
+.toggle-switch.active { background: #4caf50;}
+.toggle-switch::after { content: ''; position: absolute; width: 20px; height: 20px; background: white; border-radius: 50%; top: 2px; left: 2px; transition: left 0.3s;}
+.toggle-switch.active::after { left: 28px;}
+.admin-actions { margin-top: 20px; display: flex; gap: 10px; justify-content: flex-end;}
+.admin-actions button { padding: 10px 20px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background 0.3s;}
+.admin-save-btn { background: var(--accent); color: white;}
+.admin-save-btn:hover { background: #1e4d7e;}
+.admin-cancel-btn { background: #ddd; color: #333;}
+.admin-cancel-btn:hover { background: #bbb;}
+.admin-error { color: red; font-size: 14px; margin-top: 5px;}
+.admin-success { background: #d4edda; color: #155724; padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #c3e6cb;}
+.admin-github-config { background: #fff3cd; border: 1px solid #ffc107; padding: 15px; border-radius: 6px; margin-bottom: 20px;}
+.admin-github-config h3 { margin-top: 0; font-size: 16px; color: #856404;}
+.admin-github-config input { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;}
+.admin-github-config small { font-size: 12px; color: #666; display: block; margin-top: -5px; margin-bottom: 10px;}
+
+
+/* Out of Stock Styling */
+.card.unavailable { filter: grayscale(45%) brightness(1.08); opacity: 0.85; position: relative;}
+.card.unavailable .card-outstock-label { display: block; position: absolute; top: 14px; right: 18px; background: linear-gradient(90deg, #ffe873, #ff4b2b); color: #333; font-weight: 700; font-family: inherit; font-size: 11.5px; border-radius: 7px; padding: 3px 11px; letter-spacing: 0.5px; box-shadow: 0 2px 10px rgba(255, 191, 143, 0.2); text-shadow: 1px 1px 0 #fff8e0; z-index: 2;}
+.controls .btn.disabled { opacity: 0.55; background: linear-gradient(90deg, #eee, #ffe2e2); color: #888 !important; pointer-events: none; border: 1px solid #ffc8c8;}
+
+
+/* Add New Product & Rename Features */
+.admin-add-new-container { margin-bottom: 20px; text-align: right; }
+.admin-add-new-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); color: white; border: none; border-radius: 6px; padding: 8px 14px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+.admin-add-new-btn:hover { background: #1e4d7e; }
+.admin-add-new-btn .plus-icon { font-size: 18px; font-weight: bold; }
+
+.new-product-modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.65); z-index: 10001; justify-content: center; align-items: center; padding: 20px; }
+.new-product-modal-overlay.show { display: flex; }
+.new-product-modal-content { background: white; border-radius: 12px; width: 100%; max-width: 500px; max-height: 90vh; overflow-y: auto; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+.new-product-modal-header { padding: 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+.new-product-modal-header h2 { margin: 0; font-size: 22px; color: var(--accent); }
+.new-product-modal-body { padding: 20px; }
+.new-product-form-group { margin-bottom: 18px; }
+.new-product-form-group label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #333; }
+.new-product-form-group input[type="text"], .new-product-form-group input[type="number"], .new-product-form-group select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box; font-family: inherit; }
+.new-product-form-group input[type="file"] { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box; }
+.new-product-form-group small { display: block; color: #666; font-size: 12px; margin-top: 4px; }
+.new-product-image-preview { margin-top: 10px; max-width: 200px; max-height: 200px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; display: none; }
+.new-product-image-preview img { width: 100%; height: auto; display: block; }
+.new-product-image-preview.show { display: block; }
+.new-product-actions { margin-top: 20px; display: flex; gap: 10px; justify-content: flex-end; padding-top: 15px; border-top: 1px solid #eee; }
+.new-product-actions button { padding: 10px 20px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background 0.3s; }
+.new-product-add-btn { background: var(--accent); color: white; }
+.new-product-add-btn:hover { background: #1e4d7e; }
+.new-product-cancel-btn { background: #ddd; color: #333; }
+.new-product-cancel-btn:hover { background: #bbb; }
+.new-product-error { color: red; font-size: 13px; margin-top: 5px; }
+
+.admin-product-name { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.admin-product-name-text { font-weight: bold; color: var(--accent); font-size: 16px; flex: 1; }
+.admin-product-name-input { flex: 1; padding: 6px 10px; border: 2px solid var(--accent); border-radius: 4px; font-size: 16px; font-weight: bold; color: var(--accent); display: none; font-family: inherit; }
+.admin-product-name-input.editing { display: block; }
+.admin-product-name-text.editing { display: none; }
+.admin-edit-name-btn { background: none; border: none; cursor: pointer; padding: 4px; color: #666; font-size: 16px; transition: color 0.2s, transform 0.2s; }
+.admin-edit-name-btn:hover { color: var(--accent); transform: scale(1.1); }
+.admin-name-action-btns { display: none; gap: 4px; }
+.admin-name-action-btns.show { display: flex; }
+.admin-name-ok-btn, .admin-name-cancel-btn { background: none; border: none; cursor: pointer; padding: 4px; font-size: 18px; font-weight: bold; transition: transform 0.2s; }
+.admin-name-ok-btn { color: #4caf50; }
+.admin-name-ok-btn:hover { transform: scale(1.2); }
+.admin-name-cancel-btn { color: #f44336; }
+.admin-name-cancel-btn:hover { transform: scale(1.2); }
+
+
+.new-product-form-group textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box; font-family: inherit; min-height: 100px; resize: vertical; }
+.desc-word-counter { font-size: 12px; color: #666; margin-top: 4px; text-align: right; }
+.desc-word-counter.warning { color: #ff9800; }
+.desc-word-counter.error { color: #f44336; font-weight: bold; }
+
+
+.modal-desc {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.modal-desc b {
+  color: var(--accent);
+  font-size: 1.1em;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+
+
+#pDesc { line-height: 1.7; color: #333; font-size: 15px; margin-top: 10px; }
+#pDesc strong { display: block; color: var(--accent); font-weight: 700; font-size: 16px; margin-top: 16px; margin-bottom: 8px; border-bottom: 2px solid var(--accent); padding-bottom: 4px; }
+#pDesc br + strong { margin-top: 20px; }
+.desc-list { list-style: none; padding-left: 0; margin: 8px 0; }
+.desc-list li { position: relative; padding-left: 20px; margin-bottom: 6px; }
+.desc-list li::before { content: '•'; position: absolute; left: 0; color: var(--accent); font-weight: bold; font-size: 18px; }
+
+
+
+</style>
+</head>
+
+
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="logo-placeholder" id="logoSpace"><img src="LOGO/REINIGENLOGO.png"> </div>
+      <nav class="menu-right" id="menuRight">
+        <a href="#">Products</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="cover-placeholder" id="coverPlaceholder">
+  <div class="cover-content" role="banner" aria-label="Header content">
+  <h1>We Are Your Hygiene Partner</h1>
+    <p><b>Use Our Cleaning & Speciality Chemicals and Supplies to Keep Your House, Office and Surrounding Clean and Hygienic</b></p>
+  
+  </div>
+</div>
+
+<div class="header"><h1>Product Catalog</h1><div class="sub">Browse Our Range Of Cleaning Products. Select The Items You Need Using The <b>“ Add to Cart ”</b> And Quantity Options. Use <b>" Your Cart "</b> To Complete Your Order Through Your <b>WhatsApp</b> (or) <b>Email</b> App. You Can Also Use The <b>" Product Info "</b> Button To Learn More About Each Product. Once <b>Your Order</b> Is Placed, Our Team Will Reach Out To You For <b>Order Confirmation</b> And To Finalize The Process.</b></div></div>
+<br>
+    <div class="filter-row">
+      <div class="filter-icon" title="Filters">
+       &nbsp; <svg viewBox="0 0 24 24" width="30" height="50" fill="none" stroke="#374151" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M6 12h12M10 18h4"/></svg>
+      </div>
+      <div class="chip active" data-filter="all"><b>All Products</b></div>
+      <div class="chip" data-filter="Cleaning & Speciality Chemicals"><b>Cleaning & Speciality Chemicals</b></div>
+      <div class="chip" data-filter="Cleaning Supplies"><b>Cleaning Supplies</b></div>
+    </div>
+<br>
+    <main>
+      <section class="grid" id="grid"></section>
+    </main>
+<br>
+<br>
+
+<br>
+<br>
+  </div>
+
+  <div class="cart-float" id="cartFloat" aria-hidden="false">
+    <div style="display:flex;align-items:center;gap:8px">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="20" r="1"></circle>
+        <circle cx="20" cy="20" r="1"></circle>
+        <path d="M1 1h4l2.6 12.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <div style="font-weight:700">Your Cart</div>
+    </div>
+    <div class="cart-count" id="cartCount">0</div>
+  </div>
+
+  <iframe name="hidden_iframe" style="display:none"></iframe>
+
+  <div class="overlay" id="cartModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" style="max-width:980px;">
+      <button class="close" id="closeCartModal" aria-label="Close">✕</button>
+      <h2 style="display:flex;align-items:center;justify-content:center;gap:8px;">
+  <img src="ICONS/SHOPL.png" style="width:50px;height:50px;object-fit:contain;">
+  Your Cart
+  <img src="ICONS/SHOPR.png" style="width:50px;height:50px;object-fit:contain;">
+</h2>
+      
+      <div id="cartHeader" class="cart-header"></div>
+      
+      <div class="cart-list" id="cartList"></div>
+      
+      <div id="cartTotal" class="cart-total"></div>
+      
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;flex-wrap:wrap">
+        <div class="cart-review" role="status" aria-live="polite"> Review Items Before Ordering</div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <div style="display:flex;gap:6px;align-items:center">
+            <div style="display:flex;align-items:center;gap:8px">
+              <div style="width:30px;height:50px;background:#fff;border-radius:2px;border:1px solid #e6eef8;display:flex;align-items:center;justify-content:center;color:var(--outlook-blue)"><img src="SOCIAL MEDIAS/MAIL.png" alt="Mail" style="width:100%;height:100%;object-fit:contain;"></div>
+              <button class="btn mail" id="cartOrderMail" title="Order with Mail">Order with Mail</button>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:8px;margin-left:8px">
+              <div style="width:30px;height:50px;background:#fff;border-radius:2px;border:1px solid #e6f6ea;display:flex;align-items:center;justify-content:center;color:var(--wa-green)"><img src="SOCIAL MEDIAS/WA.png" alt="WhatsApp" style="width:100%;height:100%;object-fit:contain;"></div>
+              <button class="btn wa" id="cartOrderWA" title="Order with WhatsApp">Order with WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="productModal" aria-hidden="true">
+    <div class="modal product-modal" role="dialog" aria-modal="true">
+      <button class="close" id="closeProductModal" aria-label="Close">✕</button>
+      <div class="left">
+        <div class="modal-img" id="modalImgArea">
+          </div>
+      </div>
+      <div class="right">
+        <h2 id="pTitle">Product Name</h2>
+        <div id="pCategory" style="color:var(--muted)"></div>
+        <div id="pPrice" style="font-size:20px; font-weight:700; color:var(--accent); margin:8px 0;"></div>
+        <p id="pDesc" style="color:var(--muted);line-height:1.4">Product description placeholder.</p>
+        <div style="margin-top:auto;display:flex;gap:8px;align-items:center;">
+          <div class="qty" id="pQtyArea" style="display:none;">
+            <button class="qbtn" id="pMinus">−</button>
+            <div class="count" id="pCount">1</div>
+            <button class="qbtn" id="pPlus">+</button>
+          </div>
+          <button class="btn" id="pAddInitial">Add to Cart</button>
+          <button class="remove-btn" id="pRemove" style="display:none">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="checkoutModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" style="max-width:720px;">
+      <button class="close" id="closeCheckoutModal" aria-label="Close">✕</button>
+      <h2>Your Contact Details</h2>
+      <div id="chosenModeLabel" style="text-align:center;color:var(--muted);margin-bottom:8px;font-weight:600"></div>
+
+      <form id="checkoutForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label>🧑‍💼 Name *</label>
+            <div class="rule">use letters and spaces only - 2 to 60 characters</div>
+            <input type="text" name="name" autocomplete="name" required>
+            <div class="field-error" id="err-name">
+              <div id="err-name-txt">only letters and spaces (2-60 chars)</div>
+            </div>
+          </div>
+        </div>
+<br><br>
+        <div class="form-row">
+          <div class="field">
+            <label>📞 Contact Number *</label>
+            <div class="rule">digits only - 6 to 15 digits</div>
+            <input type="text" name="phone" inputmode="numeric" autocomplete="tel" required>
+            <div class="field-error" id="err-phone">
+              <div id="err-phone-txt">digits only - 6 to 15 digits</div>
+            </div>
+          </div>
+        </div>
+<br><br>
+        <div class="form-row">
+          <div class="field">
+            <label>📍 Address *</label>
+            <div class="rule">enter a valid delivery address</div>
+            <textarea name="address" rows="2" required></textarea>
+            <div class="field-error" id="err-address">
+              <div id="err-address-txt">please provide an address (min 4 chars)</div>
+            </div>
+          </div>
+        </div>
+  
+        <div style="display:flex;gap:8px;justify-content:center;margin-top:6px">
+          <button type="button" class="btn" id="backToCart">Back</button>
+          <button type="submit" class="btn" id="submitOrderBtn">Submit Order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="overlay" id="launchModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" style="max-width:720px;">
+      <button class="close" id="closeLaunchModal" aria-label="Close">✕</button>
+      <div style="text-align:center;padding:8px">
+        <div id="launchGraphic" class="launch-graphic" aria-hidden="true"></div>
+
+        <div id="launchTitle" class="launch-title">Click "Send" Button</div>
+        <div id="launchDesc" class="launch-sub" style="margin-top:10px;">
+          You're about to be redirected to the app to send your order details.
+        </div>
+
+        <p style="margin-top:14px;line-height:1.45;color:var(--muted)">
+          <strong style="display:block;margin-bottom:8px;font-size:15px"><em style="color:#ff00dd;font-style:normal;font-weight:700">By completing the action ( 👉 Clicking <em style="color:#ff00dd;font-style:normal;font-weight:700">Send 👈</em> ) your order will be received by us.</em></strong>
+          <strong style="display:block;margin-bottom:6px; font-weight:450;">Our team will contact you within the next <span style="color:var(--accent)">5 working hours</span> to confirm the order.</strong>
+          <strong>Thanks for shopping with us!</strong>
+        </p>
+
+        <div style="margin-top:14px;display:flex;gap:10px;justify-content:center">
+          <button id="launchProceed" class="btn">Proceed</button>
+          <button id="launchCancel" class="btn ghost">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="failedModal" aria-hidden="true">
+    <div class="failed-popup" role="dialog" aria-modal="true">
+      <button class="close" id="closeFailedModal" aria-label="Close">✕</button>
+      <h3 style="color:var(--error)">Action not completed</h3>
+      <p id="failedMsg" style="color:#000;margin-top:6px">We couldn't open your email or WhatsApp automatically. Please allow popups or try again.</p>
+      <div class="failed-actions">
+        <button class="btn ghost" id="continueShopping">Continue Shopping</button>
+        <button class="btn" id="startFresh">Start Fresh</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="screen-refresh" id="refreshOverlay"></div>
+
+<script>
+  /* ========== Minimal config & sample products ========== */
+  // If you put image URLs here (500x500 recommended), they will be used across grid, modal and cart.
+  // UPDATED: Added 'price' to each product
+  const PRODUCTS = [
+{	id:1,	name:	'Hand Wash',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This hand wash is a gentle, everyday liquid soap made to clean hands well without drying the skin. The pH-balanced formula helps keep the skin\'s natural moisture and supports the skin barrier, while mild cleansing ingredients remove dirt, grease and common germs. It is suitable for frequent use at home, offices, shops, schools and other places where regular hand washing is needed.<br><br><strong>How to use</strong><ul class="desc-list"><li>Wet your hands with clean running water.</li><li>Take a small amount of hand wash in your palm and rub your hands together to make foam.</li><li>Rub all parts of the hands - palms, backs, between fingers and under nails for at least 20 seconds.</li><li>Rinse well with water and dry with a clean towel or air dryer.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Gentle on skin:</b> pH-balanced and enriched with moisturizers to help prevent dryness and irritation.</li><li><b>Effective cleaning:</b> Removes dirt, oil and everyday germs when used correctly.</li><li><b>Protects skin barrier:</b> Helps the skin keep its natural oils so hands stay soft even with frequent washing.</li><li><b>Mild fragrance:</b> Fresh scent that is not overpowering.</li><li><b>Easy to use:</b> Available in pump or bottle format for quick dispensing; rinses clean without sticky residue.</li><li>Suitable for adults and children (supervise young children). Avoid contact with eyes. If the product gets into eyes, rinse immediately with clean water.</li></ul>',	img:	 'CHEMICALS/CHEM-HANDWASH.png',	price:	10.00	},
+{	id:2,	name:	'Bathroom Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'CHEMICALS/CHEM-BATHROOMCLEANER.png',	price:	10.00	},
+{	id:3,	name:	'Blood Stain Remover',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-BLOODSTAINREMOVER.png',	price:	10.00	},
+{	id:4,	name:	'Dish Wash Gel',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-DISHWASHGEL.png',	price:	10.00	},
+{	id:5,	name:	'Fabric Softner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This fabric softener makes clothes feel soft and fresh after washing. It works in the final rinse to condition fabric fibres so clothes feel smooth and gentle on the skin. The concentrated liquid needs only a small amount per wash and gives a light, long-lasting fragrance. It also helps reduce wrinkles and static, so clothes look neater and are easier to wear.<br><br><strong>How to Use</strong><ul class="desc-list"><li>Measure the amount using the cap. Follow the bottle directions for small, medium or large loads.</li><li>For washing machines: pour the measured softener into the machine\'s fabric softener dispenser or tray. Do not pour the softener directly onto clothes.</li><li>For hand washing: add the correct amount to the final rinse water and mix before putting clothes in. Leave clothes in the rinse water for about a minute, then drain and gently squeeze out excess water.</li><li>Run the rinse cycle as usual. Keep the bottle closed after use and store out of reach of children.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Soft and comfortable:</b> Makes fabrics feel soft and pleasant on the skin.</li><li><b>Fewer wrinkles:</b> Reduces wrinkles so ironing becomes easier.</li><li><b>Less static:</b> Controls static cling, especially on synthetic clothes.</li><li><b>Fresh smell:</b> Gives a mild, pleasant fragrance that lasts.</li><li><b>Economical:</b> Concentrated formula means the bottle lasts longer when used as directed.</li></ul>',	img:	'CHEMICALS/CHEM-FABRICSOFTNER.png',	price:	10.00	},
+{	id:6,	name:	'Floor Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This floor cleaner is a strong liquid made to clean hard floors at home and in offices. It removes dust, oil and common stains and leaves floors clean and smelling fresh. It can be used on tiles, vinyl, sealed wooden floors, marble and similar surfaces. Mix the cleaner with water before use to make a safe cleaning solution that dries quickly and does not leave sticky marks.<br><br><strong>How to use</strong><ul class="desc-list"><li>Pour one capful of the cleaner into half a bucket of water (about 4 litres). Add more cleaner for very dirty floors. The ratio varies based on the usage.</li><li>Dip a mop or a clean cloth into the water and squeeze it so it is not dripping.</li><li>Mop the floor evenly. For small, tough stains, put a little undiluted cleaner on a cloth and rub the spot gently.</li><li>Let the floor air dry. You usually do not need to rinse with clean water.</li><li>Keep the bottle closed and store it out of reach of children and pets.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Easy cleaning:</b> Removes everyday dirt and oil so floors look clean.</li><li><b>Works on many floors:</b> Safe for tiles, vinyl, sealed wooden floors and marble when used as directed.</li><li><b>No sticky feel:</b> Dries fast so the floor does not feel sticky underfoot.</li><li><b>Fresh smell:</b> Leaves a mild, pleasant scent that freshens the room.</li><li><b>Saves time:</b> Mixing with water makes the bottle last longer and helps you clean faster.</li></ul>',	img:	'CHEMICALS/CHEM-FLOORCLEANER.png',	price:	10.00	},
+{	id:7,	name:	'Washing Gel',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	' Washing Gel is a concentrated liquid cleaner for clothes that gives a deep, thorough wash. The gel sinks into fabric to lift dirt, grease and tough stains while also removing bad smells. It dissolves well in both hot and cold water, so it leaves no white marks or residue on clothes. The formula is gentle on fabrics and helps keep colours and texture in good shape, making it suitable for everyday clothes and delicate items alike. Use it in any type of washing machine or for hand wash.<br><br><strong>How to use</strong><br><b>For Machine Wash:</b><ul class="desc-list"><li>Measure the gel with the cap depending on load size and dirt level.</li><li>Pour into the detergent drawer or directly into the drum before adding clothes.</li><li>Run the normal wash cycle.</li></ul><br><b>For Hand Wash:</b><ul class="desc-list"><li>Mix a small amount of gel in a bucket of water to make a soapy solution.</li><li>Soak clothes for about 30 minutes for tough stains.</li><li>Rub gently, then rinse well with clean water. Always follow the dose shown on the bottle. For very delicate fabrics, test on a small area first.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Deep cleaning:</b> Removes tough stains and hard dirt from fabric.</li><li><b>Colour care:</b> Gentle formula helps keep colours bright and fabric soft.</li><li><b>No residue:</b> Gel dissolves fully in hot or cold or normal water without leaving white marks.</li><li><b>Works everywhere:</b> Suitable for all washing machines and for hand washing.</li><li><b>Long-lasting freshness:</b> Leaves clothes smelling clean for a long time.</li></ul> ',	img:	'CHEMICALS/WASHINGGEL.png',	price:	10.00	},
+{	id:8,	name:	'Glass Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	' This glass cleaner is made to keep glass surfaces clean and clear. It removes dust, grease, fingerprints, and marks quickly, leaving the glass neat and bright. The liquid dries fast and does not leave any film or marks behind. It is suitable for everyday use on windows, mirrors, glass tables, cupboards and car glass. The formula is free from strong chemicals like ammonia, which makes it safe even for tinted windows and delicate glass. With regular use, it helps maintain a clean and clear look at home, in offices and in vehicles.<br><br><strong>How to use:</strong><ul class="desc-list"><li>Shake the bottle well before use.</li><li>Spray the cleaner directly on the glass or on a clean cotton/microfiber cloth.</li><li>Wipe the glass surface using straight or circular hand movements until the dirt is removed.</li><li>For the final touch, use a dry part of the cloth to gently wipe again for a clear finish.</li></ul><br><strong>Benefits:</strong><ul class="desc-list"><li><b>Clear Finish:</b> Leaves glass surfaces bright and clean without any leftover marks.</li><li><b>Effective Cleaning:</b> Removes dust, oil and fingerprints with ease.</li><li><b>Multipurpose Use:</b> Can be used on mirrors, windows, glass tables, cupboards and car glass.</li><li><b>Safe Formula:</b> Free from harsh ammonia, safe for tinted and delicate glass.</li><li><b>Quick and Easy:</b> Fast-drying solution saves time and effort during cleaning.</li></ul> ',	img:	'CHEMICALS/CHEM-GLASSCLEANER.png',	price:	10.00	},
+{	id:9,	name:	'Multipurpose Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-MULTIPURPOSECLEANER.png',	price:	10.00	},
+{	id:10,	name:	'Phenyle',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This Phenyle is a strong disinfectant liquid for cleaning and sanitizing floors and other hard surfaces. It removes dirt and bad smells while reducing common germs and bacteria, helping to keep homes, workplaces and public areas more hygienic. The concentrated liquid can be used on floors, bathroom tiles, drains, bins and similar surfaces.<br><br><strong>How to use</strong><ul class="desc-list"><li>For floors: Mix one capful of Phenyle in one bucket of water (about 4 litres). Mop the floor with this water and let it dry. For very dirty areas, you may add a little more Phenyle or can spray direction on the surface (based on the requirements).</li><li>For toilets and drains: Pour a small amount of undiluted Phenyle directly into the toilet bowl or drain to remove smell and disinfect.</li><li>For bins and other hard surfaces: Wipe or scrub with the diluted solution; for quick freshening, spray and wipe. Always follow the directions on the bottle. Do not mix Phenyle with other cleaning products.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Cleans and disinfects:</b> Removes dirt and reduces germs on floors and surfaces.</li><li><b>Removes bad smells:</b> Neutralises unpleasant odours and leaves a clean scent.</li><li><b>Multi-purpose:</b> Useful for bathrooms, kitchens, drains, bins and tiled areas.</li><li><b>Economical:</b> Concentrated formula means a small amount covers more area.</li><li><b>Easy to use:</b> Simple mixing and application for regular or deep cleaning.</li></ul><br><strong>Safety</strong><br>Keep out of reach of children and pets. Avoid contact with eyes and skin; rinse with water if it comes into contact. Do not mix with bleach or acids. Use in a well-ventilated area.',	img:	'CHEMICALS/CHEM-PHENYLE.png',	price:	10.00	},
+{	id:11,	name:	'Room Freshner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-ROOMFRESHNER.png',	price:	10.00	},
+{	id:12,	name:	'Scale Remover',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-SCALEREMOVER.png',	price:	10.00	},
+{	id:13,	name:	'Soap Oil',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This soap oil is a concentrated liquid cleaner for many cleaning purposes at home and at work. It makes a rich state that cuts through grease, dirt and food stains on hard surfaces. Use it on floors, kitchen counters, bathroom tiles, sinks and similar areas. It helps reduce common germs, leaves a mild, fresh smell and does not leave sticky marks when it dries. Because it is concentrated, a small amount lasts longer.<br><br><strong>How to use</strong><ul class="desc-list"><li>Dilute: Put one capful of soap oil into half a bucket of water (about 4 litres). Use more for very dirty places.</li><li>Clean: Dip a mop or a clean cloth into the water, wring it and wipe the surface.</li><li>For counters and sinks: Pour the diluted solution into a spray bottle or use a wet cloth to clean, then wipe dry with a clean cloth.</li><li>For tough grease: Put a little undiluted soap oil on a cloth, rub the spot gently, then wipe or rinse.</li><li>Dry: Let the surface air dry. Rinsing is not needed in most cases. Keep the bottle closed and store out of reach of children.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Multi-purpose cleaning:</b> Can be used on floors, kitchen counters, bathroom tiles, sinks and other hard surfaces.</li><li><b>Sanitizing action:</b> Helps reduce common germs and bacteria when used as directed.</li><li><b>Powerful cleaning:</b> Rich lather cuts through grease, food stains and heavy dirt.</li><li><b>Residue-free finish:</b> Dries quickly without leaving sticky marks or streaks.</li><li><b>Long-lasting fragrance:</b> Gives a mild, fresh scent that stays for some time.</li><li><b>Economical concentrate:</b> A small amount stretches farther, so the bottle lasts longer.</li></ul>',	img:	'CHEMICALS/CHEM-SOAPOIL.png',	price:	10.00	},
+{	id:14,	name:	'Toilet Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-TOILETCLEANER.png',	price:	10.00	},
+{	id:15,	name:	'Broom, Coconut',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-COCONUT.png',	price:	10.00	},
+{	id:16,	name:	'Broom, Standard Commercial ',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-CORPORATION.png',	price:	10.00	},
+{	id:17,	name:	'Broom, Grass High Quality',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-GRASSSHIGHQUALITY.png',	price:	10.00	},
+{	id:18,	name:	'Broom, Grass Simple Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-GRASSSIMPLEHANDLE.png',	price:	10.00	},
+{	id:19,	name:	'Broom, Gray Plastic Handle, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-GRAYPLASTICHANDLEBLUE.png',	price:	10.00	},
+{	id:20,	name:	'Broom, Gray Plastic Handle, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-GRAYPLASTICHANDLERED.png',	price:	10.00	},
+{	id:21,	name:	'Broom, Plastic',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-PLASTIC.png',	price:	10.00	},
+{	id:22,	name:	'Broom, Soft Grass Wooden Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-SOFTGRASSWOODEN.png',	price:	10.00	},
+{	id:23,	name:	'Brush, Tile Scrubber ',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRSUH-TILES.png',	price:	10.00	},
+{	id:24,	name:	'Brush, Bottle Cleaner, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-BOTTLEBLUE.png',	price:	10.00	},
+{	id:25,	name:	'Brush, Bottle Cleaner, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-BOTTLEGREEN.png',	price:	10.00	},
+{	id:26,	name:	'Brush, Bottle Cleaner, Pink',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-BOTTLEPINK.png',	price:	10.00	},
+{	id:27,	name:	'Brush, Bottle Cleaner, Yellow',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-BOTTLEYELLOW.png',	price:	10.00	},
+{	id:28,	name:	'Brush, Double Head, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-DOUBLEHEADBLUE.png',	price:	10.00	},
+{	id:29,	name:	'Brush, Double Head, Yellow',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-DOUBLEHEADYELLOW.png',	price:	10.00	},
+{	id:30,	name:	'Brush, Duster, Multi-Color Feather',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-DUSTER-MULTICOLORFEATHER.png',	price:	10.00	},
+{	id:31,	name:	'Brush, Microfibre Duster',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-MICROFIBREDUSTER.png',	price:	10.00	},
+{	id:32,	name:	'Brush, Multiple Head Set ',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-MULTIPLEBRUSH.png',	price:	10.00	},
+{	id:33,	name:	'Brush, Round, Pink Plastic Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-ROUNDPINK-PLASTICHANDLE.png',	price:	10.00	},
+{	id:34,	name:	'Brush, Round, Red Yellow Metal Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-ROUNDREDYELLOW-METALHANDLE.png',	price:	10.00	},
+{	id:35,	name:	'Brush, Round Wooden',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-ROUNDWOODEN.png',	price:	10.00	},
+{	id:36,	name:	'Brush, Sink Cleaner',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-SINK.png',	price:	10.00	},
+{	id:37,	name:	'Brush, Utility Model 2',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN2.png',	price:	10.00	},
+{	id:38,	name:	'Brush, Utility Model 3',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN3.png',	price:	10.00	},
+{	id:39,	name:	'Brush, Utility Model 4',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN4.png',	price:	10.00	},
+{	id:40,	name:	'Brush, Utility Model 5',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN5.png',	price:	10.00	},
+{	id:41,	name:	'Brush, Utility Model 6',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN6.png',	price:	10.00	},
+{	id:42,	name:	'Brush, Utility Model 7',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN7.png',	price:	10.00	},
+{	id:43,	name:	'Brush, Utility Model 8',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN8.png',	price:	10.00	},
+{	id:44,	name:	'Brush and Wiper, Black',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-BLACK.png',	price:	10.00	},
+{	id:45,	name:	'Brush and Wiper, Multi-Color Dot',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-MULTICOLORDOT.png',	price:	10.00	},
+{	id:46,	name:	'Brush and Wiper, Multi-Color Stripe',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-MULTICOLORSTRIPE.png',	price:	10.00	},
+{	id:47,	name:	'Brush and Wiper, Plain',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-PLAIN.png',	price:	10.00	},
+{	id:48,	name:	'Brush and Wiper, Unknown Model',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-UNKNOWN.png',	price:	10.00	},
+{	id:49,	name:	'Brush and Wiper, White',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-WHITE.png',	price:	10.00	},
+{	id:50,	name:	'Bucket, Metal Handle, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-METALHANDLE-BLUE.png',	price:	10.00	},
+{	id:51,	name:	'Bucket, Metal Handle, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-METALHANDLE-GREEN.png',	price:	10.00	},
+{	id:52,	name:	'Bucket, Metal Handle, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-METALHANDLE-RED.png',	price:	10.00	},
+{	id:53,	name:	'Bucket, Plastic Handle, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-PLASTICHANDLE-BLUE.png',	price:	10.00	},
+{	id:54,	name:	'Bucket, Plastic Handle, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-PLASTICHANDLE-GREEN.png',	price:	10.00	},
+{	id:55,	name:	'Bucket, Plastic Handle, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-PLASTICHANDLE-RED.png',	price:	10.00	},
+{	id:56,	name:	'Caddy Tray',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CADDYTRAY.png',	price:	10.00	},
+{	id:57,	name:	'Caution Board ',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CAUTIONBOARD.png',	price:	10.00	},
+{	id:58,	name:	'Cleaning Cloth, Checked',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CLOTH-CHECKED.png',	price:	10.00	},
+{	id:59,	name:	'Cleaning Cloth, Orange',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CLOTH-ORANGE.png',	price:	10.00	},
+{	id:60,	name:	'Cleaning Cloth, White with Brown Lines',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CLOTH-WHITE-BROWNLINES.png',	price:	10.00	},
+{	id:61,	name:	'Cleaning Cloth, White with Red Lines',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CLOTH-WHITEREDLINES.png',	price:	10.00	},
+{	id:62,	name:	'Dustbin, Pedal Bin, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-PEDAL-BLUE.png',	price:	10.00	},
+{	id:63,	name:	'Dustbin, Pedal Bin, Flower Print',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-PEDAL-FLOWERPRINT.png',	price:	10.00	},
+{	id:64,	name:	'Dustbin, Pedal Bin, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-PEDAL-RED.png',	price:	10.00	},
+{	id:65,	name:	'Dustbin, Pedal Bin, Steel Silver',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-PEDAL-STEELSILVER.png',	price:	10.00	},
+{	id:66,	name:	'Dustbin, Simple, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SIMPLE-BLUE.png',	price:	10.00	},
+{	id:67,	name:	'Dustbin, Simple, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SIMPLE-GREEN.png',	price:	10.00	},
+{	id:68,	name:	'Dustbin, Simple, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SIMPLE-RED.png',	price:	10.00	},
+{	id:69,	name:	'Dustbin, Steel Dotted',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-STEELDOTTED.png',	price:	10.00	},
+{	id:70,	name:	'Dustbin, Swing Lid, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SWING-GREEN.png',	price:	10.00	},
+{	id:71,	name:	'Dustbin, Swing Lid, Yellow',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SWING-YELLOW.png',	price:	10.00	},
+{	id:72,	name:	'Dustpan, Simple, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTPAN-SIMPLE-BLUE.png',	price:	10.00	},
+{	id:73,	name:	'Dustpan, Simple, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTPAN-SIMPLE-GREEN.png',	price:	10.00	},
+{	id:74,	name:	'Dustpan, Simple, Orange',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTPAN-SIMPLE-ORANGE.png',	price:	10.00	},
+{	id:75,	name:	'Dustpan, Simple, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTPAN-SIMPLE-RED.png',	price:	10.00	},
+{	id:76,	name:	'Air Freshener, Odonil Fest Spray, Floral',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-FLORAL.png',	price:	10.00	},
+{	id:77,	name:	'Air Freshener, Odonil Fest Spray, Jasmine',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-JASMINE.png',	price:	10.00	},
+{	id:78,	name:	'Air Freshener, Odonil Fest Spray, Lavender',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-LAVENDER.png',	price:	10.00	},
+{	id:79,	name:	'Air Freshener, Odonil Fest Spray, Lime',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-LIME.png',	price:	10.00	},
+{	id:80,	name:	'Air Freshener, Odonil Fest Spray, Ocean',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-OCEAN.png',	price:	10.00	},
+{	id:81,	name:	'Air Freshener, Odonil Fest Spray, Rose',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-ROSE.png',	price:	10.00	},
+{	id:82,	name:	'Air Freshener, Odonil Fest Spray, Sandal',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-SANDAL.png',	price:	10.00	},
+{	id:83,	name:	'Air Freshener, Odonil Solid',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILSOLID.png',	price:	10.00	},
+{	id:84,	name:	'Air Freshener, Spring Fest Spray, Aroma Green',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-AROMAGREEN.png',	price:	10.00	},
+{	id:85,	name:	'Air Freshener, Spring Fest Spray, Duet',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-DUET.png',	price:	10.00	},
+{	id:86,	name:	'Air Freshener, Spring Fest Spray, Jasmine',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-JASMINE.png',	price:	10.00	},
+{	id:87,	name:	'Air Freshener, Spring Fest Spray, Lavender',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-LAVENDER.png',	price:	10.00	},
+{	id:88,	name:	'Air Freshener, Spring Fest Spray, Lime',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-LIME.png',	price:	10.00	},
+{	id:89,	name:	'Air Freshener, Spring Fest Spray, Rose',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-ROSE.png',	price:	10.00	},
+{	id:90,	name:	'Air Freshener, Spring Fest Spray, Sandal',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-SANDAL.png',	price:	10.00	},
+{	id:91,	name:	'Garbage Bag, Plasto, Jumbo Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOJUMBO.png',	price:	10.00	},
+{	id:92,	name:	'Garbage Bag, Plasto, Large Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOLARGE.png',	price:	10.00	},
+{	id:93,	name:	'Garbage Bag, Plasto, Medium Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOMEDIUM.png',	price:	10.00	},
+{	id:94,	name:	'Garbage Bag, Plasto, Small Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOSMALL.png',	price:	10.00	},
+{	id:95,	name:	'Garbage Bag, Plasto, Extra Large Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOXL.png',	price:	10.00	},
+{	id:96,	name:	'Head Cover (Disposable)',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/HEADCOVER.png',	price:	10.00	},
+{	id:97,	name:	'Mask, Cotton',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/MASK-COTTON.png',	price:	10.00	},
+{	id:98,	name:	'Mask, Disposable',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/MASK-DISPOSABLE.png',	price:	10.00	},
+{	id:99,	name:	'Naphthalene Balls',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/NAPHTHALENEBALLS.png',	price:	10.00	},
+{	id:100,	name:	'Spray Gun',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/SPRAYGUN.png',	price:	10.00	},
+{	id:101,	name:	'Unknown 1',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/UNKNOWN1.png',	price:	10.00	},
+{	id:102,	name:	 'Gloves, Rubber, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-BLUE.png',	price:	10.00	},
+{	id:103,	name:	'Gloves, Cotton',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-COTTON.png',	price:	10.00	},
+{	id:104,	name:	'Gloves, Cotton (Variant 1)',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-COTTON1.png',	price:	10.00	},
+{	id:105,	name:	'Gloves, Leather',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-LEATHER.png',	price:	10.00	},
+{	id:106,	name:	'Gloves, Lenora Brand',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-LENORA.png',	price:	10.00	},
+{	id:107,	name:	'Gloves, Rubber, Orange',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-ORANGE.png',	price:	10.00	},
+{	id:108,	name:	'Gloves, Real Touch Rubber',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-REALTOUCHRUBBER.png',	price:	10.00	},
+{	id:109,	name:	'Gloves, Rubber, White',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-WHITE.png',	price:	10.00	},
+{	id:110,	name:	'Mat, Cotton, Line Star Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-LINESTAR.png',	price:	10.00	},
+{	id:111,	name:	'Mat, Cotton, Rangoli Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-RANGOLI.png',	price:	10.00	},
+{	id:112,	name:	'Mat, Cotton, Robo Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-ROBO.png',	price:	10.00	},
+{	id:113,	name:	'Mat, Cotton, Special Box Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-SPECIALBOX.png',	price:	10.00	},
+{	id:114,	name:	'Mat, Cotton, Welcome Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-WELCOME.png',	price:	10.00	},
+{	id:115,	name:	'Mat, Multi-Purpose, 16x22 Inch',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-MULTI-16X22.png',	price:	10.00	},
+{	id:116,	name:	'Mat, Multi-Purpose, 16x27 Inch',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-MULTI-16X27.png',	price:	10.00	},
+{	id:117,	name:	'Mop, Flat Microfibre',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-FLATMICROFIBRE.png',	price:	10.00	},
+{	id:118,	name:	'Mop Refill, Blue Brush Head',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-BLUEBRUSH.png',	price:	10.00	},
+{	id:119,	name:	'Mop Refill, Flat Microfibre, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-FLATMICROFIBRE-BLUE.png',	price:	10.00	},
+{	id:120,	name:	'Mop Refill, Flat Microfibre, Grey',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-FLATMICROFIBRE-GREY.png',	price:	10.00	},
+{	id:121,	name:	'Mop Refill, Grey Brush Head',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-GREYBRUSH.png',	price:	10.00	},
+{	id:122,	name:	'Mop Refill, Grey Flat Brush',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-GREYFLATBRUSH.png',	price:	10.00	},
+{	id:123,	name:	'Mop Refill, Pink Brown Brush Head',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-PINKBROWNBRUSH.png',	price:	10.00	},
+{	id:124,	name:	'Mop, Toilet Cleaner, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-TOILET-UNKNOWNGREEN.png',	price:	10.00	},
+{	id:125,	name:	'Mop, Toilet Cleaner, Pink',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-TOILET-UNKNOWNPINK.png',	price:	10.00	},
+{	id:126,	name:	'Mop, Twist Style, Purple',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-TWISTPURPLE.png',	price:	10.00	},
+{	id:127,	name:	'Mop, Standard',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP.png',	price:	10.00	},
+{	id:128,	name:	 'Mug, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/MUG-BLUE.png',	price:	10.00	},
+{	id:129,	name:	'Mug, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/MUG-GREEN.png',	price:	10.00	},
+{	id:130,	name:	'Mug, Pink',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/MUG-PINK.png',	price:	10.00	},
+{	id:131,	name:	'Mug, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/MUG-RED.png',	price:	10.00	},
+{	id:132,	name:	'Shining Powder, Pitambari Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/POWDER-SHINER-PITAMBARI.png',	price:	10.00	},
+{	id:133,	name:	'Washing Powder, Surf Excel Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/POWDER-SURFEXCEL.png',	price:	10.00	},
+{	id:134,	name:	'Scrubber, Bathing',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-BATHING.png',	price:	10.00	},
+{	id:135,	name:	'Scrubber, Dish with Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-DISHWITHHANDLE.png',	price:	10.00	},
+{	id:136,	name:	'Scrubber, Happy Home Brand',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-HAPPYHOME.png',	price:	10.00	},
+{	id:137,	name:	'Scrubber, Steel-O-Brite, 15g',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-STEELOBRITE15.png',	price:	10.00	},
+{	id:138,	name:	'Scrubber, Steel-O-Brite, 20g',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-STEELOBRITE20.png',	price:	10.00	},
+{	id:139,	name:	'Soap, Dettol Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/SOAP-DETTOL.png',	price:	10.00	},
+{	id:140,	name:	'Soap, Lifebuoy Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/SOAP-LIFEBUOY.png',	price:	10.00	},
+{	id:141,	name:	'Soap, Rin Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/SOAP-RIN.png',	price:	10.00	},
+{	id:142,	name:	'Insect Spray, Hit Mosquito Kill',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/SPRAY-HIT-MOSQUITOKILL.png',	price:	10.00	},
+{	id:143,	name:	'Tissue, Bathroom Roll',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-BATHROOMROLL.png',	price:	10.00	},
+{	id:144,	name:	'Tissue, Standard',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-NORMAL.png',	price:	10.00	},
+{	id:145,	name:	'Tissue, Origami Facial',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-ORIGAMIFACIAL.png',	price:	10.00	},
+{	id:146,	name:	'Tissue, Scott Kimberley Brand',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-SCOTTKIMBERLEY.png',	price:	10.00	},
+{	id:147,	name:	'Tissue, Soft',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-SOFT.png',	price:	10.00	},
+{	id:148,	name:	'Tissue, Toilet Roll',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-TOILETROLL.png',	price:	10.00	},
+{	id:149,	name:	'Urinal Cube, Multicolor',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/URINALCUBE-MUTLICOLOR.png',	price:	10.00	},
+{	id:150,	name:	'Urinal Cube, Standard',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/URINALCUBE.png',	price:	10.00	},
+{	id:151,	name:	'Urinal Screen',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/URINALSCREEN.png',	price:	10.00	}
+
+];
+
+  const state = { cart: {}, currentProduct: null };
+  let orderMode = 'mail'; // 'mail' or 'whatsapp'
+  let pendingExternalUrl = null;
+
+  const $ = s => document.querySelector(s);
+  const $$ = s => Array.from(document.querySelectorAll(s));
+
+ const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
+  /* small helpers */
+  function normalize(v){ return String(v||'').replace(/\u200B|\uFEFF/g,'').trim(); }
+  function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, (m)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+  // validation
+  function validName(n) { const v = normalize(n); return /^[A-Za-z\s]{2,60}$/.test(v); }
+  function validPhone(p) { const v = normalize(p).replace(/[^0-9]/g,''); return /^[0-9]{6,15}$/.test(v); }
+  function validAddress(a) { return normalize(a).length >= 4; }
+  function validEmail(e) { const v = normalize(e); if(v === '') return true; return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+  /* form inputs and touched state (errors only show after touch) */
+  const nameInput = document.querySelector('input[name="name"]');
+  const phoneInput = document.querySelector('input[name="phone"]');
+  const addressInput = document.querySelector('textarea[name="address"]');
+  const submitBtn = document.getElementById('submitOrderBtn');
+  const chosenModeLabel = document.getElementById('chosenModeLabel');
+  const touched = { name:false, phone:false, address:false, email:false };
+
+  function showError(id,msg){ const el = document.getElementById(id); if(!el) return; const txt = el.querySelector('div'); if(msg && txt) txt.textContent = msg; el.style.display = 'flex'; }
+  function hideError(id){ const el = document.getElementById(id); if(!el) return; el.style.display = 'none'; }
+
+  function checkAndToggle(input, nameKey, validator, errId, msg){
+    const val = input.value || '';
+    const ok = validator(val);
+    if(touched[nameKey]){
+      if(!ok){ input.classList.add('invalid'); showError(errId, msg); }
+      else { input.classList.remove('invalid'); hideError(errId); }
+    } else {
+      input.classList.remove('invalid'); hideError(errId);
+    }
+  }
+  function onFirstTouch(key){ if(!touched[key]) touched[key]=true; }
+
+  nameInput.addEventListener('input', ()=>{ onFirstTouch('name'); checkAndToggle(nameInput,'name',validName,'err-name','Only letters and spaces (2-60 chars).'); toggleSubmitState(); });
+  nameInput.addEventListener('blur', ()=>{ onFirstTouch('name'); checkAndToggle(nameInput,'name',validName,'err-name','Only letters and spaces (2-60 chars).'); toggleSubmitState(); });
+
+  phoneInput.addEventListener('input', ()=>{ onFirstTouch('phone'); const cleaned = normalize(phoneInput.value).replace(/[^0-9]/g,''); if(phoneInput.value !== cleaned) phoneInput.value = cleaned; checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only — 6 to 15 digits.'); toggleSubmitState(); });
+  phoneInput.addEventListener('blur', ()=>{ onFirstTouch('phone'); checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only — 6 to 15 digits.'); toggleSubmitState(); });
+
+  addressInput.addEventListener('input', ()=>{ onFirstTouch('address'); checkAndToggle(addressInput,'address',validAddress,'err-address','Please provide an address (min 4 chars).'); toggleSubmitState(); });
+  addressInput.addEventListener('blur', ()=>{ onFirstTouch('address'); checkAndToggle(addressInput,'address',validAddress,'err-address','Please provide an address (min 4 chars).'); toggleSubmitState(); });
+
+  
+  function toggleSubmitState(){
+    const nameOk = validName(nameInput.value);
+    const phoneOk = validPhone(phoneInput.value);
+    const addrOk = validAddress(addressInput.value);
+    
+    submitBtn.disabled = !(nameOk && phoneOk && addrOk);
+    submitBtn.style.opacity = submitBtn.disabled ? 0.6 : 1;
+  }
+  toggleSubmitState();
+
+  /* overlay helpers (locks background scroll) */
+  function showOverlay(selector){ const el = $(selector); if(!el) return; el.classList.add('show'); el.setAttribute('aria-hidden','false'); lockBodyScrollIfNeeded(); }
+  function hideOverlay(selector){ const el = $(selector); if(!el) return; el.classList.remove('show'); el.setAttribute('aria-hidden','true'); lockBodyScrollIfNeeded(); }
+  function lockBodyScrollIfNeeded(){ const any = Array.from(document.querySelectorAll('.overlay')).some(o => o.classList.contains('show')); if(any) document.documentElement.classList.add('no-scroll'), document.body.classList.add('no-scroll'); else document.documentElement.classList.remove('no-scroll'), document.body.classList.remove('no-scroll'); }
+
+  /* Build email HTML table (bold headers and Customer Details) + plain-text fallback */
+function buildMailHtmlAndPlain(formData){
+  // helper: create bold Unicode maps (Mathematical Bold)
+  const BOLD_UPPER_START = 0x1D400; // A
+  const BOLD_LOWER_START = 0x1D41A; // a
+  const BOLD_DIGIT_START = 0x1D7CE; // 0
+
+  function toUnicodeBold(s){
+    if (!s) return s;
+    return Array.from(String(s)).map(ch => {
+      const code = ch.charCodeAt(0);
+      if (code >= 65 && code <= 90) { // A-Z
+        return String.fromCodePoint(BOLD_UPPER_START + (code - 65));
+      }
+      if (code >= 97 && code <= 122) { // a-z
+        return String.fromCodePoint(BOLD_LOWER_START + (code - 97));
+      }
+      if (code >= 48 && code <= 57) { // 0-9
+        return String.fromCodePoint(BOLD_DIGIT_START + (code - 48));
+      }
+      // leave other characters (spaces, punctuation) unchanged
+      return ch;
+    }).join('');
+  }
+
+  // UPDATED: Calculate total and add price column
+  let totalOrderPrice = 0;
+  const itemsLines = Object.keys(state.cart).map((id, idx) => {
+    const p = PRODUCTS.find(x => x.id == id);
+    const pname = p ? p.name : ('Item ' + id);
+    const qty = state.cart[id];
+    const price = (p && p.price) ? p.price : 0;
+    const lineTotal = price * qty;
+    totalOrderPrice += lineTotal; // Add to grand total
+    
+    const noBold = toUnicodeBold(String(idx + 1));
+    const qtyLabelBold = toUnicodeBold('Qty:');
+    const priceLabelBold = toUnicodeBold('Price:');
+    // UPDATED: Added price column
+    return `${noBold} | ${pname} | ${qtyLabelBold} ${qty} | ${priceLabelBold} ${lineTotal.toFixed(2)}`;
+  }).join('\n');
+
+  // header and items header with Unicode bold labels
+  const header = toUnicodeBold(`New Order from Website - ${formData.name || '-'}`);
+  // UPDATED: Added Price header
+  const itemsHeader = `${toUnicodeBold('No')} | ${toUnicodeBold('Product')} | ${toUnicodeBold('Qty')} | ${toUnicodeBold('Price')}`;
+  const totalLine = `${toUnicodeBold('Total Price:')} ${totalOrderPrice.toFixed(2)}`;
+
+  // customer block with bold labels (Unicode)
+  function custLine(label, value){
+    return `${toUnicodeBold(label + ':')} ${value || '-'}`;
+  }
+  const custLines = [
+    custLine('Name', formData.name || ''),
+    custLine('Phone', formData.phone || ''),
+    custLine('Address', formData.address || ''),
+  ].join('\n');
+
+  // UPDATED: Added totalLine
+  const plain = `${header}\n\nOrdered Items from Reinigen\n\n${itemsHeader}\n${itemsLines}\n\n${totalLine}\n\n${toUnicodeBold('Customer Details')}\n${custLines}\n\nPlaced: ${new Date().toLocaleString()}`;
+
+  // simple HTML fallback that preserves the same text layout (escaped)
+  // UPDATED: Added totalLine
+  const htmlBody = `<div>${escapeHtml(header)}</div>
+<pre style="white-space:pre-wrap; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4; margin-top:8px">${escapeHtml(`\nItems:\n${itemsHeader}\n${itemsLines}\n\n${totalLine}\n\nCustomer Details\n${custLines}\n\nPlaced: ${new Date().toLocaleString()}`)}</pre>`;
+
+  return { htmlBody, plainBody: plain };
+}
+
+
+/* WhatsApp formatting: serial no bold, header row, product name plain, "Qty:" bold but quantity number plain,
+   pipes with spaces between columns */
+function buildWhatsAppText(formData){
+  const header = `*New Order from Website - ${formData.name || '-'}*`;
+
+  // UPDATED: Added *Price* header
+  const itemsHeader = `*No* | *Product* | *Qty* | *Price*`;
+  
+  // UPDATED: Calculate total and add price column
+  let totalOrderPrice = 0;
+  const items = Object.keys(state.cart).map((id, idx) => {
+    const p = PRODUCTS.find(x => x.id == id);
+    const qty = state.cart[id];
+    const price = (p && p.price) ? p.price : 0;
+    const lineTotal = price * qty;
+    totalOrderPrice += lineTotal;
+    
+    // UPDATED: Added price column
+    return `*${idx + 1}* | ${p ? p.name : 'Item ' + id} | *Qty:* ${qty} | *Price:* ${lineTotal.toFixed(2)}`;
+  }).join('\n');
+
+  // UPDATED: Added total line
+  const totalLine = `*Total Price:* ${totalOrderPrice.toFixed(2)}`;
+
+  // UPDATED: Removed stray '}' from address
+  const cust = `*Customer Details*\n*Name:* ${formData.name || ''}\n*Phone:* ${formData.phone || ''}\n*Address:* ${formData.address || ''}`;
+
+  // UPDATED: Added totalLine
+  return `${header}\n\nOrdered Items from Reinigen\n\n\n${itemsHeader}\n${items}\n\n${totalLine}\n\n${cust}\n\nPlaced: ${new Date().toLocaleString()}`;
+}
+
+
+
+  /* openExternalAndWait (unchanged) */
+  function openExternalAndWait(url, onSuccess, onFailure, timeout = 120000){
+    let win = null;
+    try { win = window.open(url, '_blank'); } catch(e) { win = null; }
+    if(!win){
+      return setTimeout(()=> onFailure('blocked'), 250);
+    }
+    const start = Date.now(); let finished = false;
+    function cleanup(){ finished = true; clearInterval(interval); document.removeEventListener('visibilitychange', visibilityHandler); }
+    function visibilityHandler(){ if(document.visibilityState === 'visible' && Date.now() - start > 500){ cleanup(); try{ if(win && !win.closed) win.close(); }catch(e){} onSuccess('visibility'); } }
+    function check(){
+      if(finished) return;
+      try {
+        if(win && win.closed){ cleanup(); onSuccess('closed'); return; }
+      } catch(e){}
+      if(Date.now() - start > timeout){ cleanup(); onFailure('timeout'); }
+    }
+    document.addEventListener('visibilitychange', visibilityHandler);
+    const interval = setInterval(check, 600);
+  }
+
+  /* Cart / UI rendering (images used everywhere if provided) */
+  function renderGrid(list) {
+    const grid = $('#grid'); grid.innerHTML = '';
+    list.forEach(p => {
+      const card = document.createElement('div'); card.className = 'card';
+      // Mark unavailable products
+      if (p.available === false) {
+        card.classList.add('unavailable');
+      }
+      const thumb = document.createElement('div'); thumb.className = 'thumb';
+      if(p.img){
+        const i = document.createElement('img'); i.src = p.img; i.alt = p.name; thumb.appendChild(i);
+      } else {
+        thumb.textContent = 'Image';
+      }
+      const name = document.createElement('div'); name.className = 'pname'; name.textContent = p.name;
+      const info = document.createElement('div'); info.className = 'pinfo'; info.textContent = p.category;
+      
+      // UPDATED: Add price to card info
+      if (p.price) {
+        const priceDiv = document.createElement('div');
+        priceDiv.style.color = 'var(--accent)';
+        priceDiv.style.fontWeight = '700';
+        priceDiv.style.fontSize = '16px';
+        priceDiv.style.marginTop = '4px';
+        priceDiv.textContent = `₹${p.price.toFixed(2)}`;
+        info.appendChild(priceDiv);
+      }
+
+      const controls = document.createElement('div'); controls.className = 'controls';
+
+      const infoBtn = document.createElement('button'); infoBtn.className = 'btn ghost'; infoBtn.textContent = 'Product Info';
+      infoBtn.onclick = () => openProductModal(p);
+
+      const addBtn = document.createElement('button'); addBtn.className = 'btn'; addBtn.textContent = 'Add to Cart';
+      if (p.available === false) {
+        addBtn.disabled = true;
+        addBtn.classList.add('disabled');
+      } else {
+        addBtn.onclick = () => { state.cart[p.id] = (state.cart[p.id] || 0) + 1; renderGrid(currentFilteredProducts()); updateCartCount(); };
+      }
+
+      controls.appendChild(infoBtn); controls.appendChild(addBtn);
+
+      if (state.cart[p.id]) {
+        const qty = document.createElement('div'); qty.className = 'qty';
+        const minus = document.createElement('button'); minus.className = 'qbtn'; minus.textContent = '−';
+        const count = document.createElement('div'); count.className = 'count'; count.textContent = state.cart[p.id];
+        const plus = document.createElement('button'); plus.className = 'qbtn'; plus.textContent = '+';
+        minus.onclick = () => { const cur = state.cart[p.id] || 1; const next = Math.max(1, cur - 1); state.cart[p.id] = next; count.textContent = next; updateCartCount(); renderGrid(currentFilteredProducts()); };
+        plus.onclick = () => { const cur = state.cart[p.id] || 0; state.cart[p.id] = cur + 1; count.textContent = state.cart[p.id]; updateCartCount(); renderGrid(currentFilteredProducts()); };
+
+        qty.appendChild(minus); qty.appendChild(count); qty.appendChild(plus);
+        controls.appendChild(qty);
+
+        const remove = document.createElement('button'); remove.className = 'remove-btn'; remove.textContent = 'Remove';
+        remove.onclick = () => { delete state.cart[p.id]; renderGrid(currentFilteredProducts()); updateCartCount(); };
+        controls.appendChild(remove);
+      }
+
+      card.appendChild(thumb);
+      // Add out-of-stock label
+      if (p.available === false) {
+        const outLabel = document.createElement('span');
+        outLabel.className = 'card-outstock-label';
+        outLabel.textContent = 'Out of Stock';
+        card.appendChild(outLabel);
+      } card.appendChild(name); card.appendChild(info); card.appendChild(controls);
+      grid.appendChild(card);
+    });
+  }
+
+  $$('.chip').forEach(ch => ch.addEventListener('click', () => { $$('.chip').forEach(c => c.classList.remove('active')); ch.classList.add('active'); renderGrid(currentFilteredProducts()); }));
+
+  function currentFilteredProducts() {
+    const active = $$('.chip.active')[0];
+    if (!active) return PRODUCTS;
+    const f = active.getAttribute('data-filter');
+    if (f === 'all' || f.toLowerCase() === 'all products') return PRODUCTS;
+    return PRODUCTS.filter(p => p.category === f);
+  }
+
+  function updateCartCount() { const total = Object.values(state.cart).reduce((s, n) => s + n, 0); $('#cartCount').textContent = total; }
+
+  /* cart modal now renders a table layout with image after S.No (no visible borders) */
+  function renderCartList() {
+    const list = $('#cartList');
+    const header = $('#cartHeader');
+    const total = $('#cartTotal');
+    list.innerHTML = '';
+    header.innerHTML = '';
+    total.innerHTML = '';
+    
+    const items = Object.keys(state.cart).map(id => ({ id: +id, qty: state.cart[id] }));
+    if (items.length === 0) {
+      list.innerHTML = '<div style="padding:22px;text-align:center;color:var(--muted)">Cart is empty. Add products from the list.</div>';
+      return;
+    }
+
+    let totalPrice = 0; // To calculate total
+
+    // build sticky header table
+    const headerTable = document.createElement('table');
+    headerTable.innerHTML = `<thead><tr>
+      <th style="font-weight:800; font-size:17px; color:#2b6cb0; text-align:center;">S.No</th>
+      <th style="font-weight:800; font-size:17px; color:#2b6cb0; padding:10px; text-align:center;"> </th>
+      <th style="font-weight:800; font-size:17px; color:#2b6cb0; text-align:center;">Product Name</th>
+      <th style="font-weight:800; font-size:17px; color:#2b6cb0; text-align:center;">Quantity</th>
+      <th style="font-weight:800; font-size:17px; color:#2b6cb0; text-align:center;">Price</th>
+    </tr></thead>`;
+    header.appendChild(headerTable);
+
+    // build scrolling content table
+    const table = document.createElement('table');
+    table.style.width = '100%';
+    table.style.borderCollapse = 'collapse';
+    
+    const tbody = document.createElement('tbody');
+
+    items.forEach((it, idx) => {
+      const p = PRODUCTS.find(x => x.id === it.id);
+      const price = (p && p.price) ? p.price : 0;
+      const lineTotal = price * it.qty;
+      totalPrice += lineTotal; // Add to total
+      
+      const tr = document.createElement('tr');
+
+      const tdIndex = document.createElement('td'); tdIndex.style.padding = '8px'; tdIndex.textContent = idx+1;
+      const tdImg = document.createElement('td'); tdImg.style.padding='8px';
+      const imgWrap = document.createElement('div'); imgWrap.className = 'cart-item-img';
+      if (p && p.img) {
+        const im = document.createElement('img'); im.src = p.img; im.alt = p.name; imgWrap.appendChild(im);
+      } else {
+        imgWrap.innerHTML = '<div style="width:64px;height:64px;background:#f3f6fb;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#9aa5b1">Img</div>';
+      }
+      tdImg.appendChild(imgWrap);
+
+      const tdName = document.createElement('td'); tdName.style.padding='8px'; tdName.innerHTML = `<div style="font-weight:700">${p ? p.name : ('Item '+it.id)}</div>`;
+
+      
+      const tdQty = document.createElement('td'); tdQty.style.padding='8px'; tdQty.style.textAlign='center'; tdQty.innerHTML = `<div style="font-weight:700">${it.qty}</div>`;
+      
+      const tdPrice = document.createElement('td');
+      tdPrice.style.padding = '8px';
+      tdPrice.style.textAlign = 'right';
+      tdPrice.innerHTML = `<div style="font-weight:700">₹${lineTotal.toFixed(2)}</div>`;
+
+      tr.appendChild(tdIndex); tr.appendChild(tdImg); tr.appendChild(tdName); tr.appendChild(tdQty); tr.appendChild(tdPrice);
+      tbody.appendChild(tr);
+    });
+
+    table.appendChild(tbody);
+    list.appendChild(table);
+
+    // build sticky total
+    const totalDiv = document.createElement('div');
+    totalDiv.style.textAlign = 'right';
+    totalDiv.style.padding = '10px 8px';
+    totalDiv.style.fontSize = '18px';
+    totalDiv.style.fontWeight = '800';
+    totalDiv.style.color = 'var(--accent)';
+    totalDiv.style.borderTop = '2px solid #eee';
+    totalDiv.style.marginTop = '8px';
+    totalDiv.innerHTML = `Total Price: ₹${totalPrice.toFixed(2)}`;
+    total.appendChild(totalDiv);
+  }
+
+  function openProductModal(p) {
+    state.currentProduct = p;
+    $('#pTitle').textContent = p.name;
+    $('#pCategory').textContent = p.category + (p.tags ? ' • ' + p.tags.join(', ') : '');
+    $('#pDesc').innerHTML = p.desc || 'No description';
+
+    // UPDATED: Show price in modal
+    const priceEl = $('#pPrice');
+    if (p.price) {
+      priceEl.textContent = `Price: ₹${p.price.toFixed(2)}`;
+      priceEl.style.display = 'block';
+    } else {
+      priceEl.style.display = 'none';
+    }
+
+    const qArea = $('#pQtyArea');
+    qArea.style.display = state.cart[p.id] ? 'flex' : 'none';
+    $('#pCount').textContent = state.cart[p.id] || 1;
+    $('#pRemove').style.display = state.cart[p.id] ? 'inline-block' : 'none';
+    $('#pAddInitial').style.display = state.cart[p.id] ? 'none' : 'inline-block';
+
+    // render modal image (displayed up to ~500px)
+    const modalImgArea = document.getElementById('modalImgArea');
+    modalImgArea.innerHTML = '';
+    if(p.img){
+      const i = document.createElement('img'); i.src = p.img; i.alt = p.name; modalImgArea.appendChild(i);
+    } else {
+      modalImgArea.textContent = 'Image';
+    }
+
+    showOverlay('#productModal');
+  }
+
+  $('#pPlus').addEventListener('click', () => { const p = state.currentProduct; if (!p) return; state.cart[p.id] = (state.cart[p.id] || 0) + 1; $('#pCount').textContent = state.cart[p.id]; updateCartCount(); renderGrid(currentFilteredProducts()); renderCartList(); });
+  $('#pMinus').addEventListener('click', () => { const p = state.currentProduct; if (!p) return; const cur = state.cart[p.id] || 1; const next = Math.max(1, cur - 1); state.cart[p.id] = next; $('#pCount').textContent = next; updateCartCount(); renderGrid(currentFilteredProducts()); renderCartList(); });
+  $('#pAddInitial').addEventListener('click', () => { const p = state.currentProduct; if (!p) return; state.cart[p.id] = 1; $('#pAddInitial').style.display = 'none'; $('#pQtyArea').style.display = 'flex'; $('#pRemove').style.display = 'inline-block'; updateCartCount(); renderGrid(currentFilteredProducts()); renderCartList(); });
+  $('#pRemove').addEventListener('click', () => { const p = state.currentProduct; if (!p) return; delete state.cart[p.id]; hideOverlay('#productModal'); updateCartCount(); renderGrid(currentFilteredProducts()); renderCartList(); });
+
+  /* Wire cart order buttons (unchanged behavioral flow) */
+  $('#cartOrderMail').addEventListener('click', () => {
+    if (Object.keys(state.cart).length === 0) { alert('Cart empty. Please add products.'); return; }
+    orderMode = 'mail';
+    $('#chosenModeLabel').innerHTML =
+  '<img src="SOCIAL MEDIAS/MAIL.png" alt="" aria-hidden="true" style="width:18px;height:18px;vertical-align:middle;margin-right:8px">\
+   <span style="color:#0078d4; font-weight:600; vertical-align:middle">Ordering via Mail</span><br><br><br>';
+    showOverlay('#checkoutModal');
+    Object.keys(touched).forEach(k=>touched[k]=false);
+    ['err-name','err-phone','err-address','err-email'].forEach(id=>hideError(id));
+    [nameInput, phoneInput, addressInput].forEach(i=>i.classList.remove('invalid'));
+    toggleSubmitState();
+  });
+
+  $('#cartOrderWA').addEventListener('click', () => {
+    if (Object.keys(state.cart).length === 0) { alert('Cart empty. Please add products.'); return; }
+    orderMode = 'whatsapp';
+    $('#chosenModeLabel').innerHTML =
+  '<img src="SOCIAL MEDIAS/WA.png" alt="" aria-hidden="true" style="width:18px;height:18px;vertical-align:middle;margin-right:8px">\
+   <span style="color:#25D366; font-weight:600; vertical-align:middle">Ordering via WhatsApp</span><br><br>';
+    showOverlay('#checkoutModal');
+    Object.keys(touched).forEach(k=>touched[k]=false);
+    ['err-name','err-phone','err-address','err-email'].forEach(id=>hideError(id));
+    [nameInput, phoneInput, addressInput].forEach(i=>i.classList.remove('invalid'));
+    toggleSubmitState();
+  });
+
+  $$('.close').forEach(b => b.addEventListener('click', () => { const o = b.closest('.overlay'); if (o) hideOverlay('#' + o.id); }));
+  $('#cartFloat').addEventListener('click', () => { renderCartList(); showOverlay('#cartModal'); });
+  $('#closeCartModal').addEventListener('click', () => hideOverlay('#cartModal'));
+  $('#closeProductModal').addEventListener('click', () => hideOverlay('#productModal'));
+  $('#closeCheckoutModal').addEventListener('click', () => hideOverlay('#checkoutModal'));
+  $('#closeLaunchModal').addEventListener('click', () => hideOverlay('#launchModal'));
+  $('#closeFailedModal').addEventListener('click', () => hideOverlay('#failedModal'));
+  $('#backToCart').addEventListener('click', () => { hideOverlay('#checkoutModal'); showOverlay('#cartModal'); });
+
+  /* Launch modal proceed (unchanged flow behavior) */
+  document.getElementById('launchProceed').addEventListener('click', () => {
+    if (!pendingExternalUrl) { hideOverlay('#launchModal'); return; }
+
+    openExternalAndWait(pendingExternalUrl,
+      (reason) => {
+        // success: clear cart & reset UI
+        pendingExternalUrl = null;
+        state.cart = {}; state.currentProduct = null;
+        renderGrid(PRODUCTS);
+        renderCartList();
+        updateCartCount();
+        $$('.overlay').forEach(o => hideOverlay('#' + o.id));
+        document.getElementById('checkoutForm').reset();
+        Object.keys(touched).forEach(k=>touched[k]=false);
+        [nameInput, phoneInput, addressInput].forEach(x => x.classList.remove('invalid'));
+        ['err-name','err-phone','err-address','err-email'].forEach(id => hideError(id));
+        toggleSubmitState();
+      },
+      (why) => {
+        pendingExternalUrl = null;
+        hideOverlay('#launchModal');
+        showOverlay('#failedModal');
+      },
+      120000
+    );
+  });
+
+  document.getElementById('launchCancel').addEventListener('click', () => hideOverlay('#launchModal'));
+
+  /* Form submit: prepare pendingExternalUrl and show launch modal (only UI+message changed) */
+  $('#checkoutForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // mark touched to surface errors if present
+    touched.name = touched.phone = touched.address = true;
+    checkAndToggle(nameInput,'name',validName,'err-name','Only letters and spaces (2-60 chars).');
+    checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only — 6 to 15 digits.');
+    checkAndToggle(addressInput,'address',validAddress,'err-address','Please provide an address (min 4 chars).');
+    toggleSubmitState();
+if(!validName(nameInput.value) || !validPhone(phoneInput.value) || !validAddress(addressInput.value)) return;
+
+    const fd = new FormData(e.target); const data = Object.fromEntries(fd.entries());
+    data.items = JSON.stringify(Object.keys(state.cart).map(id => { const p = PRODUCTS.find(x => x.id == id); return { id: p ? p.id : id, name: p ? p.name : ('Item '+id), qty: state.cart[id], price: (p ? p.price : 0) }; })); // Added price to data
+
+    // Build bodies (functions updated to use price)
+    const mailParts = buildMailHtmlAndPlain(data);
+    const waText = buildWhatsAppText(data);
+
+    if (orderMode === 'mail') {
+  // subject includes user-provided name (preserved as desired)
+  const subject = `New Order from Website - ${normalize(data.name) || 'New'}`;
+
+  // use the plain-text fallback (mail clients handle plain body reliably)
+  // (mailParts is returned by buildMailHtmlAndPlain earlier)
+  const mailPlain = mailParts.plainBody;
+
+  // assemble mailto using encoded components
+  pendingExternalUrl = `mailto:${encodeURIComponent('edit.edit.insta@gmail.com')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailPlain)}`;
+
+  $('#launchTitle').innerHTML = `
+  <img src="GIFS/Mail.gif" alt="Mail send animation" onerror="this.style.display='none'">
+  <div>Simply Click "<span style="color:#0072C6;">Send</span>" Button in Your Mail</div>
+`;
+  $('#launchDesc').textContent = "You're about to be redirected to your email application to send your order details.";
+} else {
+  // whatsapp branch left as before (ensure encodeURIComponent used)
+  const WHATSAPP_NUMBER = '9629563236'; // <-- optional business number
+  pendingExternalUrl = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}` : `https://wa.me/?text=${encodeURIComponent(waText)}`;
+  $('#launchTitle').innerHTML = `
+    <img src="GIFS/WhatsApp.gif" alt="WhatsApp send animation" onerror="this.style.display='none'">
+    <div>Simply click "<span style="color:#25D366;">Send</span>" Button in Your WhatsApp</div>
+  `;
+  $('#launchDesc').textContent = "You're about to be redirected to WhatsApp to send your order details.";
+}
+
+
+    // show the launch modal (your gif/message) and hide the checkout
+    showOverlay('#launchModal');
+    hideOverlay('#checkoutModal');
+  });
+
+  // failed modal handlers (unchanged)
+  $('#continueShopping').onclick = () => { hideOverlay('#failedModal'); showOverlay('#cartModal'); };
+  $('#startFresh').onclick = () => {
+    state.cart = {}; renderGrid(PRODUCTS); updateCartCount();
+    hideOverlay('#failedModal');
+    document.getElementById('checkoutForm').reset();
+    Object.keys(touched).forEach(k=>touched[k]=false);
+    [nameInput, phoneInput, addressInput].forEach(x => x.classList.remove('invalid'));
+    ['err-name','err-phone','err-address','err-email'].forEach(id => hideError(id));
+    toggleSubmitState();
+  };
+
+  // init
+  renderGrid(PRODUCTS);
+  updateCartCount();
+  lockBodyScrollIfNeeded();
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') $$('.overlay.show').forEach(o => hideOverlay('#' + o.id)); });
+
+
+  /* ========== ADMIN SETTINGS FUNCTIONALITY ========== */
+  const ADMIN_PASSWORD = 'M@R';
+  let adminProductChanges = [];
+  let isAdminVerified = false;
+
+  // Load GitHub config from localStorage
+  function loadGithubConfig() {
+    return {
+      owner: localStorage.getItem('github_owner') || '',
+      repo: localStorage.getItem('github_repo') || '',
+      filePath: localStorage.getItem('github_filepath') || 'product.html',
+      token: localStorage.getItem('github_token') || ''
+    };
+  }
+
+  // Save GitHub config to localStorage
+  function saveGithubConfig(owner, repo, filePath, token) {
+    localStorage.setItem('github_owner', owner);
+    localStorage.setItem('github_repo', repo);
+    localStorage.setItem('github_filepath', filePath);
+    localStorage.setItem('github_token', token);
+  }
+
+  function openAdminModal() {
+    document.getElementById('adminModal').classList.add('show');
+    document.body.style.overflow = 'hidden';
+
+    // Load saved GitHub config
+    const config = loadGithubConfig();
+    document.getElementById('githubOwner').value = config.owner;
+    document.getElementById('githubRepo').value = config.repo;
+    document.getElementById('githubFilePath').value = config.filePath;
+    document.getElementById('githubToken').value = config.token;
+
+    if (isAdminVerified) {
+      document.getElementById('adminPasswordSection').style.display = 'none';
+      document.getElementById('adminProductsSection').classList.add('show');
+      renderAdminProducts();
+    }
+  }
+
+  function closeAdminModal() {
+    document.getElementById('adminModal').classList.remove('show');
+    document.body.style.overflow = '';
+    isAdminVerified = false;
+    document.getElementById('adminPasswordSection').style.display = 'block';
+    document.getElementById('adminProductsSection').classList.remove('show');
+    document.getElementById('adminPassword').value = '';
+    document.getElementById('adminPasswordError').textContent = '';
+  }
+
+  function verifyAdminPassword() {
+    const password = document.getElementById('adminPassword').value;
+    const errorEl = document.getElementById('adminPasswordError');
+
+    if (password === ADMIN_PASSWORD) {
+      isAdminVerified = true;
+      document.getElementById('adminPasswordSection').style.display = 'none';
+      document.getElementById('adminProductsSection').classList.add('show');
+      errorEl.textContent = '';
+      renderAdminProducts();
+    } else {
+      errorEl.textContent = 'Incorrect password. Please try again.';
+    }
+  }
+
+  function renderAdminProducts() {
+    const container = document.getElementById('adminProductsList');
+    container.innerHTML = '';
+
+    const addNewDiv = document.createElement('div');
+    addNewDiv.className = 'admin-add-new-container';
+    addNewDiv.innerHTML = '<button class="admin-add-new-btn" onclick="openNewProductModal()"><span class="plus-icon">+</span> Add New</button>';
+    container.appendChild(addNewDiv);
+
+    adminProductChanges = PRODUCTS.map(p => ({
+      id: p.id,
+      name: p.name,
+      price: p.price,
+      available: p.available !== false
+    }));
+
+    adminProductChanges.forEach(product => {
+      const itemDiv = document.createElement('div');
+      itemDiv.className = 'admin-product-item';
+      itemDiv.innerHTML = `
+        <div class="admin-product-name">
+          <span class="admin-product-name-text" id="productName_${product.id}">${escapeHtml(product.name)}</span>
+          <input type="text" class="admin-product-name-input" id="productNameInput_${product.id}" value="${escapeHtml(product.name)}">
+          <button class="admin-edit-name-btn" id="editBtn_${product.id}" onclick="startEditProductName(${product.id})" title="Edit name">✏️</button>
+          <div class="admin-name-action-btns" id="nameActions_${product.id}">
+            <button class="admin-name-ok-btn" onclick="saveProductName(${product.id})" title="Save">✓</button>
+            <button class="admin-name-cancel-btn" onclick="cancelEditProductName(${product.id})" title="Cancel">✕</button>
+          </div>
+        </div>
+        <div class="admin-product-controls">
+          <div class="admin-price-input">
+            <label>Price (₹)</label>
+            <input type="number" step="0.01" min="0" value="${product.price}" 
+                   onchange="updateProductChange(${product.id}, 'price', this.value)">
+          </div>
+          <div class="admin-availability">
+            <label>Available:</label>
+            <div class="toggle-switch ${product.available ? 'active' : ''}" 
+                 onclick="toggleAvailability(${product.id}, this)"></div>
+          </div>
+        </div>
+      `;
+      container.appendChild(itemDiv);
+    });
+  }
+
+  function updateProductChange(productId, field, value) {
+    const product = adminProductChanges.find(p => p.id === productId);
+    if (product) {
+      if (field === 'price') {
+        product.price = parseFloat(value) || 0;
+      } else if (field === 'available') {
+        product.available = value;
+      }
+    }
+  }
+
+  function toggleAvailability(productId, toggleEl) {
+    const isActive = toggleEl.classList.contains('active');
+    toggleEl.classList.toggle('active');
+    updateProductChange(productId, 'available', !isActive);
+  }
+
+  async function saveProductChanges() {
+    const successEl = document.getElementById('adminSuccessMessage');
+    successEl.innerHTML = '';
+    const owner = document.getElementById('githubOwner').value.trim();
+    const repo = document.getElementById('githubRepo').value.trim();
+    const filePath = document.getElementById('githubFilePath').value.trim();
+    const token = document.getElementById('githubToken').value.trim();
+    if (!owner || !repo || !filePath || !token) { alert('Fill GitHub fields!'); return; }
+    saveGithubConfig(owner, repo, filePath, token);
+    try {
+      successEl.innerHTML = '<div class="admin-success">Saving...</div>';
+      if (tempNewProducts.length > 0) {
+        for (const newProduct of tempNewProducts) {
+          if (newProduct.imageData) {
+            const base64Data = newProduct.imageData.split(',')[1];
+            await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${newProduct.img}`, {
+              method: 'PUT', headers: {'Authorization': `token ${token}`},
+              body: JSON.stringify({message: 'Add image', content: base64Data, branch: 'main'})
+            });
+          }
+        }
+      }
+      const getResp = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`, {headers: {'Authorization': `token ${token}`}});
+      if (!getResp.ok) throw new Error('Fetch failed');
+      const fileData = await getResp.json();
+      const curContent = atob(fileData.content);
+      let newArr = '  const PRODUCTS = [\\n';
+      adminProductChanges.forEach((product, index) => {
+        const orig = PRODUCTS.find(p => p.id === product.id);
+        if (orig) {
+          const av = product.available ? '' : ', available: false';
+          const nm = product.name || orig.name;
+          newArr += `    { id:${product.id}, name:'${nm.replace(/'/g, "\\\\'")}', category:'${orig.category}', img: '${orig.img}', price: ${product.price.toFixed(2)}${av} }`;
+          if (index < adminProductChanges.length - 1) newArr += ',\\n'; else newArr += '\\n';
+        }
+      });
+      newArr += '  ];';
+      const updContent = curContent.replace(/const PRODUCTS = \[[^\]]*\];/s, newArr);
+      const b64 = btoa(unescape(encodeURIComponent(updContent)));
+      await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`, {
+        method: 'PUT', headers: {'Authorization': `token ${token}`},
+        body: JSON.stringify({message: 'Update products', content: b64, sha: fileData.sha, branch: 'main'})
+      });
+      successEl.innerHTML = '<div class="admin-success">✅ Saved!</div>';
+      tempNewProducts = [];
+      setTimeout(() => location.reload(), 3000);
+    } catch (e) {
+      successEl.innerHTML = `<div class="admin-error">❌ ${e.message}</div>`;
+    }
+  }
+
+  // Close modal when clicking outside
+  document.addEventListener('click', function(event) {
+    const modal = document.getElementById('adminModal');
+    if (event.target === modal) {
+      closeAdminModal();
+    }
+  });
+
+
+  let newProductImageData = null;
+  let newProductImageName = null;
+  let tempNewProducts = [];
+  let originalProductNames = {};
+
+  function openNewProductModal() {
+    document.getElementById('newProductModal').classList.add('show');
+    document.getElementById('newProductForm').reset();
+    newProductImageData = null;
+    newProductImageName = null;
+    document.getElementById('newProductImagePreview').classList.remove('show');
+    document.getElementById('newProductNameError').textContent = '';
+    document.getElementById('newProductImageError').textContent = '';
+    document.getElementById('newProductCategoryError').textContent = '';
+    document.getElementById('newProductPriceError').textContent = '';
+  }
+
+  function closeNewProductModal() {
+    document.getElementById('newProductModal').classList.remove('show');
+  }
+
+  
+  // Description word counter and validation
+  setTimeout(function() {
+    const descInput = document.getElementById('newProductDesc');
+    const wordCounter = document.getElementById('descWordCounter');
+
+    if (descInput && wordCounter) {
+      descInput.addEventListener('input', function() {
+        const text = this.value.trim();
+        const words = text.length > 0 ? text.split(/\s+/).filter(w => w.length > 0) : [];
+        const wordCount = words.length;
+
+        wordCounter.textContent = wordCount + ' / 300 words';
+
+        // Remove previous classes
+        wordCounter.classList.remove('warning', 'error');
+
+        if (wordCount > 300) {
+          wordCounter.classList.add('error');
+        } else if (wordCount > 250) {
+          wordCounter.classList.add('warning');
+        }
+      });
+
+      // Support line breaks with Shift+Enter
+      descInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && e.shiftKey) {
+          // Allow Shift+Enter for line break (default behavior)
+          return true;
+        }
+      });
+    }
+  }, 600);
+
+setTimeout(function() {
+    const imageInput = document.getElementById('newProductImage');
+    if (imageInput) {
+      imageInput.addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        const errorEl = document.getElementById('newProductImageError');
+        const previewEl = document.getElementById('newProductImagePreview');
+
+        if (!file) {
+          errorEl.textContent = '';
+          previewEl.classList.remove('show');
+          newProductImageData = null;
+          newProductImageName = null;
+          return;
+        }
+
+        if (!['image/jpeg', 'image/jpg', 'image/png'].includes(file.type)) {
+          errorEl.textContent = 'Only JPG and PNG allowed';
+          previewEl.classList.remove('show');
+          return;
+        }
+
+        if (file.size > 400 * 1024) {
+          errorEl.textContent = 'Max 400KB';
+          previewEl.classList.remove('show');
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = function(event) {
+          newProductImageData = event.target.result;
+          newProductImageName = file.name;
+          previewEl.querySelector('img').src = event.target.result;
+          previewEl.classList.add('show');
+          errorEl.textContent = '';
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+  }, 500);
+
+  function addNewProductToList() {
+    const name = document.getElementById('newProductName').value.trim();
+    const category = document.getElementById('newProductCategory').value;
+    const price = parseFloat(document.getElementById('newProductPrice').value);
+    const desc = document.getElementById('newProductDesc').value.trim();
+
+    // Validate description word count
+    const descWords = desc.length > 0 ? desc.split(/\s+/).filter(w => w.length > 0) : [];
+    if (descWords.length > 300) {
+      document.getElementById('newProductDescError').textContent = 'Max 300 words';
+      hasError = true;
+    } else {
+      document.getElementById('newProductDescError').textContent = '';
+    }
+    const imageFolder = document.getElementById('newProductImageFolder').value.trim() || 'PRODUCTS';
+
+    let hasError = false;
+
+    if (!name) {
+      document.getElementById('newProductNameError').textContent = 'Required';
+      hasError = true;
+    }
+    if (!newProductImageData) {
+      document.getElementById('newProductImageError').textContent = 'Required';
+      hasError = true;
+    }
+    if (!category) {
+      document.getElementById('newProductCategoryError').textContent = 'Required';
+      hasError = true;
+    }
+    if (!price || price <= 0) {
+      document.getElementById('newProductPriceError').textContent = 'Required';
+      hasError = true;
+    }
+
+    if (hasError) return;
+
+    const maxId = Math.max(...PRODUCTS.map(p => p.id), ...tempNewProducts.map(p => p.id), 0);
+    const newId = maxId + 1;
+
+    const newProduct = {
+      id: newId,
+      name: name,
+      category: category,
+      desc: desc || 'New Product',
+      img: imageFolder + '/' + newProductImageName,
+      price: price,
+      available: true,
+      isNew: true,
+      imageData: newProductImageData,
+      imageName: newProductImageName
+    };
+
+    tempNewProducts.push(newProduct);
+    PRODUCTS.push(newProduct);
+    closeNewProductModal();
+    renderAdminProducts();
+
+    document.getElementById('adminSuccessMessage').innerHTML = '<div class="admin-success">✅ Added! Click Save Changes.</div>';
+  }
+
+  function startEditProductName(productId) {
+    const textEl = document.getElementById('productName_' + productId);
+    const inputEl = document.getElementById('productNameInput_' + productId);
+    const editBtn = document.getElementById('editBtn_' + productId);
+    const actionsEl = document.getElementById('nameActions_' + productId);
+
+    if (!textEl || !inputEl) return;
+
+    originalProductNames[productId] = textEl.textContent;
+    textEl.classList.add('editing');
+    inputEl.classList.add('editing');
+    editBtn.style.display = 'none';
+    actionsEl.classList.add('show');
+    inputEl.focus();
+    inputEl.select();
+  }
+
+  function saveProductName(productId) {
+    const textEl = document.getElementById('productName_' + productId);
+    const inputEl = document.getElementById('productNameInput_' + productId);
+    const editBtn = document.getElementById('editBtn_' + productId);
+    const actionsEl = document.getElementById('nameActions_' + productId);
+
+    const newName = inputEl.value.trim();
+    if (!newName) {
+      alert('Name cannot be empty');
+      return;
+    }
+
+    textEl.textContent = newName;
+
+    const product = adminProductChanges.find(p => p.id === productId);
+    if (product) product.name = newName;
+
+    const mainProduct = PRODUCTS.find(p => p.id === productId);
+    if (mainProduct) mainProduct.name = newName;
+
+    textEl.classList.remove('editing');
+    inputEl.classList.remove('editing');
+    editBtn.style.display = 'block';
+    actionsEl.classList.remove('show');
+
+    document.getElementById('adminSuccessMessage').innerHTML = '<div class="admin-success">✅ Name updated! Click Save Changes.</div>';
+  }
+
+  function cancelEditProductName(productId) {
+    const textEl = document.getElementById('productName_' + productId);
+    const inputEl = document.getElementById('productNameInput_' + productId);
+    const editBtn = document.getElementById('editBtn_' + productId);
+    const actionsEl = document.getElementById('nameActions_' + productId);
+
+    inputEl.value = originalProductNames[productId] || textEl.textContent;
+    textEl.classList.remove('editing');
+    inputEl.classList.remove('editing');
+    editBtn.style.display = 'block';
+    actionsEl.classList.remove('show');
+  }
+
+</script>
+
+
+
+
+
+
+<div class="footer-bg">
+
+  <footer class="footer-hub footer-1" aria-label="Footer layer 1">
+    <div class="footer1-inner footer-inner-max">
+      <div class="footer-1-col-1">
+        <h3>Whom We Serve</h3>
+        <br>
+        <ul>
+          <li>To B2B Clients</li>
+          <li>To Wholesalers</li>
+          <li>To Retailers</li>
+          <li>To Direct Customers</li>
+        </ul>
+      </div>
+
+      <div class="footer-1-col-2">
+        <h3>Quick Links</h3>
+        <br>
+        <ul>
+          <li><a href="#" title="Products">Products</a></li>
+          <li><a href="about.html" title="About">About</a></li>
+          <li><a href="resources.html" title="Resources">Resources</a></li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-1-col-3">
+        <h3>Connect With Us</h3>
+        <br>
+        <ul>
+          <li><a href="tel:+918144744481" rel="noopener" aria-label="Phone"><img src="SOCIAL MEDIAS/PHONE.png" alt="Phone"></a></li>
+          <li><a href="https://wa.me/918144744481" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="SOCIAL MEDIAS/WA.png" alt="WhatsApp"></a></li>
+          <li><a href="mailto:information.reinigen@gmail.com " rel="noopener" aria-label="Mail"><img src="SOCIAL MEDIAS/MAIL.png" alt="Mail"></a></li>
+          <li><a href="https://www.instagram.com/reinigen.cleaning.chemicals/" target="_blank" rel="noopener" aria-label="Instagram"><img src="SOCIAL MEDIAS/INSTA.png" alt="Instagram"></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61581408448137" target="_blank" rel="noopener" aria-label="Facebook"><img src="SOCIAL MEDIAS/FACEBOOK.png" alt="Facebook"></a></li>
+          <li><a href=" " target="_blank" rel="noopener" aria-label="Facebook"><img src="SOCIAL MEDIAS/YOUTUBE.png" alt="YouTube"></a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-hub footer-2" aria-label="Footer layer 2">
+    <div class="footer2-inner">
+      <div class="footer-2-col-1">
+        <div class="footer2-logo-wrap">
+          <img class="footer2-logo-image" src="LOGO/REINIGENLOGO.png" alt="Reinigen logo">
+        </div>
+      </div>
+
+      <div class="footer-2-col-2">
+        <div class="footer2-address-wrap">
+          <div class="footer2-address-content">
+            <address>
+              <b>Reinigen Cleaning & Speciality Chemicals and Supplies</b><br>
+              6 / 133E, Kowsik Nagar,<br>
+              Opposite to CSI Church, L &amp; T Bye Pass,<br>
+              Pattanam Village, Coimbatore - 641016,<br>
+              Tamil Nadu, India.
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-hub footer-3" aria-label="Footer layer 3">
+    <div class="footer3-inner">© 2025 Reinigen — All rights reserved.<span class="settings-icon" onclick="openAdminModal()" title="Admin Settings">⚙️</span></div>
+  </footer>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Admin Settings Modal -->
+<div id="adminModal" class="admin-modal-overlay">
+  <div class="admin-modal-content">
+    <div class="admin-modal-header">
+      <h2>Admin Settings</h2>
+      <button class="admin-close" onclick="closeAdminModal()">&times;</button>
+    </div>
+    <div class="admin-modal-body">
+      <!-- Password Section -->
+      <div id="adminPasswordSection" class="admin-password-section">
+        <label for="adminPassword">Enter Admin Password:</label>
+        <input type="password" id="adminPassword" placeholder="Enter password">
+        <div id="adminPasswordError" class="admin-error"></div>
+        <button onclick="verifyAdminPassword()">Unlock</button>
+      </div>
+
+      <!-- Products Section (Hidden until password verified) -->
+      <div id="adminProductsSection" class="admin-products-section">
+        <!-- GitHub Configuration -->
+        <div class="admin-github-config">
+          <h3>⚠️ GitHub Configuration Required</h3>
+          <label>GitHub Username/Owner:</label>
+          <input type="text" id="githubOwner" placeholder="your-username">
+          <small>Your GitHub username (who owns the repository)</small>
+
+          <label>Repository Name:</label>
+          <input type="text" id="githubRepo" placeholder="repository-name">
+          <small>The name of your repository (without .git)</small>
+
+          <label>File Path:</label>
+          <input type="text" id="githubFilePath" placeholder="product.html" value="product.html">
+          <small>Path to this file in the repository (usually product.html)</small>
+
+          <label>GitHub Personal Access Token:</label>
+          <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+          <small>Generate token at: Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token<br>
+          Required scopes: repo (Full control of private repositories)</small>
+        </div>
+
+        <div id="adminSuccessMessage"></div>
+
+        <!-- Products List -->
+        <div id="adminProductsList"></div>
+
+        <!-- Action Buttons -->
+        <div class="admin-actions">
+          <button class="admin-cancel-btn" onclick="closeAdminModal()">Cancel</button>
+          <button class="admin-save-btn" onclick="saveProductChanges()">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- New Product Modal -->
+<div id="newProductModal" class="new-product-modal-overlay">
+  <div class="new-product-modal-content">
+    <div class="new-product-modal-header">
+      <h2>Add New Product</h2>
+      <button class="admin-close" onclick="closeNewProductModal()">&times;</button>
+    </div>
+    <div class="new-product-modal-body">
+      <form id="newProductForm">
+        <div class="new-product-form-group">
+          <label>Product Name *</label>
+          <input type="text" id="newProductName" placeholder="Enter product name" required>
+          <div id="newProductNameError" class="new-product-error"></div>
+        </div>
+        <div class="new-product-form-group">
+          <label>Product Image *</label>
+          <input type="file" id="newProductImage" accept=".jpg,.jpeg,.png" required>
+          <small>Only JPG or PNG. Max: 400KB</small>
+          <div id="newProductImageError" class="new-product-error"></div>
+          <div id="newProductImagePreview" class="new-product-image-preview"><img src="" alt="Preview"></div>
+        </div>
+        <div class="new-product-form-group">
+          <label>Category *</label>
+          <select id="newProductCategory" required>
+            <option value="">Select category</option>
+            <option value="Cleaning & Speciality Chemicals">Cleaning & Speciality Chemicals</option>
+            <option value="Cleaning Supplies">Cleaning Supplies</option>
+          </select>
+          <div id="newProductCategoryError" class="new-product-error"></div>
+        </div>
+        <div class="new-product-form-group">
+          <label>Product Description</label>
+          <textarea id="newProductDesc" placeholder="Enter product description (max 300 words)" rows="4"></textarea>
+          <div id="descWordCounter" class="desc-word-counter">0 / 300 words</div>
+          <div id="newProductDescError" class="new-product-error"></div>
+        </div>
+        <div class="new-product-form-group">
+          <label>Price (₹) *</label>
+          <input type="number" id="newProductPrice" placeholder="0.00" step="0.01" min="0" required>
+          <div id="newProductPriceError" class="new-product-error"></div>
+        </div>
+        <div class="new-product-form-group">
+          <label>Image Folder in GitHub</label>
+          <input type="text" id="newProductImageFolder" placeholder="PRODUCTS" value="PRODUCTS">
+          <small>Folder where images are stored</small>
+        </div>
+        <div class="new-product-actions">
+          <button type="button" class="new-product-cancel-btn" onclick="closeNewProductModal()">Cancel</button>
+          <button type="button" class="new-product-add-btn" onclick="addNewProductToList()">Add Product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
