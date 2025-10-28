@@ -560,7 +560,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 #pDesc br + strong { margin-top: 20px; }
 .desc-list { list-style: none; padding-left: 0; margin: 8px 0; }
 .desc-list li { position: relative; padding-left: 20px; margin-bottom: 6px; }
-.desc-list li::before { content: 'â¢'; position: absolute; left: 0; color: var(--accent); font-weight: bold; font-size: 18px; }
+.desc-list li::before { content: '•'; position: absolute; left: 0; color: var(--accent); font-weight: bold; font-size: 18px; }
 
 
 
@@ -589,7 +589,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
   </div>
 </div>
 
-<div class="header"><h1>Product Catalog</h1><div class="sub">Browse Our Range Of Cleaning Products. Select The Items You Need Using The <b>â Add to Cart â</b> And Quantity Options. Use <b>" Your Cart "</b> To Complete Your Order Through Your <b>WhatsApp</b> (or) <b>Email</b> App. You Can Also Use The <b>" Product Info "</b> Button To Learn More About Each Product. Once <b>Your Order</b> Is Placed, Our Team Will Reach Out To You For <b>Order Confirmation</b> And To Finalize The Process.</b></div></div>
+<div class="header"><h1>Product Catalog</h1><div class="sub">Browse Our Range Of Cleaning Products. Select The Items You Need Using The <b>“ Add to Cart ”</b> And Quantity Options. Use <b>" Your Cart "</b> To Complete Your Order Through Your <b>WhatsApp</b> (or) <b>Email</b> App. You Can Also Use The <b>" Product Info "</b> Button To Learn More About Each Product. Once <b>Your Order</b> Is Placed, Our Team Will Reach Out To You For <b>Order Confirmation</b> And To Finalize The Process.</b></div></div>
 <br>
     <div class="filter-row">
       <div class="filter-icon" title="Filters">
@@ -626,7 +626,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 
   <div class="overlay" id="cartModal" aria-hidden="true">
     <div class="modal" role="dialog" aria-modal="true" style="max-width:980px;">
-      <button class="close" id="closeCartModal" aria-label="Close">â</button>
+      <button class="close" id="closeCartModal" aria-label="Close">✕</button>
       <h2 style="display:flex;align-items:center;justify-content:center;gap:8px;">
   <img src="ICONS/SHOPL.png" style="width:50px;height:50px;object-fit:contain;">
   Your Cart
@@ -660,7 +660,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 
   <div class="overlay" id="productModal" aria-hidden="true">
     <div class="modal product-modal" role="dialog" aria-modal="true">
-      <button class="close" id="closeProductModal" aria-label="Close">â</button>
+      <button class="close" id="closeProductModal" aria-label="Close">✕</button>
       <div class="left">
         <div class="modal-img" id="modalImgArea">
           </div>
@@ -672,7 +672,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
         <p id="pDesc" style="color:var(--muted);line-height:1.4">Product description placeholder.</p>
         <div style="margin-top:auto;display:flex;gap:8px;align-items:center;">
           <div class="qty" id="pQtyArea" style="display:none;">
-            <button class="qbtn" id="pMinus">â</button>
+            <button class="qbtn" id="pMinus">−</button>
             <div class="count" id="pCount">1</div>
             <button class="qbtn" id="pPlus">+</button>
           </div>
@@ -685,14 +685,14 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 
   <div class="overlay" id="checkoutModal" aria-hidden="true">
     <div class="modal" role="dialog" aria-modal="true" style="max-width:720px;">
-      <button class="close" id="closeCheckoutModal" aria-label="Close">â</button>
+      <button class="close" id="closeCheckoutModal" aria-label="Close">✕</button>
       <h2>Your Contact Details</h2>
       <div id="chosenModeLabel" style="text-align:center;color:var(--muted);margin-bottom:8px;font-weight:600"></div>
 
       <form id="checkoutForm" novalidate>
         <div class="form-row">
           <div class="field">
-            <label>ð§âð¼ Name *</label>
+            <label>🧑‍💼 Name *</label>
             <div class="rule">use letters and spaces only - 2 to 60 characters</div>
             <input type="text" name="name" autocomplete="name" required>
             <div class="field-error" id="err-name">
@@ -703,7 +703,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 <br><br>
         <div class="form-row">
           <div class="field">
-            <label>ð Contact Number *</label>
+            <label>📞 Contact Number *</label>
             <div class="rule">digits only - 6 to 15 digits</div>
             <input type="text" name="phone" inputmode="numeric" autocomplete="tel" required>
             <div class="field-error" id="err-phone">
@@ -714,7 +714,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 <br><br>
         <div class="form-row">
           <div class="field">
-            <label>ð Address *</label>
+            <label>📍 Address *</label>
             <div class="rule">enter a valid delivery address</div>
             <textarea name="address" rows="2" required></textarea>
             <div class="field-error" id="err-address">
@@ -733,7 +733,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 
   <div class="overlay" id="launchModal" aria-hidden="true">
     <div class="modal" role="dialog" aria-modal="true" style="max-width:720px;">
-      <button class="close" id="closeLaunchModal" aria-label="Close">â</button>
+      <button class="close" id="closeLaunchModal" aria-label="Close">✕</button>
       <div style="text-align:center;padding:8px">
         <div id="launchGraphic" class="launch-graphic" aria-hidden="true"></div>
 
@@ -743,7 +743,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
         </div>
 
         <p style="margin-top:14px;line-height:1.45;color:var(--muted)">
-          <strong style="display:block;margin-bottom:8px;font-size:15px"><em style="color:#ff00dd;font-style:normal;font-weight:700">By completing the action ( ð Clicking <em style="color:#ff00dd;font-style:normal;font-weight:700">Send ð</em> ) your order will be received by us.</em></strong>
+          <strong style="display:block;margin-bottom:8px;font-size:15px"><em style="color:#ff00dd;font-style:normal;font-weight:700">By completing the action ( 👉 Clicking <em style="color:#ff00dd;font-style:normal;font-weight:700">Send 👈</em> ) your order will be received by us.</em></strong>
           <strong style="display:block;margin-bottom:6px; font-weight:450;">Our team will contact you within the next <span style="color:var(--accent)">5 working hours</span> to confirm the order.</strong>
           <strong>Thanks for shopping with us!</strong>
         </p>
@@ -758,7 +758,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 
   <div class="overlay" id="failedModal" aria-hidden="true">
     <div class="failed-popup" role="dialog" aria-modal="true">
-      <button class="close" id="closeFailedModal" aria-label="Close">â</button>
+      <button class="close" id="closeFailedModal" aria-label="Close">✕</button>
       <h3 style="color:var(--error)">Action not completed</h3>
       <p id="failedMsg" style="color:#000;margin-top:6px">We couldn't open your email or WhatsApp automatically. Please allow popups or try again.</p>
       <div class="failed-actions">
@@ -774,7 +774,160 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
   /* ========== Minimal config & sample products ========== */
   // If you put image URLs here (500x500 recommended), they will be used across grid, modal and cart.
   // UPDATED: Added 'price' to each product
-    const PRODUCTS = [\n    { id:1, name:'Hand Wash', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-HANDWASH.png', price: 1000.00 },\n    { id:2, name:'Bathroom Cleaner', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-BATHROOMCLEANER.png', price: 10.00 },\n    { id:3, name:'Blood Stain Remover', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-BLOODSTAINREMOVER.png', price: 10.00 },\n    { id:4, name:'Dish Wash Gel', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-DISHWASHGEL.png', price: 10.00 },\n    { id:5, name:'Fabric Softner', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-FABRICSOFTNER.png', price: 10.00 },\n    { id:6, name:'Floor Cleaner', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-FLOORCLEANER.png', price: 10.00 },\n    { id:7, name:'Washing Gel', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/WASHINGGEL.png', price: 10.00 },\n    { id:8, name:'Glass Cleaner', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-GLASSCLEANER.png', price: 10.00 },\n    { id:9, name:'Multipurpose Cleaner', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-MULTIPURPOSECLEANER.png', price: 10.00 },\n    { id:10, name:'Phenyle', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-PHENYLE.png', price: 10.00 },\n    { id:11, name:'Room Freshner', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-ROOMFRESHNER.png', price: 10.00 },\n    { id:12, name:'Scale Remover', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-SCALEREMOVER.png', price: 10.00 },\n    { id:13, name:'Soap Oil', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-SOAPOIL.png', price: 10.00 },\n    { id:14, name:'Toilet Cleaner', category:'Cleaning & Speciality Chemicals', img: 'CHEMICALS/CHEM-TOILETCLEANER.png', price: 10.00 },\n    { id:15, name:'Broom, Coconut', category:'Cleaning Supplies', img: 'SUPPLIES1/BROOM-COCONUT.png', price: 10.00 },\n    { id:16, name:'Broom, Standard Commercial ', category:'Cleaning Supplies', img: 'SUPPLIES1/BROOM-CORPORATION.png', price: 10.00 },\n    { id:17, name:'Broom, Grass High Quality', category:'Cleaning Supplies', img: 'SUPPLIES1/BROOM-GRASSSHIGHQUALITY.png', price: 10.00 },\n    { id:18, name:'Broom, Grass Simple Handle', category:'Cleaning Supplies', img: 'SUPPLIES1/BROOM-GRASSSIMPLEHANDLE.png', price: 10.00 },\n    { id:19, name:'Broom, Gray Plastic Handle, Blue', category:'Cleaning Supplies', img: 'SUPPLIES1/BROOM-GRAYPLASTICHANDLEBLUE.png', price: 10.00 },\n    { id:20, name:'Broom, Gray Plastic Handle, Red', category:'Cleaning Supplies', img: 'SUPPLIES1/BROOM-GRAYPLASTICHANDLERED.png', price: 10.00 },\n    { id:21, name:'Broom, Plastic', category:'Cleaning Supplies', img: 'SUPPLIES1/BROOM-PLASTIC.png', price: 10.00 },\n    { id:22, name:'Broom, Soft Grass Wooden Handle', category:'Cleaning Supplies', img: 'SUPPLIES1/BROOM-SOFTGRASSWOODEN.png', price: 10.00 },\n    { id:23, name:'Brush, Tile Scrubber ', category:'Cleaning Supplies', img: 'SUPPLIES1/BRSUH-TILES.png', price: 10.00 },\n    { id:24, name:'Brush, Bottle Cleaner, Blue', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-BOTTLEBLUE.png', price: 10.00 },\n    { id:25, name:'Brush, Bottle Cleaner, Green', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-BOTTLEGREEN.png', price: 10.00 },\n    { id:26, name:'Brush, Bottle Cleaner, Pink', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-BOTTLEPINK.png', price: 10.00 },\n    { id:27, name:'Brush, Bottle Cleaner, Yellow', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-BOTTLEYELLOW.png', price: 10.00 },\n    { id:28, name:'Brush, Double Head, Blue', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-DOUBLEHEADBLUE.png', price: 10.00 },\n    { id:29, name:'Brush, Double Head, Yellow', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-DOUBLEHEADYELLOW.png', price: 10.00 },\n    { id:30, name:'Brush, Duster, Multi-Color Feather', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-DUSTER-MULTICOLORFEATHER.png', price: 10.00 },\n    { id:31, name:'Brush, Microfibre Duster', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-MICROFIBREDUSTER.png', price: 10.00 },\n    { id:32, name:'Brush, Multiple Head Set ', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-MULTIPLEBRUSH.png', price: 10.00 },\n    { id:33, name:'Brush, Round, Pink Plastic Handle', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-ROUNDPINK-PLASTICHANDLE.png', price: 10.00 },\n    { id:34, name:'Brush, Round, Red Yellow Metal Handle', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-ROUNDREDYELLOW-METALHANDLE.png', price: 10.00 },\n    { id:35, name:'Brush, Round Wooden', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-ROUNDWOODEN.png', price: 10.00 },\n    { id:36, name:'Brush, Sink Cleaner', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-SINK.png', price: 10.00 },\n    { id:37, name:'Brush, Utility Model 2', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-UNKNOWN2.png', price: 10.00 },\n    { id:38, name:'Brush, Utility Model 3', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-UNKNOWN3.png', price: 10.00 },\n    { id:39, name:'Brush, Utility Model 4', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-UNKNOWN4.png', price: 10.00 },\n    { id:40, name:'Brush, Utility Model 5', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-UNKNOWN5.png', price: 10.00 },\n    { id:41, name:'Brush, Utility Model 6', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-UNKNOWN6.png', price: 10.00 },\n    { id:42, name:'Brush, Utility Model 7', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-UNKNOWN7.png', price: 10.00 },\n    { id:43, name:'Brush, Utility Model 8', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-UNKNOWN8.png', price: 10.00 },\n    { id:44, name:'Brush and Wiper, Black', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-WIPER-BLACK.png', price: 10.00 },\n    { id:45, name:'Brush and Wiper, Multi-Color Dot', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-WIPER-MULTICOLORDOT.png', price: 10.00 },\n    { id:46, name:'Brush and Wiper, Multi-Color Stripe', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-WIPER-MULTICOLORSTRIPE.png', price: 10.00 },\n    { id:47, name:'Brush and Wiper, Plain', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-WIPER-PLAIN.png', price: 10.00 },\n    { id:48, name:'Brush and Wiper, Unknown Model', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-WIPER-UNKNOWN.png', price: 10.00 },\n    { id:49, name:'Brush and Wiper, White', category:'Cleaning Supplies', img: 'SUPPLIES1/BRUSH-WIPER-WHITE.png', price: 10.00 },\n    { id:50, name:'Bucket, Metal Handle, Blue', category:'Cleaning Supplies', img: 'SUPPLIES1/BUCKET-METALHANDLE-BLUE.png', price: 10.00 },\n    { id:51, name:'Bucket, Metal Handle, Green', category:'Cleaning Supplies', img: 'SUPPLIES1/BUCKET-METALHANDLE-GREEN.png', price: 10.00 },\n    { id:52, name:'Bucket, Metal Handle, Red', category:'Cleaning Supplies', img: 'SUPPLIES1/BUCKET-METALHANDLE-RED.png', price: 10.00 },\n    { id:53, name:'Bucket, Plastic Handle, Blue', category:'Cleaning Supplies', img: 'SUPPLIES1/BUCKET-PLASTICHANDLE-BLUE.png', price: 10.00 },\n    { id:54, name:'Bucket, Plastic Handle, Green', category:'Cleaning Supplies', img: 'SUPPLIES1/BUCKET-PLASTICHANDLE-GREEN.png', price: 10.00 },\n    { id:55, name:'Bucket, Plastic Handle, Red', category:'Cleaning Supplies', img: 'SUPPLIES1/BUCKET-PLASTICHANDLE-RED.png', price: 10.00 },\n    { id:56, name:'Caddy Tray', category:'Cleaning Supplies', img: 'SUPPLIES1/CADDYTRAY.png', price: 10.00 },\n    { id:57, name:'Caution Board ', category:'Cleaning Supplies', img: 'SUPPLIES1/CAUTIONBOARD.png', price: 10.00 },\n    { id:58, name:'Cleaning Cloth, Checked', category:'Cleaning Supplies', img: 'SUPPLIES1/CLOTH-CHECKED.png', price: 10.00 },\n    { id:59, name:'Cleaning Cloth, Orange', category:'Cleaning Supplies', img: 'SUPPLIES1/CLOTH-ORANGE.png', price: 10.00 },\n    { id:60, name:'Cleaning Cloth, White with Brown Lines', category:'Cleaning Supplies', img: 'SUPPLIES1/CLOTH-WHITE-BROWNLINES.png', price: 10.00 },\n    { id:61, name:'Cleaning Cloth, White with Red Lines', category:'Cleaning Supplies', img: 'SUPPLIES1/CLOTH-WHITEREDLINES.png', price: 10.00 },\n    { id:62, name:'Dustbin, Pedal Bin, Blue', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-PEDAL-BLUE.png', price: 10.00 },\n    { id:63, name:'Dustbin, Pedal Bin, Flower Print', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-PEDAL-FLOWERPRINT.png', price: 10.00 },\n    { id:64, name:'Dustbin, Pedal Bin, Red', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-PEDAL-RED.png', price: 10.00 },\n    { id:65, name:'Dustbin, Pedal Bin, Steel Silver', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-PEDAL-STEELSILVER.png', price: 10.00 },\n    { id:66, name:'Dustbin, Simple, Blue', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-SIMPLE-BLUE.png', price: 10.00 },\n    { id:67, name:'Dustbin, Simple, Green', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-SIMPLE-GREEN.png', price: 10.00 },\n    { id:68, name:'Dustbin, Simple, Red', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-SIMPLE-RED.png', price: 10.00 },\n    { id:69, name:'Dustbin, Steel Dotted', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-STEELDOTTED.png', price: 10.00 },\n    { id:70, name:'Dustbin, Swing Lid, Green', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-SWING-GREEN.png', price: 10.00 },\n    { id:71, name:'Dustbin, Swing Lid, Yellow', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTBIN-SWING-YELLOW.png', price: 10.00 },\n    { id:72, name:'Dustpan, Simple, Blue', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTPAN-SIMPLE-BLUE.png', price: 10.00 },\n    { id:73, name:'Dustpan, Simple, Green', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTPAN-SIMPLE-GREEN.png', price: 10.00 },\n    { id:74, name:'Dustpan, Simple, Orange', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTPAN-SIMPLE-ORANGE.png', price: 10.00 },\n    { id:75, name:'Dustpan, Simple, Red', category:'Cleaning Supplies', img: 'SUPPLIES2/DUSTPAN-SIMPLE-RED.png', price: 10.00 },\n    { id:76, name:'Air Freshener, Odonil Fest Spray, Floral', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-FLORAL.png', price: 10.00 },\n    { id:77, name:'Air Freshener, Odonil Fest Spray, Jasmine', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-JASMINE.png', price: 10.00 },\n    { id:78, name:'Air Freshener, Odonil Fest Spray, Lavender', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-LAVENDER.png', price: 10.00 },\n    { id:79, name:'Air Freshener, Odonil Fest Spray, Lime', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-LIME.png', price: 10.00 },\n    { id:80, name:'Air Freshener, Odonil Fest Spray, Ocean', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-OCEAN.png', price: 10.00 },\n    { id:81, name:'Air Freshener, Odonil Fest Spray, Rose', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-ROSE.png', price: 10.00 },\n    { id:82, name:'Air Freshener, Odonil Fest Spray, Sandal', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-SANDAL.png', price: 10.00 },\n    { id:83, name:'Air Freshener, Odonil Solid', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-ODONILSOLID.png', price: 10.00 },\n    { id:84, name:'Air Freshener, Spring Fest Spray, Aroma Green', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-AROMAGREEN.png', price: 10.00 },\n    { id:85, name:'Air Freshener, Spring Fest Spray, Duet', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-DUET.png', price: 10.00 },\n    { id:86, name:'Air Freshener, Spring Fest Spray, Jasmine', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-JASMINE.png', price: 10.00 },\n    { id:87, name:'Air Freshener, Spring Fest Spray, Lavender', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-LAVENDER.png', price: 10.00 },\n    { id:88, name:'Air Freshener, Spring Fest Spray, Lime', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-LIME.png', price: 10.00 },\n    { id:89, name:'Air Freshener, Spring Fest Spray, Rose', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-ROSE.png', price: 10.00 },\n    { id:90, name:'Air Freshener, Spring Fest Spray, Sandal', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-SANDAL.png', price: 10.00 },\n    { id:91, name:'Garbage Bag, Plasto, Jumbo Size', category:'Cleaning Supplies', img: 'SUPPLIES2/GARBAGE-PLASTOJUMBO.png', price: 10.00 },\n    { id:92, name:'Garbage Bag, Plasto, Large Size', category:'Cleaning Supplies', img: 'SUPPLIES2/GARBAGE-PLASTOLARGE.png', price: 10.00 },\n    { id:93, name:'Garbage Bag, Plasto, Medium Size', category:'Cleaning Supplies', img: 'SUPPLIES2/GARBAGE-PLASTOMEDIUM.png', price: 10.00 },\n    { id:94, name:'Garbage Bag, Plasto, Small Size', category:'Cleaning Supplies', img: 'SUPPLIES2/GARBAGE-PLASTOSMALL.png', price: 10.00 },\n    { id:95, name:'Garbage Bag, Plasto, Extra Large Size', category:'Cleaning Supplies', img: 'SUPPLIES2/GARBAGE-PLASTOXL.png', price: 10.00 },\n    { id:96, name:'Head Cover (Disposable)', category:'Cleaning Supplies', img: 'SUPPLIES2/HEADCOVER.png', price: 10.00 },\n    { id:97, name:'Mask, Cotton', category:'Cleaning Supplies', img: 'SUPPLIES2/MASK-COTTON.png', price: 10.00 },\n    { id:98, name:'Mask, Disposable', category:'Cleaning Supplies', img: 'SUPPLIES2/MASK-DISPOSABLE.png', price: 10.00 },\n    { id:99, name:'Naphthalene Balls', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES2/NAPHTHALENEBALLS.png', price: 10.00 },\n    { id:100, name:'Spray Gun', category:'Cleaning Supplies', img: 'SUPPLIES2/SPRAYGUN.png', price: 10.00 },\n    { id:101, name:'Unknown 1', category:'Cleaning Supplies', img: 'SUPPLIES2/UNKNOWN1.png', price: 10.00 },\n    { id:102, name:'Gloves, Rubber, Blue', category:'Cleaning Supplies', img: 'SUPPLIES3/GLOVES-BLUE.png', price: 10.00 },\n    { id:103, name:'Gloves, Cotton', category:'Cleaning Supplies', img: 'SUPPLIES3/GLOVES-COTTON.png', price: 10.00 },\n    { id:104, name:'Gloves, Cotton (Variant 1)', category:'Cleaning Supplies', img: 'SUPPLIES3/GLOVES-COTTON1.png', price: 10.00 },\n    { id:105, name:'Gloves, Leather', category:'Cleaning Supplies', img: 'SUPPLIES3/GLOVES-LEATHER.png', price: 10.00 },\n    { id:106, name:'Gloves, Lenora Brand', category:'Cleaning Supplies', img: 'SUPPLIES3/GLOVES-LENORA.png', price: 10.00 },\n    { id:107, name:'Gloves, Rubber, Orange', category:'Cleaning Supplies', img: 'SUPPLIES3/GLOVES-ORANGE.png', price: 10.00 },\n    { id:108, name:'Gloves, Real Touch Rubber', category:'Cleaning Supplies', img: 'SUPPLIES3/GLOVES-REALTOUCHRUBBER.png', price: 10.00 },\n    { id:109, name:'Gloves, Rubber, White', category:'Cleaning Supplies', img: 'SUPPLIES3/GLOVES-WHITE.png', price: 10.00 },\n    { id:110, name:'Mat, Cotton, Line Star Design', category:'Cleaning Supplies', img: 'SUPPLIES3/MAT-COTTON-LINESTAR.png', price: 10.00 },\n    { id:111, name:'Mat, Cotton, Rangoli Design', category:'Cleaning Supplies', img: 'SUPPLIES3/MAT-COTTON-RANGOLI.png', price: 10.00 },\n    { id:112, name:'Mat, Cotton, Robo Design', category:'Cleaning Supplies', img: 'SUPPLIES3/MAT-COTTON-ROBO.png', price: 10.00 },\n    { id:113, name:'Mat, Cotton, Special Box Design', category:'Cleaning Supplies', img: 'SUPPLIES3/MAT-COTTON-SPECIALBOX.png', price: 10.00 },\n    { id:114, name:'Mat, Cotton, Welcome Design', category:'Cleaning Supplies', img: 'SUPPLIES3/MAT-COTTON-WELCOME.png', price: 10.00 },\n    { id:115, name:'Mat, Multi-Purpose, 16x22 Inch', category:'Cleaning Supplies', img: 'SUPPLIES3/MAT-MULTI-16X22.png', price: 10.00 },\n    { id:116, name:'Mat, Multi-Purpose, 16x27 Inch', category:'Cleaning Supplies', img: 'SUPPLIES3/MAT-MULTI-16X27.png', price: 10.00 },\n    { id:117, name:'Mop, Flat Microfibre', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-FLATMICROFIBRE.png', price: 10.00 },\n    { id:118, name:'Mop Refill, Blue Brush Head', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-REFILL-BLUEBRUSH.png', price: 10.00 },\n    { id:119, name:'Mop Refill, Flat Microfibre, Blue', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-REFILL-FLATMICROFIBRE-BLUE.png', price: 10.00 },\n    { id:120, name:'Mop Refill, Flat Microfibre, Grey', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-REFILL-FLATMICROFIBRE-GREY.png', price: 10.00 },\n    { id:121, name:'Mop Refill, Grey Brush Head', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-REFILL-GREYBRUSH.png', price: 10.00 },\n    { id:122, name:'Mop Refill, Grey Flat Brush', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-REFILL-GREYFLATBRUSH.png', price: 10.00 },\n    { id:123, name:'Mop Refill, Pink Brown Brush Head', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-REFILL-PINKBROWNBRUSH.png', price: 10.00 },\n    { id:124, name:'Mop, Toilet Cleaner, Green', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-TOILET-UNKNOWNGREEN.png', price: 10.00 },\n    { id:125, name:'Mop, Toilet Cleaner, Pink', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-TOILET-UNKNOWNPINK.png', price: 10.00 },\n    { id:126, name:'Mop, Twist Style, Purple', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP-TWISTPURPLE.png', price: 10.00 },\n    { id:127, name:'Mop, Standard', category:'Cleaning Supplies', img: 'SUPPLIES3/MOP.png', price: 10.00 },\n    { id:128, name:'Mug, Blue', category:'Cleaning Supplies', img: 'SUPPLIES4/MUG-BLUE.png', price: 10.00 },\n    { id:129, name:'Mug, Green', category:'Cleaning Supplies', img: 'SUPPLIES4/MUG-GREEN.png', price: 10.00 },\n    { id:130, name:'Mug, Pink', category:'Cleaning Supplies', img: 'SUPPLIES4/MUG-PINK.png', price: 10.00 },\n    { id:131, name:'Mug, Red', category:'Cleaning Supplies', img: 'SUPPLIES4/MUG-RED.png', price: 10.00 },\n    { id:132, name:'Shining Powder, Pitambari Brand', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES4/POWDER-SHINER-PITAMBARI.png', price: 10.00 },\n    { id:133, name:'Washing Powder, Surf Excel Brand', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES4/POWDER-SURFEXCEL.png', price: 10.00 },\n    { id:134, name:'Scrubber, Bathing', category:'Cleaning Supplies', img: 'SUPPLIES4/SCRUBBER-BATHING.png', price: 10.00 },\n    { id:135, name:'Scrubber, Dish with Handle', category:'Cleaning Supplies', img: 'SUPPLIES4/SCRUBBER-DISHWITHHANDLE.png', price: 10.00 },\n    { id:136, name:'Scrubber, Happy Home Brand', category:'Cleaning Supplies', img: 'SUPPLIES4/SCRUBBER-HAPPYHOME.png', price: 10.00 },\n    { id:137, name:'Scrubber, Steel-O-Brite, 15g', category:'Cleaning Supplies', img: 'SUPPLIES4/SCRUBBER-STEELOBRITE15.png', price: 10.00 },\n    { id:138, name:'Scrubber, Steel-O-Brite, 20g', category:'Cleaning Supplies', img: 'SUPPLIES4/SCRUBBER-STEELOBRITE20.png', price: 10.00 },\n    { id:139, name:'Soap, Dettol Brand', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES4/SOAP-DETTOL.png', price: 10.00 },\n    { id:140, name:'Soap, Lifebuoy Brand', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES4/SOAP-LIFEBUOY.png', price: 10.00 },\n    { id:141, name:'Soap, Rin Brand', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES4/SOAP-RIN.png', price: 10.00 },\n    { id:142, name:'Insect Spray, Hit Mosquito Kill', category:'Cleaning & Speciality Chemicals', img: 'SUPPLIES4/SPRAY-HIT-MOSQUITOKILL.png', price: 10.00 },\n    { id:143, name:'Tissue, Bathroom Roll', category:'Cleaning Supplies', img: 'SUPPLIES4/TISSUE-BATHROOMROLL.png', price: 10.00 },\n    { id:144, name:'Tissue, Standard', category:'Cleaning Supplies', img: 'SUPPLIES4/TISSUE-NORMAL.png', price: 10.00 },\n    { id:145, name:'Tissue, Origami Facial', category:'Cleaning Supplies', img: 'SUPPLIES4/TISSUE-ORIGAMIFACIAL.png', price: 10.00 },\n    { id:146, name:'Tissue, Scott Kimberley Brand', category:'Cleaning Supplies', img: 'SUPPLIES4/TISSUE-SCOTTKIMBERLEY.png', price: 10.00 },\n    { id:147, name:'Tissue, Soft', category:'Cleaning Supplies', img: 'SUPPLIES4/TISSUE-SOFT.png', price: 10.00 },\n    { id:148, name:'Tissue, Toilet Roll', category:'Cleaning Supplies', img: 'SUPPLIES4/TISSUE-TOILETROLL.png', price: 10.00 },\n    { id:149, name:'Urinal Cube, Multicolor', category:'Cleaning Supplies', img: 'SUPPLIES4/URINALCUBE-MUTLICOLOR.png', price: 10.00 },\n    { id:150, name:'Urinal Cube, Standard', category:'Cleaning Supplies', img: 'SUPPLIES4/URINALCUBE.png', price: 10.00 },\n    { id:151, name:'Urinal Screen', category:'Cleaning Supplies', img: 'SUPPLIES4/URINALSCREEN.png', price: 10.00 }\n  ];
+  const PRODUCTS = [
+{	id:1,	name:	'Hand Wash',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This hand wash is a gentle, everyday liquid soap made to clean hands well without drying the skin. The pH-balanced formula helps keep the skin\'s natural moisture and supports the skin barrier, while mild cleansing ingredients remove dirt, grease and common germs. It is suitable for frequent use at home, offices, shops, schools and other places where regular hand washing is needed.<br><br><strong>How to use</strong><ul class="desc-list"><li>Wet your hands with clean running water.</li><li>Take a small amount of hand wash in your palm and rub your hands together to make foam.</li><li>Rub all parts of the hands - palms, backs, between fingers and under nails for at least 20 seconds.</li><li>Rinse well with water and dry with a clean towel or air dryer.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Gentle on skin:</b> pH-balanced and enriched with moisturizers to help prevent dryness and irritation.</li><li><b>Effective cleaning:</b> Removes dirt, oil and everyday germs when used correctly.</li><li><b>Protects skin barrier:</b> Helps the skin keep its natural oils so hands stay soft even with frequent washing.</li><li><b>Mild fragrance:</b> Fresh scent that is not overpowering.</li><li><b>Easy to use:</b> Available in pump or bottle format for quick dispensing; rinses clean without sticky residue.</li><li>Suitable for adults and children (supervise young children). Avoid contact with eyes. If the product gets into eyes, rinse immediately with clean water.</li></ul>',	img:	 'CHEMICALS/CHEM-HANDWASH.png',	price:	10.00	},
+{	id:2,	name:	'Bathroom Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'CHEMICALS/CHEM-BATHROOMCLEANER.png',	price:	10.00	},
+{	id:3,	name:	'Blood Stain Remover',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-BLOODSTAINREMOVER.png',	price:	10.00	},
+{	id:4,	name:	'Dish Wash Gel',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-DISHWASHGEL.png',	price:	10.00	},
+{	id:5,	name:	'Fabric Softner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This fabric softener makes clothes feel soft and fresh after washing. It works in the final rinse to condition fabric fibres so clothes feel smooth and gentle on the skin. The concentrated liquid needs only a small amount per wash and gives a light, long-lasting fragrance. It also helps reduce wrinkles and static, so clothes look neater and are easier to wear.<br><br><strong>How to Use</strong><ul class="desc-list"><li>Measure the amount using the cap. Follow the bottle directions for small, medium or large loads.</li><li>For washing machines: pour the measured softener into the machine\'s fabric softener dispenser or tray. Do not pour the softener directly onto clothes.</li><li>For hand washing: add the correct amount to the final rinse water and mix before putting clothes in. Leave clothes in the rinse water for about a minute, then drain and gently squeeze out excess water.</li><li>Run the rinse cycle as usual. Keep the bottle closed after use and store out of reach of children.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Soft and comfortable:</b> Makes fabrics feel soft and pleasant on the skin.</li><li><b>Fewer wrinkles:</b> Reduces wrinkles so ironing becomes easier.</li><li><b>Less static:</b> Controls static cling, especially on synthetic clothes.</li><li><b>Fresh smell:</b> Gives a mild, pleasant fragrance that lasts.</li><li><b>Economical:</b> Concentrated formula means the bottle lasts longer when used as directed.</li></ul>',	img:	'CHEMICALS/CHEM-FABRICSOFTNER.png',	price:	10.00	},
+{	id:6,	name:	'Floor Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This floor cleaner is a strong liquid made to clean hard floors at home and in offices. It removes dust, oil and common stains and leaves floors clean and smelling fresh. It can be used on tiles, vinyl, sealed wooden floors, marble and similar surfaces. Mix the cleaner with water before use to make a safe cleaning solution that dries quickly and does not leave sticky marks.<br><br><strong>How to use</strong><ul class="desc-list"><li>Pour one capful of the cleaner into half a bucket of water (about 4 litres). Add more cleaner for very dirty floors. The ratio varies based on the usage.</li><li>Dip a mop or a clean cloth into the water and squeeze it so it is not dripping.</li><li>Mop the floor evenly. For small, tough stains, put a little undiluted cleaner on a cloth and rub the spot gently.</li><li>Let the floor air dry. You usually do not need to rinse with clean water.</li><li>Keep the bottle closed and store it out of reach of children and pets.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Easy cleaning:</b> Removes everyday dirt and oil so floors look clean.</li><li><b>Works on many floors:</b> Safe for tiles, vinyl, sealed wooden floors and marble when used as directed.</li><li><b>No sticky feel:</b> Dries fast so the floor does not feel sticky underfoot.</li><li><b>Fresh smell:</b> Leaves a mild, pleasant scent that freshens the room.</li><li><b>Saves time:</b> Mixing with water makes the bottle last longer and helps you clean faster.</li></ul>',	img:	'CHEMICALS/CHEM-FLOORCLEANER.png',	price:	10.00	},
+{	id:7,	name:	'Washing Gel',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	' Washing Gel is a concentrated liquid cleaner for clothes that gives a deep, thorough wash. The gel sinks into fabric to lift dirt, grease and tough stains while also removing bad smells. It dissolves well in both hot and cold water, so it leaves no white marks or residue on clothes. The formula is gentle on fabrics and helps keep colours and texture in good shape, making it suitable for everyday clothes and delicate items alike. Use it in any type of washing machine or for hand wash.<br><br><strong>How to use</strong><br><b>For Machine Wash:</b><ul class="desc-list"><li>Measure the gel with the cap depending on load size and dirt level.</li><li>Pour into the detergent drawer or directly into the drum before adding clothes.</li><li>Run the normal wash cycle.</li></ul><br><b>For Hand Wash:</b><ul class="desc-list"><li>Mix a small amount of gel in a bucket of water to make a soapy solution.</li><li>Soak clothes for about 30 minutes for tough stains.</li><li>Rub gently, then rinse well with clean water. Always follow the dose shown on the bottle. For very delicate fabrics, test on a small area first.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Deep cleaning:</b> Removes tough stains and hard dirt from fabric.</li><li><b>Colour care:</b> Gentle formula helps keep colours bright and fabric soft.</li><li><b>No residue:</b> Gel dissolves fully in hot or cold or normal water without leaving white marks.</li><li><b>Works everywhere:</b> Suitable for all washing machines and for hand washing.</li><li><b>Long-lasting freshness:</b> Leaves clothes smelling clean for a long time.</li></ul> ',	img:	'CHEMICALS/WASHINGGEL.png',	price:	10.00	},
+{	id:8,	name:	'Glass Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	' This glass cleaner is made to keep glass surfaces clean and clear. It removes dust, grease, fingerprints, and marks quickly, leaving the glass neat and bright. The liquid dries fast and does not leave any film or marks behind. It is suitable for everyday use on windows, mirrors, glass tables, cupboards and car glass. The formula is free from strong chemicals like ammonia, which makes it safe even for tinted windows and delicate glass. With regular use, it helps maintain a clean and clear look at home, in offices and in vehicles.<br><br><strong>How to use:</strong><ul class="desc-list"><li>Shake the bottle well before use.</li><li>Spray the cleaner directly on the glass or on a clean cotton/microfiber cloth.</li><li>Wipe the glass surface using straight or circular hand movements until the dirt is removed.</li><li>For the final touch, use a dry part of the cloth to gently wipe again for a clear finish.</li></ul><br><strong>Benefits:</strong><ul class="desc-list"><li><b>Clear Finish:</b> Leaves glass surfaces bright and clean without any leftover marks.</li><li><b>Effective Cleaning:</b> Removes dust, oil and fingerprints with ease.</li><li><b>Multipurpose Use:</b> Can be used on mirrors, windows, glass tables, cupboards and car glass.</li><li><b>Safe Formula:</b> Free from harsh ammonia, safe for tinted and delicate glass.</li><li><b>Quick and Easy:</b> Fast-drying solution saves time and effort during cleaning.</li></ul> ',	img:	'CHEMICALS/CHEM-GLASSCLEANER.png',	price:	10.00	},
+{	id:9,	name:	'Multipurpose Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-MULTIPURPOSECLEANER.png',	price:	10.00	},
+{	id:10,	name:	'Phenyle',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This Phenyle is a strong disinfectant liquid for cleaning and sanitizing floors and other hard surfaces. It removes dirt and bad smells while reducing common germs and bacteria, helping to keep homes, workplaces and public areas more hygienic. The concentrated liquid can be used on floors, bathroom tiles, drains, bins and similar surfaces.<br><br><strong>How to use</strong><ul class="desc-list"><li>For floors: Mix one capful of Phenyle in one bucket of water (about 4 litres). Mop the floor with this water and let it dry. For very dirty areas, you may add a little more Phenyle or can spray direction on the surface (based on the requirements).</li><li>For toilets and drains: Pour a small amount of undiluted Phenyle directly into the toilet bowl or drain to remove smell and disinfect.</li><li>For bins and other hard surfaces: Wipe or scrub with the diluted solution; for quick freshening, spray and wipe. Always follow the directions on the bottle. Do not mix Phenyle with other cleaning products.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Cleans and disinfects:</b> Removes dirt and reduces germs on floors and surfaces.</li><li><b>Removes bad smells:</b> Neutralises unpleasant odours and leaves a clean scent.</li><li><b>Multi-purpose:</b> Useful for bathrooms, kitchens, drains, bins and tiled areas.</li><li><b>Economical:</b> Concentrated formula means a small amount covers more area.</li><li><b>Easy to use:</b> Simple mixing and application for regular or deep cleaning.</li></ul><br><strong>Safety</strong><br>Keep out of reach of children and pets. Avoid contact with eyes and skin; rinse with water if it comes into contact. Do not mix with bleach or acids. Use in a well-ventilated area.',	img:	'CHEMICALS/CHEM-PHENYLE.png',	price:	10.00	},
+{	id:11,	name:	'Room Freshner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-ROOMFRESHNER.png',	price:	10.00	},
+{	id:12,	name:	'Scale Remover',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-SCALEREMOVER.png',	price:	10.00	},
+{	id:13,	name:	'Soap Oil',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This soap oil is a concentrated liquid cleaner for many cleaning purposes at home and at work. It makes a rich state that cuts through grease, dirt and food stains on hard surfaces. Use it on floors, kitchen counters, bathroom tiles, sinks and similar areas. It helps reduce common germs, leaves a mild, fresh smell and does not leave sticky marks when it dries. Because it is concentrated, a small amount lasts longer.<br><br><strong>How to use</strong><ul class="desc-list"><li>Dilute: Put one capful of soap oil into half a bucket of water (about 4 litres). Use more for very dirty places.</li><li>Clean: Dip a mop or a clean cloth into the water, wring it and wipe the surface.</li><li>For counters and sinks: Pour the diluted solution into a spray bottle or use a wet cloth to clean, then wipe dry with a clean cloth.</li><li>For tough grease: Put a little undiluted soap oil on a cloth, rub the spot gently, then wipe or rinse.</li><li>Dry: Let the surface air dry. Rinsing is not needed in most cases. Keep the bottle closed and store out of reach of children.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Multi-purpose cleaning:</b> Can be used on floors, kitchen counters, bathroom tiles, sinks and other hard surfaces.</li><li><b>Sanitizing action:</b> Helps reduce common germs and bacteria when used as directed.</li><li><b>Powerful cleaning:</b> Rich lather cuts through grease, food stains and heavy dirt.</li><li><b>Residue-free finish:</b> Dries quickly without leaving sticky marks or streaks.</li><li><b>Long-lasting fragrance:</b> Gives a mild, fresh scent that stays for some time.</li><li><b>Economical concentrate:</b> A small amount stretches farther, so the bottle lasts longer.</li></ul>',	img:	'CHEMICALS/CHEM-SOAPOIL.png',	price:	10.00	},
+{	id:14,	name:	'Toilet Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'CHEMICALS/CHEM-TOILETCLEANER.png',	price:	10.00	},
+{	id:15,	name:	'Broom, Coconut',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-COCONUT.png',	price:	10.00	},
+{	id:16,	name:	'Broom, Standard Commercial ',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-CORPORATION.png',	price:	10.00	},
+{	id:17,	name:	'Broom, Grass High Quality',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-GRASSSHIGHQUALITY.png',	price:	10.00	},
+{	id:18,	name:	'Broom, Grass Simple Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-GRASSSIMPLEHANDLE.png',	price:	10.00	},
+{	id:19,	name:	'Broom, Gray Plastic Handle, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-GRAYPLASTICHANDLEBLUE.png',	price:	10.00	},
+{	id:20,	name:	'Broom, Gray Plastic Handle, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-GRAYPLASTICHANDLERED.png',	price:	10.00	},
+{	id:21,	name:	'Broom, Plastic',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-PLASTIC.png',	price:	10.00	},
+{	id:22,	name:	'Broom, Soft Grass Wooden Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BROOM-SOFTGRASSWOODEN.png',	price:	10.00	},
+{	id:23,	name:	'Brush, Tile Scrubber ',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRSUH-TILES.png',	price:	10.00	},
+{	id:24,	name:	'Brush, Bottle Cleaner, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-BOTTLEBLUE.png',	price:	10.00	},
+{	id:25,	name:	'Brush, Bottle Cleaner, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-BOTTLEGREEN.png',	price:	10.00	},
+{	id:26,	name:	'Brush, Bottle Cleaner, Pink',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-BOTTLEPINK.png',	price:	10.00	},
+{	id:27,	name:	'Brush, Bottle Cleaner, Yellow',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-BOTTLEYELLOW.png',	price:	10.00	},
+{	id:28,	name:	'Brush, Double Head, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-DOUBLEHEADBLUE.png',	price:	10.00	},
+{	id:29,	name:	'Brush, Double Head, Yellow',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-DOUBLEHEADYELLOW.png',	price:	10.00	},
+{	id:30,	name:	'Brush, Duster, Multi-Color Feather',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-DUSTER-MULTICOLORFEATHER.png',	price:	10.00	},
+{	id:31,	name:	'Brush, Microfibre Duster',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-MICROFIBREDUSTER.png',	price:	10.00	},
+{	id:32,	name:	'Brush, Multiple Head Set ',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-MULTIPLEBRUSH.png',	price:	10.00	},
+{	id:33,	name:	'Brush, Round, Pink Plastic Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-ROUNDPINK-PLASTICHANDLE.png',	price:	10.00	},
+{	id:34,	name:	'Brush, Round, Red Yellow Metal Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-ROUNDREDYELLOW-METALHANDLE.png',	price:	10.00	},
+{	id:35,	name:	'Brush, Round Wooden',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-ROUNDWOODEN.png',	price:	10.00	},
+{	id:36,	name:	'Brush, Sink Cleaner',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-SINK.png',	price:	10.00	},
+{	id:37,	name:	'Brush, Utility Model 2',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN2.png',	price:	10.00	},
+{	id:38,	name:	'Brush, Utility Model 3',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN3.png',	price:	10.00	},
+{	id:39,	name:	'Brush, Utility Model 4',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN4.png',	price:	10.00	},
+{	id:40,	name:	'Brush, Utility Model 5',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN5.png',	price:	10.00	},
+{	id:41,	name:	'Brush, Utility Model 6',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN6.png',	price:	10.00	},
+{	id:42,	name:	'Brush, Utility Model 7',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN7.png',	price:	10.00	},
+{	id:43,	name:	'Brush, Utility Model 8',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-UNKNOWN8.png',	price:	10.00	},
+{	id:44,	name:	'Brush and Wiper, Black',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-BLACK.png',	price:	10.00	},
+{	id:45,	name:	'Brush and Wiper, Multi-Color Dot',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-MULTICOLORDOT.png',	price:	10.00	},
+{	id:46,	name:	'Brush and Wiper, Multi-Color Stripe',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-MULTICOLORSTRIPE.png',	price:	10.00	},
+{	id:47,	name:	'Brush and Wiper, Plain',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-PLAIN.png',	price:	10.00	},
+{	id:48,	name:	'Brush and Wiper, Unknown Model',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-UNKNOWN.png',	price:	10.00	},
+{	id:49,	name:	'Brush and Wiper, White',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BRUSH-WIPER-WHITE.png',	price:	10.00	},
+{	id:50,	name:	'Bucket, Metal Handle, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-METALHANDLE-BLUE.png',	price:	10.00	},
+{	id:51,	name:	'Bucket, Metal Handle, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-METALHANDLE-GREEN.png',	price:	10.00	},
+{	id:52,	name:	'Bucket, Metal Handle, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-METALHANDLE-RED.png',	price:	10.00	},
+{	id:53,	name:	'Bucket, Plastic Handle, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-PLASTICHANDLE-BLUE.png',	price:	10.00	},
+{	id:54,	name:	'Bucket, Plastic Handle, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-PLASTICHANDLE-GREEN.png',	price:	10.00	},
+{	id:55,	name:	'Bucket, Plastic Handle, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/BUCKET-PLASTICHANDLE-RED.png',	price:	10.00	},
+{	id:56,	name:	'Caddy Tray',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CADDYTRAY.png',	price:	10.00	},
+{	id:57,	name:	'Caution Board ',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CAUTIONBOARD.png',	price:	10.00	},
+{	id:58,	name:	'Cleaning Cloth, Checked',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CLOTH-CHECKED.png',	price:	10.00	},
+{	id:59,	name:	'Cleaning Cloth, Orange',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CLOTH-ORANGE.png',	price:	10.00	},
+{	id:60,	name:	'Cleaning Cloth, White with Brown Lines',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CLOTH-WHITE-BROWNLINES.png',	price:	10.00	},
+{	id:61,	name:	'Cleaning Cloth, White with Red Lines',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES1/CLOTH-WHITEREDLINES.png',	price:	10.00	},
+{	id:62,	name:	'Dustbin, Pedal Bin, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-PEDAL-BLUE.png',	price:	10.00	},
+{	id:63,	name:	'Dustbin, Pedal Bin, Flower Print',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-PEDAL-FLOWERPRINT.png',	price:	10.00	},
+{	id:64,	name:	'Dustbin, Pedal Bin, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-PEDAL-RED.png',	price:	10.00	},
+{	id:65,	name:	'Dustbin, Pedal Bin, Steel Silver',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-PEDAL-STEELSILVER.png',	price:	10.00	},
+{	id:66,	name:	'Dustbin, Simple, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SIMPLE-BLUE.png',	price:	10.00	},
+{	id:67,	name:	'Dustbin, Simple, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SIMPLE-GREEN.png',	price:	10.00	},
+{	id:68,	name:	'Dustbin, Simple, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SIMPLE-RED.png',	price:	10.00	},
+{	id:69,	name:	'Dustbin, Steel Dotted',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-STEELDOTTED.png',	price:	10.00	},
+{	id:70,	name:	'Dustbin, Swing Lid, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SWING-GREEN.png',	price:	10.00	},
+{	id:71,	name:	'Dustbin, Swing Lid, Yellow',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTBIN-SWING-YELLOW.png',	price:	10.00	},
+{	id:72,	name:	'Dustpan, Simple, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTPAN-SIMPLE-BLUE.png',	price:	10.00	},
+{	id:73,	name:	'Dustpan, Simple, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTPAN-SIMPLE-GREEN.png',	price:	10.00	},
+{	id:74,	name:	'Dustpan, Simple, Orange',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTPAN-SIMPLE-ORANGE.png',	price:	10.00	},
+{	id:75,	name:	'Dustpan, Simple, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/DUSTPAN-SIMPLE-RED.png',	price:	10.00	},
+{	id:76,	name:	'Air Freshener, Odonil Fest Spray, Floral',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-FLORAL.png',	price:	10.00	},
+{	id:77,	name:	'Air Freshener, Odonil Fest Spray, Jasmine',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-JASMINE.png',	price:	10.00	},
+{	id:78,	name:	'Air Freshener, Odonil Fest Spray, Lavender',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-LAVENDER.png',	price:	10.00	},
+{	id:79,	name:	'Air Freshener, Odonil Fest Spray, Lime',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-LIME.png',	price:	10.00	},
+{	id:80,	name:	'Air Freshener, Odonil Fest Spray, Ocean',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-OCEAN.png',	price:	10.00	},
+{	id:81,	name:	'Air Freshener, Odonil Fest Spray, Rose',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-ROSE.png',	price:	10.00	},
+{	id:82,	name:	'Air Freshener, Odonil Fest Spray, Sandal',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILFESTSPRAY-SANDAL.png',	price:	10.00	},
+{	id:83,	name:	'Air Freshener, Odonil Solid',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-ODONILSOLID.png',	price:	10.00	},
+{	id:84,	name:	'Air Freshener, Spring Fest Spray, Aroma Green',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-AROMAGREEN.png',	price:	10.00	},
+{	id:85,	name:	'Air Freshener, Spring Fest Spray, Duet',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-DUET.png',	price:	10.00	},
+{	id:86,	name:	'Air Freshener, Spring Fest Spray, Jasmine',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-JASMINE.png',	price:	10.00	},
+{	id:87,	name:	'Air Freshener, Spring Fest Spray, Lavender',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-LAVENDER.png',	price:	10.00	},
+{	id:88,	name:	'Air Freshener, Spring Fest Spray, Lime',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-LIME.png',	price:	10.00	},
+{	id:89,	name:	'Air Freshener, Spring Fest Spray, Rose',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-ROSE.png',	price:	10.00	},
+{	id:90,	name:	'Air Freshener, Spring Fest Spray, Sandal',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/FRESHNER-SPRINGFESTSPRAY-SANDAL.png',	price:	10.00	},
+{	id:91,	name:	'Garbage Bag, Plasto, Jumbo Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOJUMBO.png',	price:	10.00	},
+{	id:92,	name:	'Garbage Bag, Plasto, Large Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOLARGE.png',	price:	10.00	},
+{	id:93,	name:	'Garbage Bag, Plasto, Medium Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOMEDIUM.png',	price:	10.00	},
+{	id:94,	name:	'Garbage Bag, Plasto, Small Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOSMALL.png',	price:	10.00	},
+{	id:95,	name:	'Garbage Bag, Plasto, Extra Large Size',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/GARBAGE-PLASTOXL.png',	price:	10.00	},
+{	id:96,	name:	'Head Cover (Disposable)',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/HEADCOVER.png',	price:	10.00	},
+{	id:97,	name:	'Mask, Cotton',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/MASK-COTTON.png',	price:	10.00	},
+{	id:98,	name:	'Mask, Disposable',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/MASK-DISPOSABLE.png',	price:	10.00	},
+{	id:99,	name:	'Naphthalene Balls',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	'SUPPLIES2/NAPHTHALENEBALLS.png',	price:	10.00	},
+{	id:100,	name:	'Spray Gun',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/SPRAYGUN.png',	price:	10.00	},
+{	id:101,	name:	'Unknown 1',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	'SUPPLIES2/UNKNOWN1.png',	price:	10.00	},
+{	id:102,	name:	 'Gloves, Rubber, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-BLUE.png',	price:	10.00	},
+{	id:103,	name:	'Gloves, Cotton',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-COTTON.png',	price:	10.00	},
+{	id:104,	name:	'Gloves, Cotton (Variant 1)',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-COTTON1.png',	price:	10.00	},
+{	id:105,	name:	'Gloves, Leather',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-LEATHER.png',	price:	10.00	},
+{	id:106,	name:	'Gloves, Lenora Brand',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-LENORA.png',	price:	10.00	},
+{	id:107,	name:	'Gloves, Rubber, Orange',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-ORANGE.png',	price:	10.00	},
+{	id:108,	name:	'Gloves, Real Touch Rubber',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-REALTOUCHRUBBER.png',	price:	10.00	},
+{	id:109,	name:	'Gloves, Rubber, White',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/GLOVES-WHITE.png',	price:	10.00	},
+{	id:110,	name:	'Mat, Cotton, Line Star Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-LINESTAR.png',	price:	10.00	},
+{	id:111,	name:	'Mat, Cotton, Rangoli Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-RANGOLI.png',	price:	10.00	},
+{	id:112,	name:	'Mat, Cotton, Robo Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-ROBO.png',	price:	10.00	},
+{	id:113,	name:	'Mat, Cotton, Special Box Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-SPECIALBOX.png',	price:	10.00	},
+{	id:114,	name:	'Mat, Cotton, Welcome Design',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-COTTON-WELCOME.png',	price:	10.00	},
+{	id:115,	name:	'Mat, Multi-Purpose, 16x22 Inch',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-MULTI-16X22.png',	price:	10.00	},
+{	id:116,	name:	'Mat, Multi-Purpose, 16x27 Inch',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MAT-MULTI-16X27.png',	price:	10.00	},
+{	id:117,	name:	'Mop, Flat Microfibre',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-FLATMICROFIBRE.png',	price:	10.00	},
+{	id:118,	name:	'Mop Refill, Blue Brush Head',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-BLUEBRUSH.png',	price:	10.00	},
+{	id:119,	name:	'Mop Refill, Flat Microfibre, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-FLATMICROFIBRE-BLUE.png',	price:	10.00	},
+{	id:120,	name:	'Mop Refill, Flat Microfibre, Grey',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-FLATMICROFIBRE-GREY.png',	price:	10.00	},
+{	id:121,	name:	'Mop Refill, Grey Brush Head',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-GREYBRUSH.png',	price:	10.00	},
+{	id:122,	name:	'Mop Refill, Grey Flat Brush',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-GREYFLATBRUSH.png',	price:	10.00	},
+{	id:123,	name:	'Mop Refill, Pink Brown Brush Head',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-REFILL-PINKBROWNBRUSH.png',	price:	10.00	},
+{	id:124,	name:	'Mop, Toilet Cleaner, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-TOILET-UNKNOWNGREEN.png',	price:	10.00	},
+{	id:125,	name:	'Mop, Toilet Cleaner, Pink',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-TOILET-UNKNOWNPINK.png',	price:	10.00	},
+{	id:126,	name:	'Mop, Twist Style, Purple',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP-TWISTPURPLE.png',	price:	10.00	},
+{	id:127,	name:	'Mop, Standard',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES3/MOP.png',	price:	10.00	},
+{	id:128,	name:	 'Mug, Blue',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/MUG-BLUE.png',	price:	10.00	},
+{	id:129,	name:	'Mug, Green',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/MUG-GREEN.png',	price:	10.00	},
+{	id:130,	name:	'Mug, Pink',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/MUG-PINK.png',	price:	10.00	},
+{	id:131,	name:	'Mug, Red',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/MUG-RED.png',	price:	10.00	},
+{	id:132,	name:	'Shining Powder, Pitambari Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/POWDER-SHINER-PITAMBARI.png',	price:	10.00	},
+{	id:133,	name:	'Washing Powder, Surf Excel Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/POWDER-SURFEXCEL.png',	price:	10.00	},
+{	id:134,	name:	'Scrubber, Bathing',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-BATHING.png',	price:	10.00	},
+{	id:135,	name:	'Scrubber, Dish with Handle',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-DISHWITHHANDLE.png',	price:	10.00	},
+{	id:136,	name:	'Scrubber, Happy Home Brand',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-HAPPYHOME.png',	price:	10.00	},
+{	id:137,	name:	'Scrubber, Steel-O-Brite, 15g',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-STEELOBRITE15.png',	price:	10.00	},
+{	id:138,	name:	'Scrubber, Steel-O-Brite, 20g',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/SCRUBBER-STEELOBRITE20.png',	price:	10.00	},
+{	id:139,	name:	'Soap, Dettol Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/SOAP-DETTOL.png',	price:	10.00	},
+{	id:140,	name:	'Soap, Lifebuoy Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/SOAP-LIFEBUOY.png',	price:	10.00	},
+{	id:141,	name:	'Soap, Rin Brand',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/SOAP-RIN.png',	price:	10.00	},
+{	id:142,	name:	'Insect Spray, Hit Mosquito Kill',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'XXX',	img:	 'SUPPLIES4/SPRAY-HIT-MOSQUITOKILL.png',	price:	10.00	},
+{	id:143,	name:	'Tissue, Bathroom Roll',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-BATHROOMROLL.png',	price:	10.00	},
+{	id:144,	name:	'Tissue, Standard',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-NORMAL.png',	price:	10.00	},
+{	id:145,	name:	'Tissue, Origami Facial',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-ORIGAMIFACIAL.png',	price:	10.00	},
+{	id:146,	name:	'Tissue, Scott Kimberley Brand',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-SCOTTKIMBERLEY.png',	price:	10.00	},
+{	id:147,	name:	'Tissue, Soft',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-SOFT.png',	price:	10.00	},
+{	id:148,	name:	'Tissue, Toilet Roll',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/TISSUE-TOILETROLL.png',	price:	10.00	},
+{	id:149,	name:	'Urinal Cube, Multicolor',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/URINALCUBE-MUTLICOLOR.png',	price:	10.00	},
+{	id:150,	name:	'Urinal Cube, Standard',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/URINALCUBE.png',	price:	10.00	},
+{	id:151,	name:	'Urinal Screen',	category:	 'Cleaning Supplies',	 	desc:	'XXX',	img:	 'SUPPLIES4/URINALSCREEN.png',	price:	10.00	}
+
+];
 
   const state = { cart: {}, currentProduct: null };
   let orderMode = 'mail'; // 'mail' or 'whatsapp'
@@ -824,8 +977,8 @@ if (yearEl) {
   nameInput.addEventListener('input', ()=>{ onFirstTouch('name'); checkAndToggle(nameInput,'name',validName,'err-name','Only letters and spaces (2-60 chars).'); toggleSubmitState(); });
   nameInput.addEventListener('blur', ()=>{ onFirstTouch('name'); checkAndToggle(nameInput,'name',validName,'err-name','Only letters and spaces (2-60 chars).'); toggleSubmitState(); });
 
-  phoneInput.addEventListener('input', ()=>{ onFirstTouch('phone'); const cleaned = normalize(phoneInput.value).replace(/[^0-9]/g,''); if(phoneInput.value !== cleaned) phoneInput.value = cleaned; checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only â 6 to 15 digits.'); toggleSubmitState(); });
-  phoneInput.addEventListener('blur', ()=>{ onFirstTouch('phone'); checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only â 6 to 15 digits.'); toggleSubmitState(); });
+  phoneInput.addEventListener('input', ()=>{ onFirstTouch('phone'); const cleaned = normalize(phoneInput.value).replace(/[^0-9]/g,''); if(phoneInput.value !== cleaned) phoneInput.value = cleaned; checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only — 6 to 15 digits.'); toggleSubmitState(); });
+  phoneInput.addEventListener('blur', ()=>{ onFirstTouch('phone'); checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only — 6 to 15 digits.'); toggleSubmitState(); });
 
   addressInput.addEventListener('input', ()=>{ onFirstTouch('address'); checkAndToggle(addressInput,'address',validAddress,'err-address','Please provide an address (min 4 chars).'); toggleSubmitState(); });
   addressInput.addEventListener('blur', ()=>{ onFirstTouch('address'); checkAndToggle(addressInput,'address',validAddress,'err-address','Please provide an address (min 4 chars).'); toggleSubmitState(); });
@@ -995,7 +1148,7 @@ function buildWhatsAppText(formData){
         priceDiv.style.fontWeight = '700';
         priceDiv.style.fontSize = '16px';
         priceDiv.style.marginTop = '4px';
-        priceDiv.textContent = `â¹${p.price.toFixed(2)}`;
+        priceDiv.textContent = `₹${p.price.toFixed(2)}`;
         info.appendChild(priceDiv);
       }
 
@@ -1016,7 +1169,7 @@ function buildWhatsAppText(formData){
 
       if (state.cart[p.id]) {
         const qty = document.createElement('div'); qty.className = 'qty';
-        const minus = document.createElement('button'); minus.className = 'qbtn'; minus.textContent = 'â';
+        const minus = document.createElement('button'); minus.className = 'qbtn'; minus.textContent = '−';
         const count = document.createElement('div'); count.className = 'count'; count.textContent = state.cart[p.id];
         const plus = document.createElement('button'); plus.className = 'qbtn'; plus.textContent = '+';
         minus.onclick = () => { const cur = state.cart[p.id] || 1; const next = Math.max(1, cur - 1); state.cart[p.id] = next; count.textContent = next; updateCartCount(); renderGrid(currentFilteredProducts()); };
@@ -1115,7 +1268,7 @@ function buildWhatsAppText(formData){
       const tdPrice = document.createElement('td');
       tdPrice.style.padding = '8px';
       tdPrice.style.textAlign = 'right';
-      tdPrice.innerHTML = `<div style="font-weight:700">â¹${lineTotal.toFixed(2)}</div>`;
+      tdPrice.innerHTML = `<div style="font-weight:700">₹${lineTotal.toFixed(2)}</div>`;
 
       tr.appendChild(tdIndex); tr.appendChild(tdImg); tr.appendChild(tdName); tr.appendChild(tdQty); tr.appendChild(tdPrice);
       tbody.appendChild(tr);
@@ -1133,20 +1286,20 @@ function buildWhatsAppText(formData){
     totalDiv.style.color = 'var(--accent)';
     totalDiv.style.borderTop = '2px solid #eee';
     totalDiv.style.marginTop = '8px';
-    totalDiv.innerHTML = `Total Price: â¹${totalPrice.toFixed(2)}`;
+    totalDiv.innerHTML = `Total Price: ₹${totalPrice.toFixed(2)}`;
     total.appendChild(totalDiv);
   }
 
   function openProductModal(p) {
     state.currentProduct = p;
     $('#pTitle').textContent = p.name;
-    $('#pCategory').textContent = p.category + (p.tags ? ' â¢ ' + p.tags.join(', ') : '');
+    $('#pCategory').textContent = p.category + (p.tags ? ' • ' + p.tags.join(', ') : '');
     $('#pDesc').innerHTML = p.desc || 'No description';
 
     // UPDATED: Show price in modal
     const priceEl = $('#pPrice');
     if (p.price) {
-      priceEl.textContent = `Price: â¹${p.price.toFixed(2)}`;
+      priceEl.textContent = `Price: ₹${p.price.toFixed(2)}`;
       priceEl.style.display = 'block';
     } else {
       priceEl.style.display = 'none';
@@ -1248,7 +1401,7 @@ function buildWhatsAppText(formData){
     // mark touched to surface errors if present
     touched.name = touched.phone = touched.address = true;
     checkAndToggle(nameInput,'name',validName,'err-name','Only letters and spaces (2-60 chars).');
-    checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only â 6 to 15 digits.');
+    checkAndToggle(phoneInput,'phone',validPhone,'err-phone','Digits only — 6 to 15 digits.');
     checkAndToggle(addressInput,'address',validAddress,'err-address','Please provide an address (min 4 chars).');
     toggleSubmitState();
 if(!validName(nameInput.value) || !validPhone(phoneInput.value) || !validAddress(addressInput.value)) return;
@@ -1401,15 +1554,15 @@ if(!validName(nameInput.value) || !validPhone(phoneInput.value) || !validAddress
         <div class="admin-product-name">
           <span class="admin-product-name-text" id="productName_${product.id}">${escapeHtml(product.name)}</span>
           <input type="text" class="admin-product-name-input" id="productNameInput_${product.id}" value="${escapeHtml(product.name)}">
-          <button class="admin-edit-name-btn" id="editBtn_${product.id}" onclick="startEditProductName(${product.id})" title="Edit name">âï¸</button>
+          <button class="admin-edit-name-btn" id="editBtn_${product.id}" onclick="startEditProductName(${product.id})" title="Edit name">✏️</button>
           <div class="admin-name-action-btns" id="nameActions_${product.id}">
-            <button class="admin-name-ok-btn" onclick="saveProductName(${product.id})" title="Save">â</button>
-            <button class="admin-name-cancel-btn" onclick="cancelEditProductName(${product.id})" title="Cancel">â</button>
+            <button class="admin-name-ok-btn" onclick="saveProductName(${product.id})" title="Save">✓</button>
+            <button class="admin-name-cancel-btn" onclick="cancelEditProductName(${product.id})" title="Cancel">✕</button>
           </div>
         </div>
         <div class="admin-product-controls">
           <div class="admin-price-input">
-            <label>Price (â¹)</label>
+            <label>Price (₹)</label>
             <input type="number" step="0.01" min="0" value="${product.price}" 
                    onchange="updateProductChange(${product.id}, 'price', this.value)">
           </div>
@@ -1442,55 +1595,63 @@ if(!validName(nameInput.value) || !validPhone(phoneInput.value) || !validAddress
   }
 
   async function saveProductChanges() {
-    const successEl = document.getElementById('adminSuccessMessage');
-    successEl.innerHTML = '';
-    const owner = document.getElementById('githubOwner').value.trim();
-    const repo = document.getElementById('githubRepo').value.trim();
-    const filePath = document.getElementById('githubFilePath').value.trim();
-    const token = document.getElementById('githubToken').value.trim();
-    if (!owner || !repo || !filePath || !token) { alert('Fill GitHub fields!'); return; }
-    saveGithubConfig(owner, repo, filePath, token);
-    try {
-      successEl.innerHTML = '<div class="admin-success">Saving...</div>';
-      if (tempNewProducts.length > 0) {
-        for (const newProduct of tempNewProducts) {
-          if (newProduct.imageData) {
-            const base64Data = newProduct.imageData.split(',')[1];
-            await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${newProduct.img}`, {
-              method: 'PUT', headers: {'Authorization': `token ${token}`},
-              body: JSON.stringify({message: 'Add image', content: base64Data, branch: 'main'})
-            });
-          }
+  const successEl = document.getElementById('adminSuccessMessage');
+  successEl.innerHTML = '';
+  const owner = document.getElementById('githubOwner').value.trim();
+  const repo = document.getElementById('githubRepo').value.trim();
+  const filePath = document.getElementById('githubFilePath').value.trim();
+  const token = document.getElementById('githubToken').value.trim();
+  if (!owner || !repo || !filePath || !token) { alert('Fill GitHub fields!'); return; }
+  saveGithubConfig(owner, repo, filePath, token);
+  try {
+    successEl.innerHTML = '<div class="admin-success">Saving...</div>';
+    if (typeof tempNewProducts !== 'undefined' && tempNewProducts && tempNewProducts.length > 0) {
+      for (const newProduct of tempNewProducts) {
+        if (newProduct.imageData) {
+          const base64Data = newProduct.imageData.split(',')[1];
+          await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${newProduct.img}`, {
+            method: 'PUT', headers: {'Authorization': `token ${token}`},
+            body: JSON.stringify({message: 'Add image', content: base64Data, branch: 'main'})
+          });
         }
       }
-      const getResp = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`, {headers: {'Authorization': `token ${token}`}});
-      if (!getResp.ok) throw new Error('Fetch failed');
-      const fileData = await getResp.json();
-      const curContent = atob(fileData.content);
-      let newArr = '  const PRODUCTS = [\\n';
-      adminProductChanges.forEach((product, index) => {
-        const orig = PRODUCTS.find(p => p.id === product.id);
-        if (orig) {
-          const av = product.available ? '' : ', available: false';
-          const nm = product.name || orig.name;
-          newArr += `    { id:${product.id}, name:'${nm.replace(/'/g, "\\\\'")}', category:'${orig.category}', img: '${orig.img}', price: ${product.price.toFixed(2)}${av} }`;
-          if (index < adminProductChanges.length - 1) newArr += ',\\n'; else newArr += '\\n';
-        }
-      });
-      newArr += '  ];';
-      const updContent = curContent.replace(/const PRODUCTS = \[[^\]]*\];/s, newArr);
-      const b64 = btoa(unescape(encodeURIComponent(updContent)));
-      await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`, {
-        method: 'PUT', headers: {'Authorization': `token ${token}`},
-        body: JSON.stringify({message: 'Update products', content: b64, sha: fileData.sha, branch: 'main'})
-      });
-      successEl.innerHTML = '<div class="admin-success">â Saved!</div>';
-      tempNewProducts = [];
-      setTimeout(() => location.reload(), 3000);
-    } catch (e) {
-      successEl.innerHTML = `<div class="admin-error">â ${e.message}</div>`;
     }
+    const getResp = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`, {
+      headers: {'Authorization': `token ${token}`}
+    });
+    if (!getResp.ok) throw new Error('Fetch failed');
+    const fileData = await getResp.json();
+    const curContent = atob(fileData.content);
+    let newArr = '  const PRODUCTS = [\\n';
+    adminProductChanges.forEach((product, index) => {
+      const orig = PRODUCTS.find(p => p.id === product.id);
+      if (orig) {
+        const av = product.available ? '' : ', available: false';
+        const nm = (product.name || orig.name).replace(/'/g, "\\'");
+        const cat = orig.category || 'Cleaning Supplies';
+        const desc = (orig.desc || 'Product Description').replace(/'/g, "\\'");
+        const img = orig.img || '';
+        newArr += `    { id:${product.id}, name:'${nm}', category:'${cat}', desc:'${desc}', img:'${img}', price:${product.price.toFixed(2)}${av} }`;
+        newArr += (index < adminProductChanges.length - 1) ? ',\\n' : '\\n';
+      }
+    });
+    newArr += '  ];';
+    const updContent = curContent.replace(/const PRODUCTS = \[[\s\S]*?\];/, newArr);
+    const utf8Bytes = new TextEncoder().encode(updContent);
+    let binaryString = '';
+    for (let i = 0; i < utf8Bytes.length; i++) { binaryString += String.fromCharCode(utf8Bytes[i]); }
+    const b64 = btoa(binaryString);
+    await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`, {
+      method: 'PUT', headers: {'Authorization': `token ${token}`},
+      body: JSON.stringify({message: 'Update products', content: b64, sha: fileData.sha, branch: 'main'})
+    });
+    successEl.innerHTML = '<div class="admin-success">✅ Saved! Reloading...</div>';
+    if (typeof tempNewProducts !== 'undefined') tempNewProducts = [];
+    setTimeout(() => location.reload(), 3000);
+  } catch (e) {
+    successEl.innerHTML = `<div class="admin-error">❌ ${e.message}</div>`;
   }
+}
 
   // Close modal when clicking outside
   document.addEventListener('click', function(event) {
@@ -1655,7 +1816,7 @@ setTimeout(function() {
     closeNewProductModal();
     renderAdminProducts();
 
-    document.getElementById('adminSuccessMessage').innerHTML = '<div class="admin-success">â Added! Click Save Changes.</div>';
+    document.getElementById('adminSuccessMessage').innerHTML = '<div class="admin-success">✅ Added! Click Save Changes.</div>';
   }
 
   function startEditProductName(productId) {
@@ -1700,7 +1861,7 @@ setTimeout(function() {
     editBtn.style.display = 'block';
     actionsEl.classList.remove('show');
 
-    document.getElementById('adminSuccessMessage').innerHTML = '<div class="admin-success">â Name updated! Click Save Changes.</div>';
+    document.getElementById('adminSuccessMessage').innerHTML = '<div class="admin-success">✅ Name updated! Click Save Changes.</div>';
   }
 
   function cancelEditProductName(productId) {
@@ -1791,7 +1952,7 @@ setTimeout(function() {
   </footer>
 
   <footer class="footer-hub footer-3" aria-label="Footer layer 3">
-    <div class="footer3-inner">Â© 2025 Reinigen â All rights reserved.<span class="settings-icon" onclick="openAdminModal()" title="Admin Settings">âï¸</span></div>
+    <div class="footer3-inner">© 2025 Reinigen — All rights reserved.<span class="settings-icon" onclick="openAdminModal()" title="Admin Settings">⚙️</span></div>
   </footer>
 
 </div>
@@ -1824,7 +1985,7 @@ setTimeout(function() {
       <div id="adminProductsSection" class="admin-products-section">
         <!-- GitHub Configuration -->
         <div class="admin-github-config">
-          <h3>â ï¸ GitHub Configuration Required</h3>
+          <h3>⚠️ GitHub Configuration Required</h3>
           <label>GitHub Username/Owner:</label>
           <input type="text" id="githubOwner" placeholder="your-username">
           <small>Your GitHub username (who owns the repository)</small>
@@ -1839,7 +2000,7 @@ setTimeout(function() {
 
           <label>GitHub Personal Access Token:</label>
           <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
-          <small>Generate token at: Settings â Developer settings â Personal access tokens â Tokens (classic) â Generate new token<br>
+          <small>Generate token at: Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token<br>
           Required scopes: repo (Full control of private repositories)</small>
         </div>
 
@@ -1896,7 +2057,7 @@ setTimeout(function() {
           <div id="newProductDescError" class="new-product-error"></div>
         </div>
         <div class="new-product-form-group">
-          <label>Price (â¹) *</label>
+          <label>Price (₹) *</label>
           <input type="number" id="newProductPrice" placeholder="0.00" step="0.01" min="0" required>
           <div id="newProductPriceError" class="new-product-error"></div>
         </div>
