@@ -74,10 +74,10 @@ body{margin:0; background:var(--bg); color:#111; font-family:-apple-system,Blink
 }
 
 /* Filter */
-.filter-row {display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 14px; flex-wrap: nowrap; width: 100%; box-sizing: border-box; padding: 0 8px; overflow: hidden;}
+.filter-row {display: flex; align-items: center; justify-content: flex-start; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; width: 100%; box-sizing: border-box; padding: 0 8px; overflow: visible;}
 
 /* Chip buttons: inline size, shrink text if needed */
-.chip {font-family: Georgia, "Times New Roman", serif; font-size: clamp(10px, 1.5vw, 18px); padding: clamp(4px, 0.6vw, 8px) clamp(8px, 1.2vw, 14px); font-weight: 400; border-radius: 999px; background: #fff; border: 1px solid #eee; color: var(--muted); cursor: pointer; flex: 0 0 auto;  white-space: nowrap;  box-sizing: border-box;}
+.chip {font-family: Georgia, "Times New Roman", serif; font-size: clamp(10px, 1.5vw, 18px); padding: clamp(4px, 0.6vw, 8px) clamp(8px, 1.2vw, 14px); font-weight: 400; border-radius: 999px; background: #fff; border: 1px solid #eee; color: var(--muted); cursor: pointer; flex: 0 1 auto; white-space: nowrap; box-sizing: border-box; transition: all 0.2s ease;}
 
 /* Active chip */
 .chip.active {background: var(--accent); color: #fff; border-color: transparent;}
@@ -85,10 +85,25 @@ body{margin:0; background:var(--bg); color:#111; font-family:-apple-system,Blink
 
 @media (max-width:480px) 
 {
-.filter-row { gap: 4px; padding: 0 6px; }
-.chip { font-size: clamp(9px, 3.2vw, 13px); padding: 3px 6px;}
+.filter-row { gap: 6px; padding: 8px 10px; justify-content: center; }
+.chip { font-size: 11px; padding: 6px 10px; font-weight: 500;}
 .filter-icon { display: none; }
 }
+
+
+
+@media (max-width:768px) 
+{
+.filter-row { flex-wrap: wrap; justify-content: center; gap: 8px; padding: 10px 12px; }
+.chip { font-size: 13px; padding: 6px 12px; }
+}
+
+@media (max-width:350px) 
+{
+.chip { font-size: 10px; padding: 5px 8px; }
+}
+
+
 
 
 /* Product Card */
