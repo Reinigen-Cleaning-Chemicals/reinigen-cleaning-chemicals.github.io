@@ -315,6 +315,144 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
 
 
+.certificates-float {
+  position: fixed;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 70px;
+}
+
+.certificates-float img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.certificates-float img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
+  .certificates-float {
+    right: 2px;
+    gap: 6px;
+  }
+  .certificates-float img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-float {
+    right: 2px;
+    gap: 5px;
+  }
+  .certificates-float img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+.products-trust-combined .image-wrapper img.responsive-img,
+.products-trust-combined .image-wrapper img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;      /* preserves aspect ratio — no cropping */
+  object-fit: contain; /* safe fallback if any container forces sizing */
+  margin: 0 auto;
+}
+
+
+
+
+.trust-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px 0 32px;
+  box-sizing: border-box;
+}
+
+.trust-card {
+  flex: 1 1 calc(20% - 20px);       /* 5 per row on wide screens */
+  min-width: 220px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  padding: 16px 12px;
+  box-sizing: border-box;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.trust-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+}
+
+/* Image area (square on top) */
+.trust-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  background: #f4f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.trust-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text */
+.trust-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Tablet: 2–3 per row */
+@media (max-width: 1024px) {
+  .trust-card { flex: 1 1 calc(45% - 20px); }
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 600px) {
+  .trust-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 14px 10px;
+  }
+  .trust-img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+  }
+  .trust-card p { font-size: 14px; }
+}
+
+
+
 </style>
 </head>
 
@@ -371,7 +509,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
       <section class="about-section">
         <h2>Who We Are</h2>
         <div class="about-content">
-          <img src="ICONS/SHOPL.png" alt="Reinigen manufacturing facility" class="about-image-left">
+          <img src="ABOUT/Office.jpg" alt="Reinigen manufacturing facility" class="about-image-left">
           <h3>Reinigen Cleaning Chemicals & Supplies ( A Brand of Mrinesh Associates )</h3>
           <p>Reinigen Cleaning Chemicals & Supplies is a home-grown manufacturer of cleaning chemicals and supplies based in Coimbatore, Tamil Nadu, India. Founded in 2010, we make practical, reliable products for homes, offices, hospitals and industrial spaces.</p>
           <p>From a small beginning with just two employees and five products, we now operate two manufacturing units (Coimbatore and Erode), have around 15 employees and serve about 500 customers across retailers, wholesalers and B2B clients. Reinigen is ISO - certified and produces eco-friendly formulations designed for everyday use.</p>
@@ -382,7 +520,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
       <section class="about-section">
         <h2>Our History</h2>
         <div class="about-content">
-          <img src="ABOUT/our-history.jpg" alt="Reinigen journey timeline" class="about-image-right">
+          <img src="ABOUT/History.png" alt="Reinigen journey timeline" class="about-image-right">
           <div class="timeline-item">
             <p><strong>2010 - THE BEGINNING:</strong> Began as a small-scale business with a small manufacturing unit and five basic cleaning items.</p>
           </div>
@@ -402,10 +540,10 @@ footer-2 .footer2-logo-image {max-height: 200px; }
       <section class="about-section">
         <h2>Our Motto & Philosophy</h2>
         <div class="about-content">
-          <img src="ABOUT/motto-philosophy.jpg" alt="Clean living healthy living" class="about-image-left">
+          <img src="ABOUT/Motto.png" alt="Clean living healthy living" class="about-image-left">
           <h3><strong>"Clean living, healthy living."</strong></h3>
           <p>Just as a home is incomplete without cooking, a home cannot be truly healthy without regular cleaning. Good hygiene prevents disease, brings peace of mind and improves quality of life.</p>
-          <p>Reinigen exists to make cleanliness simple and dependable for every household and workplace.</p>
+          <p>Reinigen exists to make cleanliness simple and dependable for every household and workplace. Trust is fundamental to our business philosophy.</p>
         </div>
       </section>
 
@@ -413,39 +551,71 @@ footer-2 .footer2-logo-image {max-height: 200px; }
       <section class="about-section">
         <h2>Our Vision & Commitment</h2>
         <div class="about-content">
-          <img src="ABOUT/vision-commitment.jpg" alt="ISO certified quality commitment" class="about-image-right">
+          <img src="ABOUT/Certificate.png" alt="ISO certified quality commitment" class="about-image-right">
           <p>We aim to make trusted hygiene products accessible and affordable across India. Quality and safety are central to everything we do - our ISO certification underlines this commitment.</p>
-          <p>We follow documented quality checks from raw material sourcing to final packing to deliver consistent, safe products. We are also committed to eco-friendly practices in our formulations and continually work to improve product performance while keeping people and the environment in mind.</p>
+          <p>We follow documented quality checks from raw material sourcing to final packing to deliver consistent, safe products. We are also committed to eco-friendly practices in our formulations and continually work to improve product performance while keeping people and the environment in mind. We are actively engaged in day-to-day operations, while our R&D team continuously works on innovation through close interaction with customers to understand their needs and pain points.</p>
         </div>
       </section>
 
-      <!-- Our Products & Customers' Trust Section (Combined visual container) -->
+      <!-- Our Products -->
       <div class="products-trust-combined">
         <section class="about-section" style="box-shadow: none; margin-bottom: 0; background: transparent;">
           <h2>Our Products & Our Customers' Trust</h2>
           <div class="about-content">
-            <img src="ABOUT/products-trust.jpg" alt="Reinigen product range" class="about-image-left">
+            <div class="image-wrapper">
+            <img src="ABOUT/Productslist.png" alt="Reinigen product range">
+            </div>
+            <br>
             <p>We manufacture a wide range of cleaning chemicals and supplies: Glass Cleaner, Hand Wash Liquid, Floor Cleaner, Cloth Washing Gel, Fabric Softener, Dish Washing Liquid, Soap Oil, Phenyle, Masks, Dustbin Covers, Mop, Tissue, Gloves, Brushes and more.</p>
             <p>We serve households (direct customers), retailers and wholesalers, hospitals, schools, offices and industrial customers.</p>
           </div>
         </section>
 
+
+
         <!-- Trust Points Section (appears continuous but separate) -->
-        <section class="about-section" style="padding-top: 0; box-shadow: none; margin-bottom: 0; background: transparent;">
-          <div class="about-content">
-            <h3><strong>Why Customers Trust Reinigen:</strong></h3>
-            <div class="trust-points">
-              <ul>
-                <li>Local manufacturing with hands-on quality checks.</li>
-                <li>ISO-certified processes that ensure safety and consistency.</li>
-                <li>Eco-friendly product formulations.</li>
-                <li>Practical, easy-to-use products made for everyday life.</li>
-                <li>A customer-first approach with reliable supply and support.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+<section class="about-section" style="padding-top: 0; box-shadow: none; margin-bottom: 0; background: transparent;">
+  <div class="about-content">
+    <h2>Why Customers Trust Reinigen</h2>
+
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-img">
+          <img src="TRUST/Local-manufacturing.png" alt="Local manufacturing placeholder">
+        </div>
+        <p>Local manufacturing with hands-on quality checks.</p>
       </div>
+
+      <div class="trust-card">
+        <div class="trust-img">
+          <img src="TRUST/ISO-certified-processes.png" alt="ISO certified placeholder">
+        </div>
+        <p>ISO-certified processes that ensure safety and consistency.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-img">
+          <img src="TRUST/Eco-friendly-product.png" alt="Eco-friendly placeholder">
+        </div>
+        <p>Eco-friendly product formulations.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-img">
+          <img src="TRUST/easy-to-use-products.png" alt="Practical products placeholder">
+        </div>
+        <p>Practical, easy-to-use products made for everyday life.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-img">
+          <img src="TRUST/customer-first.png" alt="Customer-first placeholder">
+        </div>
+        <p>A customer-first approach with reliable supply and support.</p>
+      </div>
+    </div>
+  </div>
+</section>      
 
 
 
@@ -461,7 +631,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
         
         <!-- Review 1 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/G8.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Priya Sharma</h4>
             <div class="review-rating">
@@ -474,7 +644,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 2 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/B7.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Rajesh Kumar</h4>
             <div class="review-rating">
@@ -487,7 +657,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 3 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/G7.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Meera Patel</h4>
             <div class="review-rating">
@@ -500,7 +670,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 4 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/B1.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Anil Reddy</h4>
             <div class="review-rating">
@@ -513,7 +683,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 5 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/G6.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Sunita Joshi</h4>
             <div class="review-rating">
@@ -526,7 +696,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 6 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/B6.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Vikram Singh</h4>
             <div class="review-rating">
@@ -539,7 +709,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 7 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/G5.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Kavitha Nair</h4>
             <div class="review-rating">
@@ -552,7 +722,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 8 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/B4.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Deepak Gupta</h4>
             <div class="review-rating">
@@ -565,7 +735,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 9 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/G1.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Latha Krishnan</h4>
             <div class="review-rating">
@@ -578,7 +748,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 10 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/B2.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Rohit Malhotra</h4>
             <div class="review-rating">
@@ -592,7 +762,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 11 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/G2.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Shalini Iyer</h4>
             <div class="review-rating">
@@ -605,7 +775,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 12 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/B3.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Arjun Menon</h4>
             <div class="review-rating">
@@ -618,7 +788,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 13 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/G3.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Neha Agarwal</h4>
             <div class="review-rating">
@@ -631,7 +801,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 14 -->
         <article class="review-card">
-          <img src="" alt="Customer photo">
+          <img src="REVIVEWS/B5.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Suresh Babu</h4>
             <div class="review-rating">
@@ -644,14 +814,14 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
         <!-- Review 15 -->
         <article class="review-card">
-          <img src="ICONS/SHOPL.png" alt="Customer photo">
+          <img src="REVIVEWS/G4.png" alt="Customer photo">
           <div class="review-body">
             <h4 class="review-name">Pooja Rao</h4>
             <div class="review-rating">
               <span class="rating-stars">★★★★☆</span>
               <span class="rating-num">4.7</span>
             </div>
-            <p class="review-text">Love the variety of products available. Everything from soaps to sanitizers - all in excellent quality.</p>
+            <p class="review-text">Love the variety of products available. Everything from cleaning liquids to cleaning supplies - all in excellent quality.</p>
           </div>
         </article>
 
@@ -685,33 +855,33 @@ footer-2 .footer2-logo-image {max-height: 200px; }
         <tr>
           <td scope="row">Minimum Order Quantity</td>
           <td>No minimum order</td>
-          <td>Minimum 1 case per product type</td>
-          <td>Minimum 10 cases per product type</td>
-          <td>Flexible — based on agreement</td>
+          <td>Minimum Order Value of Rs.₹5,000</td>
+          <td>Minimum Order Value of Rs.₹10,000</td>
+          <td>Based on the Agreement (or) Purchase Order</td>
         </tr>
 
         <tr>
           <td scope="row">Delivery Service</td>
-          <td>Standard delivery charges apply. Free delivery on orders above ₹2,000.</td>
+          <td>N / A</td>
+          <td>Free delivery on orders above ₹5,000.</td>
           <td>Free delivery on orders above ₹10,000.</td>
-          <td>Free delivery on orders above ₹40,000.</td>
           <td>Free delivery on all bulk orders.</td>
         </tr>
 
         <tr>
           <td scope="row">Packaging &amp; Labeling</td>
-          <td>Standard consumer-friendly packaging.</td>
-          <td>Standard consumer packaging with barcodes.</td>
-          <td>Bulk packaging in drums and large containers.</td>
-          <td>Customizable packaging sizes and labeling.</td>
+          <td>N / A</td>
+          <td>Standard packaging</td>
+          <td>Standard packaging</td>
+          <td>Standard packaging</td>
         </tr>
 
         <tr>
-          <td scope="row">Product Customization</td>
-          <td>Standard formulations only.</td>
-          <td>Standard formulations only.</td>
-          <td>Standard formulations only.</td>
-          <td>On-demand customized formulations (as agreed).</td>
+          <td scope="row">Service After Sales</td>
+          <td>N / A</td>
+          <td>N / A</td>
+          <td>N / A</td>
+          <td>Monthly One Visit</td>
         </tr>
       </tbody>
     </table>
@@ -724,9 +894,9 @@ footer-2 .footer2-logo-image {max-height: 200px; }
       <caption>Direct Customers</caption>
       <tbody>
         <tr><th>Minimum Order Quantity</th><td>No minimum order</td></tr>
-        <tr><th>Delivery Service</th><td>Standard delivery charges apply. Free delivery on orders above ₹2,000.</td></tr>
-        <tr><th>Packaging &amp; Labeling</th><td>Standard consumer-friendly packaging.</td></tr>
-        <tr><th>Product Customization</th><td>Standard formulations only.</td></tr>
+        <tr><th>Delivery Service</th><td>N / A</td></tr>
+        <tr><th>Packaging &amp; Labeling</th><td>N / A</td></tr>
+        <tr><th>Service After Sales</th><td>N / A</td></tr>
       </tbody>
     </table>
 
@@ -734,10 +904,10 @@ footer-2 .footer2-logo-image {max-height: 200px; }
     <table class="cs-mini" role="table" aria-label="Retailers service">
       <caption>Retailers</caption>
       <tbody>
-        <tr><th>Minimum Order Quantity</th><td>Minimum 1 case per product type</td></tr>
-        <tr><th>Delivery Service</th><td>Free delivery on orders above ₹10,000.</td></tr>
-        <tr><th>Packaging &amp; Labeling</th><td>Standard consumer packaging with barcodes.</td></tr>
-        <tr><th>Product Customization</th><td>Standard formulations only.</td></tr>
+        <tr><th>Minimum Order Quantity</th><td>Minimum Order Value of Rs.₹5,000</td></tr>
+        <tr><th>Delivery Service</th><td>Free delivery on orders above ₹5,000.</td></tr>
+        <tr><th>Packaging &amp; Labeling</th><td>Standard packaging</td></tr>
+        <tr><th>Service After Sales</th><td>N / A</td></tr>
       </tbody>
     </table>
 
@@ -745,10 +915,10 @@ footer-2 .footer2-logo-image {max-height: 200px; }
     <table class="cs-mini" role="table" aria-label="Wholesalers service">
       <caption>Wholesalers</caption>
       <tbody>
-        <tr><th>Minimum Order Quantity</th><td>Minimum 10 cases per product type</td></tr>
-        <tr><th>Delivery Service</th><td>Free delivery on orders above ₹40,000.</td></tr>
-        <tr><th>Packaging &amp; Labeling</th><td>Bulk packaging in drums and large containers.</td></tr>
-        <tr><th>Product Customization</th><td>Standard formulations only.</td></tr>
+        <tr><th>Minimum Order Quantity</th><td>Minimum Order Value of Rs.₹10,000</td></tr>
+        <tr><th>Delivery Service</th><td>Free delivery on orders above ₹10,000.</td></tr>
+        <tr><th>Packaging &amp; Labeling</th><td>Standard packaging</td></tr>
+        <tr><th>Service After Sales</th><td>N / A</td></tr>
       </tbody>
     </table>
 
@@ -756,10 +926,10 @@ footer-2 .footer2-logo-image {max-height: 200px; }
     <table class="cs-mini" role="table" aria-label="B2B clients service">
       <caption>B2B Clients (Hospitals, Offices, Industries)</caption>
       <tbody>
-        <tr><th>Minimum Order Quantity</th><td>Flexible — based on agreement</td></tr>
+        <tr><th>Minimum Order Quantity</th><td>Based on the Agreement (or) Purchase Order</td></tr>
         <tr><th>Delivery Service</th><td>Free delivery on all bulk orders.</td></tr>
         <tr><th>Packaging &amp; Labeling</th><td>Customizable packaging sizes and labeling.</td></tr>
-        <tr><th>Product Customization</th><td>On-demand customized formulations (as agreed).</td></tr>
+        <tr><th>Service After Sales</th><td>Monthly One Visit</td></tr>
       </tbody>
     </table>
   </div>
@@ -1045,7 +1215,14 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 </script>
 
 
-
+<div class="certificates-float">
+  <img src="CERTIFICATES/CERTIFICATE1.png" alt="Certificate 1" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE2.png" alt="Certificate 2" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE3.png" alt="Certificate 3" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE4.png" alt="Certificate 4" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE5.png" alt="Certificate 5" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE6.png" alt="Certificate 6" title="Certificate">
+</div>
 
 
 
