@@ -171,9 +171,14 @@ html, body { -webkit-overflow-scrolling: touch; overflow-x:hidden; }
 .trust-points li::before {content: "✔"; color: #16bc00; font-weight: bold; display: inline-block; width: 2em; margin-left: -1em;}
 
 .products-trust-combined { background: #fff; border-radius: 12px; margin-bottom: 30px; }
+
+
 .about-section h2 {font-family: Georgia, "Times New Roman", serif; font-size: 36px; color: #2b6cb0; text-align: center; margin-bottom: 30px; font-weight: 700;}
 
-
+@media (max-width: 480px)
+{
+  .about-section h2 {font-size: 22px; margin-bottom: 20px; }
+}
 
 
 /* Complete Footer CSS */
@@ -309,7 +314,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 @media (max-width: 480px) 
 {
 #customer-reviews-section { padding: 25px 15px;}
-#customer-reviews-section h2 { font-size: 28px; margin-bottom: 20px;}
+#customer-reviews-section h2 { font-size: 22px; margin-bottom: 20px;}
 .reviews-track {gap: 0px}
 .reviews-container { gap: 12px; padding: 16px 0;}
 .review-card { height: 360px; min-height: 360px; max-height: 360px; padding: 24px 16px 18px; width: 100%; flex: 0 0 100%;}
