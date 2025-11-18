@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>REINIGEN | PRODUCTS </title>
 
-
+  <title>REINIGEN | PRODUCTS </title>
 
 
 <meta charset="UTF-8">
@@ -60,6 +58,8 @@
   ]
 }
 </script>
+
+
 
 
 
@@ -582,10 +582,9 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 }
 
 
-/* Out of Stock Styling */
-.card.unavailable { filter: grayscale(45%) brightness(1.08); opacity: 0.85; position: relative;}
-.card.unavailable .card-outstock-label { display: block; position: absolute; top: 14px; right: 18px; background: #2b6cb0; color: #ffffff; font-weight: 700; font-family: inherit; font-size: 11.5px; border-radius: 7px; padding: 3px 11px; letter-spacing: 0.5px; box-shadow: 0 2px 10px rgba(255, 191, 143, 0.2); text-shadow: 1px 1px 0 #fff8e0; z-index: 2;}
-.controls .btn.disabled { opacity: 0.55; background: linear-gradient(90deg, #eee, #ffe2e2); color: #888 !important; pointer-events: none; border: 1px solid #ffc8c8;}
+
+
+
 
 
 /* Add New Product & Rename Features */
@@ -593,7 +592,6 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 .admin-add-new-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); color: white; border: none; border-radius: 6px; padding: 8px 14px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
 .admin-add-new-btn:hover { background: #1e4d7e; }
 .admin-add-new-btn .plus-icon { font-size: 18px; font-weight: bold; }
-
 
 .new-product-modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.65); z-index: 10001; justify-content: center; align-items: center; padding: 20px; }
 .new-product-modal-overlay.show { display: flex; }
@@ -617,7 +615,6 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 .new-product-cancel-btn:hover { background: #bbb; }
 .new-product-error { color: red; font-size: 13px; margin-top: 5px; }
 
-
 .admin-product-name { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
 .admin-product-name-text { font-weight: bold; color: var(--accent); font-size: 16px; flex: 1; }
 .admin-product-name-input { flex: 1; padding: 6px 10px; border: 2px solid var(--accent); border-radius: 4px; font-size: 16px; font-weight: bold; color: var(--accent); display: none; font-family: inherit; }
@@ -640,8 +637,19 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 .desc-word-counter.error { color: #f44336; font-weight: bold; }
 
 
-.modal-desc {line-height: 1.6;white-space: pre-wrap;}
-.modal-desc b {  color: var(--accent); font-size: 1.1em; display: block; margin-top: 12px; margin-bottom: 6px;}
+.modal-desc {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.modal-desc b {
+  color: var(--accent);
+  font-size: 1.1em;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
 
 
 #pDesc { line-height: 1.7; color: #333; font-size: 15px; margin-top: 10px; }
@@ -652,30 +660,267 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 .desc-list li::before { content: '•'; position: absolute; left: 0; color: var(--accent); font-weight: bold; font-size: 18px; }
 
 
-.certificates-float {position: fixed; right: 12px; top: 50%; transform: translateY(-50%); z-index: 50; display: flex; flex-direction: column; gap: 8px; max-width: 70px;}
-.certificates-float img {width: 45px; height: 45px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s ease; cursor: pointer; object-fit: cover;}
-.certificates-float img:hover {transform: scale(1.1); box-shadow: 0 6px 16px rgba(0,0,0,0.25);}
+
+
+
+
+.certificates-float {
+  position: fixed;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 70px;
+}
+
+.certificates-float img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.certificates-float img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
 
 @media (max-width: 768px) {
-  .certificates-float {right: 2px; gap: 6px;} 
-  .certificates-float img {width: 30px; height: 30px;}
+  .certificates-float {
+    right: 2px;
+    gap: 6px;
+  }
+  .certificates-float img {
+    width: 30px;
+    height: 30px;
+  }
 }
+
 @media (max-width: 480px) {
-  .certificates-float {right: 2px; gap: 5px;} 
-  .certificates-float img {width: 30px; height: 30px;}
+  .certificates-float {
+    right: 2px;
+    gap: 5px;
+  }
+  .certificates-float img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.grid, .subcat-products {display: flex !important; flex-wrap: wrap !important; align-items: stretch !important; gap: 20px !important; box-sizing: border-box !important; width: 100% !important;}
-.grid .card, .subcat-products .card {display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-sizing: border-box !important; flex: 0 1 calc(25% - 20px) !important; max-width: calc(25% - 20px) !important; margin: 0 !important; height: auto !important;}
+
+
+
+/* Subcategory Header - Fully Responsive - FIXED */
+.subcat-header {
+  width: 100%;
+  margin: 30px 0 15px 0;
+  padding: 12px 15px;
+  background: linear-gradient(135deg, #2b6cb0, #4a90e2);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(43,108,176,0.3);
+  line-height: 1.4;
+  word-wrap: break-word;
+  white-space: normal;
+  display: block;
+  clear: both;
+  grid-column: 1 / -1; /* Forces full width in grid */
+}
+
+/* Products under subcategory */
+/* Products under subcategory */
+.subcat-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+
+.subcat-products .card {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+  max-width: calc(33.333% - 20px);
+}
+
+/* Medium screens (tablets) - FIX FOR 581-1000px */
+@media (max-width: 1024px) {
+  .subcat-header {
+    font-size: 18px;
+    margin: 25px 0 12px 0;
+    padding: 10px 12px;
+  }
+  
+  .subcat-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  .subcat-products .card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+/* Specific fix for 581-1000px range */
+@media (max-width: 1000px) and (min-width: 581px) {
+  .subcat-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  .subcat-products .card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .subcat-header {
+    font-size: 17px;
+    margin: 20px 0 10px 0;
+    padding: 9px 12px;
+  }
+  
+  .subcat-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+  }
+  
+  .subcat-products .card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/* Specific fix for 581-768px - tighter spacing */
+@media (max-width: 768px) and (min-width: 581px) {
+  .subcat-products {
+    gap: 14px;
+    padding: 0 8px;
+  }
+  
+  .subcat-products .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .subcat-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .subcat-products .card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+/* Mobile phones */
+@media (max-width: 480px) {
+  .subcat-header {
+    font-size: 15px;
+    margin: 15px 0 10px 0;
+    padding: 8px 10px;
+  }
+  
+  .subcat-products {
+    gap: 12px;
+  }
+  
+  .subcat-products .card {
+    flex: 1 1 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+
+
+
+
+.grid,
+.subcat-products {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: stretch !important;   /* <- makes items in same row equal height */
+  gap: 20px !important;               /* spacing between cards */
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+/* Make each card a vertical flex column so content can be spaced and footer stays bottom */
+.grid .card,
+.subcat-products .card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important; /* pushes Add/Remove area to bottom */
+  box-sizing: border-box !important;
+
+  /* Desktop: 4 columns */
+  flex: 0 1 calc(25% - 20px) !important; /* width for 4 per row (adjust gap subtracted) */
+  max-width: calc(25% - 20px) !important;
+  margin: 0 !important;
+  height: auto !important; /* let flexbox make heights equal across row */
+}
+
+/* Tablet: 3 columns */
 @media (max-width: 1199px) {
-  .grid .card, .subcat-products .card {flex: 0 1 calc(33.333% - 18px) !important; max-width: calc(33.333% - 18px) !important;}
-}
-@media (max-width: 600px) {
-  .grid .card, .subcat-products .card {flex: 0 1 100% !important; max-width: 100% !important;}
+  .grid .card,
+  .subcat-products .card {
+    flex: 0 1 calc(33.333% - 18px) !important;
+    max-width: calc(33.333% - 18px) !important;
+  }
 }
 
-.grid .card > *, .subcat-products .card > * {box-sizing: border-box !important;}
-.grid .card .remove, .grid .card .btn-remove, .grid .card .remove-button, .subcat-products .card .remove, .subcat-products .card .btn-remove, .subcat-products .card .remove-button {position: static !important; margin-top: 12px !important;}
+/* Phone: 1 column */
+@media (max-width: 600px) {
+  .grid .card,
+  .subcat-products .card {
+    flex: 0 1 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Ensure inner areas do not force overflow and vertically expand nicely */
+.grid .card > * ,
+.subcat-products .card > * {
+  box-sizing: border-box !important;
+}
+
+/* Optional: if the Remove button should stay visually at the bottom without changing other paddings */
+.grid .card .remove,
+.grid .card .btn-remove,
+.grid .card .remove-button,
+.subcat-products .card .remove,
+.subcat-products .card .btn-remove,
+.subcat-products .card .remove-button {
+  /* keep button in normal flow so it contributes to card height (we want that) */
+  position: static !important;
+  margin-top: 12px !important;
+}
 
 
 
@@ -689,7 +934,7 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
 <body>
   <div class="wrap">
     <div class="topbar">
-      <div class="logo-placeholder" id="logoSpace"><img src="LOGO/REINIGENLOGO.png" alt="Reinigen Cleaning Chemicals and Supplies logo"> </div>
+      <div class="logo-placeholder" id="logoSpace"><img src="LOGO/REINIGENLOGO.png"> </div>
       <nav class="menu-right" id="menuRight">
         <a href="#">Products</a>
         <a href="about.html">About</a>
@@ -737,9 +982,9 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
     <div class="modal" role="dialog" aria-modal="true" style="max-width:980px;">
       <button class="close" id="closeCartModal" aria-label="Close">✕</button>
       <h2 style="display:flex;align-items:center;justify-content:center;gap:8px;">
-  <img src="ICONS/SHOPL.png" alt="Shopping Cart" style="width:50px;height:50px;object-fit:contain;">
+  <img src="ICONS/SHOPL.png" style="width:50px;height:50px;object-fit:contain;">
   Your Cart
-  <img src="ICONS/SHOPR.png" alt="Shopping Cart" style="width:50px;height:50px;object-fit:contain;">
+  <img src="ICONS/SHOPR.png" style="width:50px;height:50px;object-fit:contain;">
 </h2>
       
       <div id="cartHeader" class="cart-header"></div>
@@ -753,12 +998,12 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
         <div style="display:flex;gap:8px;align-items:center">
           <div style="display:flex;gap:6px;align-items:center">
             <div style="display:flex;align-items:center;gap:8px">
-              <div style="width:30px;height:50px;background:#fff;border-radius:2px;border:1px solid #e6eef8;display:flex;align-items:center;justify-content:center;color:var(--outlook-blue)"><img src="SOCIAL MEDIAS/MAIL.png" alt="Reinigen Mail" style="width:100%;height:100%;object-fit:contain;"></div>
+              <div style="width:30px;height:50px;background:#fff;border-radius:2px;border:1px solid #e6eef8;display:flex;align-items:center;justify-content:center;color:var(--outlook-blue)"><img src="SOCIAL MEDIAS/MAIL.png" alt="Mail" style="width:100%;height:100%;object-fit:contain;"></div>
               <button class="btn mail" id="cartOrderMail" title="Order with Mail">Order with Mail</button>
             </div>
 
             <div style="display:flex;align-items:center;gap:8px;margin-left:8px">
-              <div style="width:30px;height:50px;background:#fff;border-radius:2px;border:1px solid #e6f6ea;display:flex;align-items:center;justify-content:center;color:var(--wa-green)"><img src="SOCIAL MEDIAS/WA.png" alt="Reinigen WhatsApp" style="width:100%;height:100%;object-fit:contain;"></div>
+              <div style="width:30px;height:50px;background:#fff;border-radius:2px;border:1px solid #e6f6ea;display:flex;align-items:center;justify-content:center;color:var(--wa-green)"><img src="SOCIAL MEDIAS/WA.png" alt="WhatsApp" style="width:100%;height:100%;object-fit:contain;"></div>
               <button class="btn wa" id="cartOrderWA" title="Order with WhatsApp">Order with WhatsApp</button>
             </div>
           </div>
@@ -885,20 +1130,19 @@ button.btn {padding: 3px 2px ; margin: 8px 0 ; font-size: 10px ; border-radius: 
   // UPDATED: Added 'price' to each product
   const PRODUCTS = [
 
-  {	id:1,	name:	'Hand Wash',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This hand wash is a gentle, everyday liquid made to clean hands well without drying the skin. The pH-balanced formula helps keep the skin\'s natural moisture and supports the skin barrier, while mild cleansing ingredients remove dirt, grease and common germs. It is suitable for frequent use at home, offices, shops, schools and other places where regular hand washing is needed.<br><br><strong>How to use</strong><ul class="desc-list"><li>Wet your hands with clean running water.</li><li>Take a small amount of hand wash in your palm and rub your hands together to make foam.</li><li>Rub all parts of the hands - palms, backs, between fingers and under nails for at least 20 seconds.</li><li>Rinse well with water and dry with a clean towel or air dryer.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Gentle on skin:</b> pH-balanced and enriched with moisturizers to help prevent dryness and irritation.</li><li><b>Effective cleaning:</b> Removes dirt, oil and everyday germs when used correctly.</li><li><b>Protects skin barrier:</b> Helps the skin keep its natural oils so hands stay soft even with frequent washing.</li><li><b>Mild fragrance:</b> Fresh scent that is not overpowering.</li><li><b>Easy to use:</b> Available in pump or bottle format for quick dispensing; rinses clean without sticky residue.</li><li>Suitable for adults and children (supervise young children). Avoid contact with eyes. If the product gets into eyes, rinse immediately with clean water.</li></ul>',	img:	 'CHEMICALS/CHEM-HANDWASH.png',		},
-  {	id:2,	name:	'Bathroom Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This bathroom cleaner is designed to tackle soap-scum, hard water stains, and general grime in shower areas, sinks, tiles and floors while leaving surfaces fresh and hygienic. It helps remove layers of build-up and keeps your bathroom looking clean and well-maintained.<br><strong>How to use:</strong><ul><li>Apply the cleaner to damp surfaces (tiles, shower wall, sink).</li><li>Allow it to work for a few minutes.</li><li>Scrub or wipe clean, then rinse thoroughly.</li></ul><strong>Benefits:</strong><ul><li>Removes tough soap-scum and stains.</li><li>Improves hygiene and appearance of bathroom.</li><li>Saves time vs basic cleaning.</li><li>Ideal for regular maintenance.</li></ul>',	img:	 'CHEMICALS/CHEM-BATHROOMCLEANER.png',		},
-{	id:3,	name:	'Blood Stain Remover',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This blood stain remover is formulated to target blood-based stains on fabrics, linens or upholstery, breaking down protein-based residue and making removal easier. It’s useful in challenging stain situations where normal detergents struggle.<br><strong>How to use:</strong><ul><li>Pre-treat the stained area with the remover.</li><li>Gently apply the liquid into the fabric.</li><li>Allow a short dwell time, then wash as usual.</li></ul><strong>Benefits:</strong><ul><li>Effective on deep, protein-based stains.</li><li>Helps fabrics look renewed.</li><li>Saves cost on fabric replacement.</li><li>Ideal for kitchens, linens, medical settings.</li></ul>',	img:	'CHEMICALS/CHEM-BLOODSTAINREMOVER.png',		},
-{	id:4,	name:	'Dish Wash Gel',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This dish wash gel offers concentrated cleaning power to remove grease, food residue and odour from plates, utensils and cookware while being skin-friendly. Its gel format dissolves easily and works efficiently, making dishwashing simpler and more effective.<br><strong>How to use:</strong><ul><li>Pour a small amount of gel into water or directly onto sponge.</li><li>Scrub dishes, utensils, pots and pans until clean.</li><li>Rinse thoroughly and dry or air-dry.</li></ul><strong>Benefits:</strong><ul><li>Cuts through grease and hardened food residue.</li><li>Maintains hygiene of kitchenware.</li><li>Safe for hands when used appropriately.</li><li>Convenient for everyday dishwashing.</li></ul>',	img:	'CHEMICALS/CHEM-DISHWASHGEL.png',		},
-{	id:5,	name:	'Fabric Softner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This fabric softener makes clothes feel soft and fresh after washing. It works in the final rinse to condition fabric fibres so clothes feel smooth and gentle on the skin. The concentrated liquid needs only a small amount per wash and gives a light, long-lasting fragrance. It also helps reduce wrinkles and static, so clothes look neater and are easier to wear.<br><br><strong>How to Use</strong><ul class="desc-list"><li>Measure the amount using the cap. Follow the bottle directions for small, medium or large loads.</li><li>For washing machines: pour the measured softener into the machine\'s fabric softener dispenser or tray. Do not pour the softener directly onto clothes.</li><li>For hand washing: add the correct amount to the final rinse water and mix before putting clothes in. Leave clothes in the rinse water for about a minute, then drain and gently squeeze out excess water.</li><li>Run the rinse cycle as usual. Keep the bottle closed after use and store out of reach of children.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Soft and comfortable:</b> Makes fabrics feel soft and pleasant on the skin.</li><li><b>Fewer wrinkles:</b> Reduces wrinkles so ironing becomes easier.</li><li><b>Less static:</b> Controls static cling, especially on synthetic clothes.</li><li><b>Fresh smell:</b> Gives a mild, pleasant fragrance that lasts.</li><li><b>Economical:</b> Concentrated formula means the bottle lasts longer when used as directed.</li></ul>',	img:	'CHEMICALS/CHEM-FABRICSOFTNER.png',		},
-{	id:6,	name:	'Floor Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This floor cleaner is a strong liquid made to clean hard floors at home and in offices. It removes dust, oil and common stains and leaves floors clean and smelling fresh. It can be used on tiles, vinyl, sealed wooden floors, marble and similar surfaces. Mix the cleaner with water before use to make a safe cleaning solution that dries quickly and does not leave sticky marks.<br><br><strong>How to use</strong><ul class="desc-list"><li>Pour one capful of the cleaner into half a bucket of water (about 4 litres). Add more cleaner for very dirty floors. The ratio varies based on the usage.</li><li>Dip a mop or a clean cloth into the water and squeeze it so it is not dripping.</li><li>Mop the floor evenly. For small, tough stains, put a little undiluted cleaner on a cloth and rub the spot gently.</li><li>Let the floor air dry. You usually do not need to rinse with clean water.</li><li>Keep the bottle closed and store it out of reach of children and pets.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Easy cleaning:</b> Removes everyday dirt and oil so floors look clean.</li><li><b>Works on many floors:</b> Safe for tiles, vinyl, sealed wooden floors and marble when used as directed.</li><li><b>No sticky feel:</b> Dries fast so the floor does not feel sticky underfoot.</li><li><b>Fresh smell:</b> Leaves a mild, pleasant scent that freshens the room.</li><li><b>Saves time:</b> Mixing with water makes the bottle last longer and helps you clean faster.</li></ul>',	img:	'CHEMICALS/CHEM-FLOORCLEANER.png',		},
-{	id:7,	name:	'Washing Gel',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	' Washing Gel is a concentrated liquid cleaner for clothes that gives a deep, thorough wash. The gel sinks into fabric to lift dirt, grease and tough stains while also removing bad smells. It dissolves well in both hot and cold water, so it leaves no white marks or residue on clothes. The formula is gentle on fabrics and helps keep colours and texture in good shape, making it suitable for everyday clothes and delicate items alike. Use it in any type of washing machine or for hand wash.<br><br><strong>How to use</strong><br><b>For Machine Wash:</b><ul class="desc-list"><li>Measure the gel with the cap depending on load size and dirt level.</li><li>Pour into the detergent drawer or directly into the drum before adding clothes.</li><li>Run the normal wash cycle.</li></ul><br><b>For Hand Wash:</b><ul class="desc-list"><li>Mix a small amount of gel in a bucket of water to make a soapy solution.</li><li>Soak clothes for about 30 minutes for tough stains.</li><li>Rub gently, then rinse well with clean water. Always follow the dose shown on the bottle. For very delicate fabrics, test on a small area first.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Deep cleaning:</b> Removes tough stains and hard dirt from fabric.</li><li><b>Colour care:</b> Gentle formula helps keep colours bright and fabric soft.</li><li><b>No residue:</b> Gel dissolves fully in hot or cold or normal water without leaving white marks.</li><li><b>Works everywhere:</b> Suitable for all washing machines and for hand washing.</li><li><b>Long-lasting freshness:</b> Leaves clothes smelling clean for a long time.</li></ul> ',	img:	'CHEMICALS/WASHINGGEL.png',		},
-{	id:8,	name:	'Glass Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	' This glass cleaner is made to keep glass surfaces clean and clear. It removes dust, grease, fingerprints, and marks quickly, leaving the glass neat and bright. The liquid dries fast and does not leave any film or marks behind. It is suitable for everyday use on windows, mirrors, glass tables, cupboards and car glass. The formula is free from strong chemicals like ammonia, which makes it safe even for tinted windows and delicate glass. With regular use, it helps maintain a clean and clear look at home, in offices and in vehicles.<br><br><strong>How to use:</strong><ul class="desc-list"><li>Shake the bottle well before use.</li><li>Spray the cleaner directly on the glass or on a clean cotton/microfiber cloth.</li><li>Wipe the glass surface using straight or circular hand movements until the dirt is removed.</li><li>For the final touch, use a dry part of the cloth to gently wipe again for a clear finish.</li></ul><br><strong>Benefits:</strong><ul class="desc-list"><li><b>Clear Finish:</b> Leaves glass surfaces bright and clean without any leftover marks.</li><li><b>Effective Cleaning:</b> Removes dust, oil and fingerprints with ease.</li><li><b>Multipurpose Use:</b> Can be used on mirrors, windows, glass tables, cupboards and car glass.</li><li><b>Safe Formula:</b> Free from harsh ammonia, safe for tinted and delicate glass.</li><li><b>Quick and Easy:</b> Fast-drying solution saves time and effort during cleaning.</li></ul> ',	img:	'CHEMICALS/CHEM-GLASSCLEANER.png',		},
-{	id:9,	name:	'Multipurpose Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This multipurpose cleaner is built to tackle a wide variety of surfaces and tasks like countertops, furniture, appliances, glass and more. It simplifies cleaning by being effective across many zones without needing specialised cleaners.<br><strong>How to use:</strong><ul><li>Spray or apply the cleaner onto the surface or cloth.</li><li>Wipe or scrub the surface gently.</li><li>If needed, rinse or dry the area.</li></ul><strong>Benefits:</strong><ul><li>One liquid for many cleanings purpose.</li><li>Reduces number of cleaning solutions needed.</li><li>Cost-efficient and convenient.</li><li>Suitable for regular home use.</li></ul>',	img:	'CHEMICALS/CHEM-MULTIPURPOSECLEANER.png',		},
-{	id:10,	name:	'Phenyle',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This Phenyle is a strong disinfectant liquid for cleaning and sanitizing floors and other hard surfaces. It removes dirt and bad smells while reducing common germs and bacteria, helping to keep homes, workplaces and public areas more hygienic. The concentrated liquid can be used on floors, bathroom tiles, drains, bins and similar surfaces.<br><br><strong>How to use</strong><ul class="desc-list"><li>For floors: Mix one capful of Phenyle in one bucket of water (about 4 litres). Mop the floor with this water and let it dry. For very dirty areas, you may add a little more Phenyle or can spray direction on the surface (based on the requirements).</li><li>For toilets and drains: Pour a small amount of undiluted Phenyle directly into the toilet bowl or drain to remove smell and disinfect.</li><li>For bins and other hard surfaces: Wipe or scrub with the diluted solution; for quick freshening, spray and wipe. Always follow the directions on the bottle. Do not mix Phenyle with other cleaning products.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Cleans and disinfects:</b> Removes dirt and reduces germs on floors and surfaces.</li><li><b>Removes bad smells:</b> Neutralises unpleasant odours and leaves a clean scent.</li><li><b>Multi-purpose:</b> Useful for bathrooms, kitchens, drains, bins and tiled areas.</li><li><b>Economical:</b> Concentrated formula means a small amount covers more area.</li><li><b>Easy to use:</b> Simple mixing and application for regular or deep cleaning.</li></ul><br><strong>Safety</strong><br>Keep out of reach of children and pets. Avoid contact with eyes and skin; rinse with water if it comes into contact. Do not mix with bleach or acids. Use in a well-ventilated area.',	img:	'CHEMICALS/CHEM-PHENYLE.png',		},
-{	id:11,	name:	'Room Freshner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This room freshener liquid releases a pleasant fragrance to help neutralise odours and refresh indoor air. It’s designed for quick use when you want your space to feel clean and welcoming.<br><strong>How to use:</strong><ul><li>Take the liquid in a bottle and shake the bottle gently.</li><li>Spray into the air or on fabrics (curtains, cushions) as needed.</li><li>Avoid spraying directly onto food or skin.</li></ul><strong>Benefits:</strong><ul><li>Quickly freshens room ambiance.</li><li>Masks persistent odours and improves air feel.</li><li>Easy and fast to use.</li><li>Adds pleasant scent to corridors, lounges, bathrooms.</li></ul>',	img:	'CHEMICALS/CHEM-ROOMFRESHNER.png',		},
-{	id:12,	name:	'Scale Remover',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This scale remover is a cleaner designed to dissolve mineral deposits, hard water build-up and chalky residue on taps, showerheads, tiles and fixtures. Especially helpful where hard water causes visible scale marks.<br><strong>How to use:</strong><ul><li>Apply the liquid onto the scaled surface (taps, shower head, tile).</li><li>Let it sit for the specified time.</li><li>Wipe or scrub clean, then rinse.</li></ul><strong>Benefits:</strong><ul><li>Restores surfaces by removing mineral build-up.</li><li>Helps maintain plumbing efficiency and appearance.</li><li>Reduces cleaning effort over time.</li><li>Works on multiple scale-prone areas.</li></ul>',	img:	'CHEMICALS/CHEM-SCALEREMOVER.png',		},
-{	id:13,	name:	'Soap Oil',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This soap oil is a concentrated liquid cleaner for many cleaning purposes at home and at work. It makes a rich state that cuts through grease, dirt and food stains on hard surfaces. Use it on floors, kitchen counters, bathroom tiles, sinks and similar areas. It helps reduce common germs, leaves a mild, fresh smell and does not leave sticky marks when it dries. Because it is concentrated, a small amount lasts longer.<br><br><strong>How to use</strong><ul class="desc-list"><li>Dilute: Put one capful of soap oil into half a bucket of water (about 4 litres). Use more for very dirty places.</li><li>Clean: Dip a mop or a clean cloth into the water, wring it and wipe the surface.</li><li>For counters and sinks: Pour the diluted solution into a spray bottle or use a wet cloth to clean, then wipe dry with a clean cloth.</li><li>For tough grease: Put a little undiluted soap oil on a cloth, rub the spot gently, then wipe or rinse.</li><li>Dry: Let the surface air dry. Rinsing is not needed in most cases. Keep the bottle closed and store out of reach of children.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Multi-purpose cleaning:</b> Can be used on floors, kitchen counters, bathroom tiles, sinks and other hard surfaces.</li><li><b>Sanitizing action:</b> Helps reduce common germs and bacteria when used as directed.</li><li><b>Powerful cleaning:</b> Rich lather cuts through grease, food stains and heavy dirt.</li><li><b>Residue-free finish:</b> Dries quickly without leaving sticky marks or streaks.</li><li><b>Long-lasting fragrance:</b> Gives a mild, fresh scent that stays for some time.</li><li><b>Economical concentrate:</b> A small amount stretches farther, so the bottle lasts longer.</li></ul>',	img:	'CHEMICALS/CHEM-SOAPOIL.png',		},
-{	id:14,	name:	'Toilet Cleaner',	category:	 'Cleaning & Speciality Chemicals',	 	desc:	'This specialized toilet cleaner targets hard stains, limescale, germs and odour in the toilet bowl and surrounding areas, leaving the fixture clean, bright and fresh.<br><strong>How to use:</strong><ul><li>Squirt the liquid into the toilet bowl, under the rim and along sides.</li><li>Allow it to stay for the recommended time.</li><li>Scrub with a toilet brush, then flush.</li></ul><strong>Benefits:</strong><ul><li>Cleans and disinfects toilet surfaces.</li><li>Removes limescale and stains.</li><li>Improves hygiene and fresh scent.</li><li>Helps maintain toilet appearance.</li></ul>',	img:	'CHEMICALS/CHEM-TOILETCLEANER.png',		}
+  {	id:1,	name:	'Hand Wash',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This hand wash is a gentle, everyday liquid soap made to clean hands well without drying the skin. The pH-balanced formula helps keep the skin\'s natural moisture and supports the skin barrier, while mild cleansing ingredients remove dirt, grease and common germs. It is suitable for frequent use at home, offices, shops, schools and other places where regular hand washing is needed.<br><br><strong>How to use</strong><ul class="desc-list"><li>Wet your hands with clean running water.</li><li>Take a small amount of hand wash in your palm and rub your hands together to make foam.</li><li>Rub all parts of the hands - palms, backs, between fingers and under nails for at least 20 seconds.</li><li>Rinse well with water and dry with a clean towel or air dryer.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Gentle on skin:</b> pH-balanced and enriched with moisturizers to help prevent dryness and irritation.</li><li><b>Effective cleaning:</b> Removes dirt, oil and everyday germs when used correctly.</li><li><b>Protects skin barrier:</b> Helps the skin keep its natural oils so hands stay soft even with frequent washing.</li><li><b>Mild fragrance:</b> Fresh scent that is not overpowering.</li><li><b>Easy to use:</b> Available in pump or bottle format for quick dispensing; rinses clean without sticky residue.</li><li>Suitable for adults and children (supervise young children). Avoid contact with eyes. If the product gets into eyes, rinse immediately with clean water.</li></ul>',	img:	 'CHEMICALS/CHEM-HANDWASH.png',	price:	10.00	},
+  {	id:2,	name:	'Bathroom Cleaner',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This bathroom cleaner is designed to tackle soap-scum, hard water stains, and general grime in shower areas, sinks, tiles and floors while leaving surfaces fresh and hygienic. It helps remove layers of build-up and keeps your bathroom looking clean and well-maintained.<br><strong>How to use:</strong><ul><li>Apply the cleaner to damp surfaces (tiles, shower wall, sink).</li><li>Allow it to work for a few minutes.</li><li>Scrub or wipe clean, then rinse thoroughly.</li></ul><strong>Benefits:</strong><ul><li>Removes tough soap-scum and stains.</li><li>Improves hygiene and appearance of bathroom.</li><li>Saves time vs basic cleaning.</li><li>Ideal for regular maintenance.</li></ul>',	img:	 'CHEMICALS/CHEM-BATHROOMCLEANER.png',	price:	10.00	},
+{	id:3,	name:	'Blood Stain Remover',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This blood stain remover is formulated to target blood-based stains on fabrics, linens or upholstery, breaking down protein-based residue and making removal easier. It’s useful in challenging stain situations where normal detergents struggle.<br><strong>How to use:</strong><ul><li>Pre-treat the stained area with the remover.</li><li>Gently apply the liquid into the fabric.</li><li>Allow a short dwell time, then wash as usual.</li></ul><strong>Benefits:</strong><ul><li>Effective on deep, protein-based stains.</li><li>Helps fabrics look renewed.</li><li>Saves cost on fabric replacement.</li><li>Ideal for kitchens, linens, medical settings.</li></ul>',	img:	'CHEMICALS/CHEM-BLOODSTAINREMOVER.png',	price:	10.00	},
+{	id:4,	name:	'Dish Wash Gel',	category:	 'Cleaning & Speciality Chemicals',	 subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)',	desc:	'This dish wash gel offers concentrated cleaning power to remove grease, food residue and odour from plates, utensils and cookware while being skin-friendly. Its gel format dissolves easily and works efficiently, making dishwashing simpler and more effective.<br><strong>How to use:</strong><ul><li>Pour a small amount of gel into water or directly onto sponge.</li><li>Scrub dishes, utensils, pots and pans until clean.</li><li>Rinse thoroughly and dry or air-dry.</li></ul><strong>Benefits:</strong><ul><li>Cuts through grease and hardened food residue.</li><li>Maintains hygiene of kitchenware.</li><li>Safe for hands when used appropriately.</li><li>Convenient for everyday dishwashing.</li></ul>',	img:	'CHEMICALS/CHEM-DISHWASHGEL.png',	price:	10.00	},
+{	id:5,	name:	'Fabric Softner',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This fabric softener makes clothes feel soft and fresh after washing. It works in the final rinse to condition fabric fibres so clothes feel smooth and gentle on the skin. The concentrated liquid needs only a small amount per wash and gives a light, long-lasting fragrance. It also helps reduce wrinkles and static, so clothes look neater and are easier to wear.<br><br><strong>How to Use</strong><ul class="desc-list"><li>Measure the amount using the cap. Follow the bottle directions for small, medium or large loads.</li><li>For washing machines: pour the measured softener into the machine\'s fabric softener dispenser or tray. Do not pour the softener directly onto clothes.</li><li>For hand washing: add the correct amount to the final rinse water and mix before putting clothes in. Leave clothes in the rinse water for about a minute, then drain and gently squeeze out excess water.</li><li>Run the rinse cycle as usual. Keep the bottle closed after use and store out of reach of children.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Soft and comfortable:</b> Makes fabrics feel soft and pleasant on the skin.</li><li><b>Fewer wrinkles:</b> Reduces wrinkles so ironing becomes easier.</li><li><b>Less static:</b> Controls static cling, especially on synthetic clothes.</li><li><b>Fresh smell:</b> Gives a mild, pleasant fragrance that lasts.</li><li><b>Economical:</b> Concentrated formula means the bottle lasts longer when used as directed.</li></ul>',	img:	'CHEMICALS/CHEM-FABRICSOFTNER.png',	price:	10.00	},
+{	id:6,	name:	'Floor Cleaner',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This floor cleaner is a strong liquid made to clean hard floors at home and in offices. It removes dust, oil and common stains and leaves floors clean and smelling fresh. It can be used on tiles, vinyl, sealed wooden floors, marble and similar surfaces. Mix the cleaner with water before use to make a safe cleaning solution that dries quickly and does not leave sticky marks.<br><br><strong>How to use</strong><ul class="desc-list"><li>Pour one capful of the cleaner into half a bucket of water (about 4 litres). Add more cleaner for very dirty floors. The ratio varies based on the usage.</li><li>Dip a mop or a clean cloth into the water and squeeze it so it is not dripping.</li><li>Mop the floor evenly. For small, tough stains, put a little undiluted cleaner on a cloth and rub the spot gently.</li><li>Let the floor air dry. You usually do not need to rinse with clean water.</li><li>Keep the bottle closed and store it out of reach of children and pets.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Easy cleaning:</b> Removes everyday dirt and oil so floors look clean.</li><li><b>Works on many floors:</b> Safe for tiles, vinyl, sealed wooden floors and marble when used as directed.</li><li><b>No sticky feel:</b> Dries fast so the floor does not feel sticky underfoot.</li><li><b>Fresh smell:</b> Leaves a mild, pleasant scent that freshens the room.</li><li><b>Saves time:</b> Mixing with water makes the bottle last longer and helps you clean faster.</li></ul>',	img:	'CHEMICALS/CHEM-FLOORCLEANER.png',	price:	10.00	},
+{	id:7,	name:	'Washing Gel',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	' Washing Gel is a concentrated liquid cleaner for clothes that gives a deep, thorough wash. The gel sinks into fabric to lift dirt, grease and tough stains while also removing bad smells. It dissolves well in both hot and cold water, so it leaves no white marks or residue on clothes. The formula is gentle on fabrics and helps keep colours and texture in good shape, making it suitable for everyday clothes and delicate items alike. Use it in any type of washing machine or for hand wash.<br><br><strong>How to use</strong><br><b>For Machine Wash:</b><ul class="desc-list"><li>Measure the gel with the cap depending on load size and dirt level.</li><li>Pour into the detergent drawer or directly into the drum before adding clothes.</li><li>Run the normal wash cycle.</li></ul><br><b>For Hand Wash:</b><ul class="desc-list"><li>Mix a small amount of gel in a bucket of water to make a soapy solution.</li><li>Soak clothes for about 30 minutes for tough stains.</li><li>Rub gently, then rinse well with clean water. Always follow the dose shown on the bottle. For very delicate fabrics, test on a small area first.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Deep cleaning:</b> Removes tough stains and hard dirt from fabric.</li><li><b>Colour care:</b> Gentle formula helps keep colours bright and fabric soft.</li><li><b>No residue:</b> Gel dissolves fully in hot or cold or normal water without leaving white marks.</li><li><b>Works everywhere:</b> Suitable for all washing machines and for hand washing.</li><li><b>Long-lasting freshness:</b> Leaves clothes smelling clean for a long time.</li></ul> ',	img:	'CHEMICALS/WASHINGGEL.png',	price:	10.00	},
+{	id:8,	name:	'Glass Cleaner',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	' This glass cleaner is made to keep glass surfaces clean and clear. It removes dust, grease, fingerprints, and marks quickly, leaving the glass neat and bright. The liquid dries fast and does not leave any film or marks behind. It is suitable for everyday use on windows, mirrors, glass tables, cupboards and car glass. The formula is free from strong chemicals like ammonia, which makes it safe even for tinted windows and delicate glass. With regular use, it helps maintain a clean and clear look at home, in offices and in vehicles.<br><br><strong>How to use:</strong><ul class="desc-list"><li>Shake the bottle well before use.</li><li>Spray the cleaner directly on the glass or on a clean cotton/microfiber cloth.</li><li>Wipe the glass surface using straight or circular hand movements until the dirt is removed.</li><li>For the final touch, use a dry part of the cloth to gently wipe again for a clear finish.</li></ul><br><strong>Benefits:</strong><ul class="desc-list"><li><b>Clear Finish:</b> Leaves glass surfaces bright and clean without any leftover marks.</li><li><b>Effective Cleaning:</b> Removes dust, oil and fingerprints with ease.</li><li><b>Multipurpose Use:</b> Can be used on mirrors, windows, glass tables, cupboards and car glass.</li><li><b>Safe Formula:</b> Free from harsh ammonia, safe for tinted and delicate glass.</li><li><b>Quick and Easy:</b> Fast-drying solution saves time and effort during cleaning.</li></ul> ',	img:	'CHEMICALS/CHEM-GLASSCLEANER.png',	price:	10.00	},
+{	id:9,	name:	'Multipurpose Cleaner',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This multipurpose cleaner is built to tackle a wide variety of surfaces and tasks like countertops, furniture, appliances, glass and more. It simplifies cleaning by being effective across many zones without needing specialised cleaners.<br><strong>How to use:</strong><ul><li>Spray or apply the cleaner onto the surface or cloth.</li><li>Wipe or scrub the surface gently.</li><li>If needed, rinse or dry the area.</li></ul><strong>Benefits:</strong><ul><li>One liquid for many cleanings purpose.</li><li>Reduces number of cleaning solutions needed.</li><li>Cost-efficient and convenient.</li><li>Suitable for regular home use.</li></ul>',	img:	'CHEMICALS/CHEM-MULTIPURPOSECLEANER.png',	price:	10.00	},
+{	id:10,	name:	'Phenyle',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This Phenyle is a strong disinfectant liquid for cleaning and sanitizing floors and other hard surfaces. It removes dirt and bad smells while reducing common germs and bacteria, helping to keep homes, workplaces and public areas more hygienic. The concentrated liquid can be used on floors, bathroom tiles, drains, bins and similar surfaces.<br><br><strong>How to use</strong><ul class="desc-list"><li>For floors: Mix one capful of Phenyle in one bucket of water (about 4 litres). Mop the floor with this water and let it dry. For very dirty areas, you may add a little more Phenyle or can spray direction on the surface (based on the requirements).</li><li>For toilets and drains: Pour a small amount of undiluted Phenyle directly into the toilet bowl or drain to remove smell and disinfect.</li><li>For bins and other hard surfaces: Wipe or scrub with the diluted solution; for quick freshening, spray and wipe. Always follow the directions on the bottle. Do not mix Phenyle with other cleaning products.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Cleans and disinfects:</b> Removes dirt and reduces germs on floors and surfaces.</li><li><b>Removes bad smells:</b> Neutralises unpleasant odours and leaves a clean scent.</li><li><b>Multi-purpose:</b> Useful for bathrooms, kitchens, drains, bins and tiled areas.</li><li><b>Economical:</b> Concentrated formula means a small amount covers more area.</li><li><b>Easy to use:</b> Simple mixing and application for regular or deep cleaning.</li></ul><br><strong>Safety</strong><br>Keep out of reach of children and pets. Avoid contact with eyes and skin; rinse with water if it comes into contact. Do not mix with bleach or acids. Use in a well-ventilated area.',	img:	'CHEMICALS/CHEM-PHENYLE.png',	price:	10.00	},
+{	id:11,	name:	'Room Freshner',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This room freshener liquid releases a pleasant fragrance to help neutralise odours and refresh indoor air. It’s designed for quick use when you want your space to feel clean and welcoming.<br><strong>How to use:</strong><ul><li>Take the liquid in a bottle and shake the bottle gently.</li><li>Spray into the air or on fabrics (curtains, cushions) as needed.</li><li>Avoid spraying directly onto food or skin.</li></ul><strong>Benefits:</strong><ul><li>Quickly freshens room ambiance.</li><li>Masks persistent odours and improves air feel.</li><li>Easy and fast to use.</li><li>Adds pleasant scent to corridors, lounges, bathrooms.</li></ul>',	img:	'CHEMICALS/CHEM-ROOMFRESHNER.png',	price:	10.00	},
+{	id:12,	name:	'Scale Remover',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This scale remover is a cleaner designed to dissolve mineral deposits, hard water build-up and chalky residue on taps, showerheads, tiles and fixtures. Especially helpful where hard water causes visible scale marks.<br><strong>How to use:</strong><ul><li>Apply the liquid onto the scaled surface (taps, shower head, tile).</li><li>Let it sit for the specified time.</li><li>Wipe or scrub clean, then rinse.</li></ul><strong>Benefits:</strong><ul><li>Restores surfaces by removing mineral build-up.</li><li>Helps maintain plumbing efficiency and appearance.</li><li>Reduces cleaning effort over time.</li><li>Works on multiple scale-prone areas.</li></ul>',	img:	'CHEMICALS/CHEM-SCALEREMOVER.png',	price:	10.00	},
+{	id:13,	name:	'Soap Oil',	category:	 'Cleaning & Speciality Chemicals',	subcat:'All Cleaning and Speciality Chemicals (In Liquid, Solid and Spray Form)', 	desc:	'This soap oil is a concentrated liquid cleaner for many cleaning purposes at home and at work. It makes a rich state that cuts through grease, dirt and food stains on hard surfaces. Use it on floors, kitchen counters, bathroom tiles, sinks and similar areas. It helps reduce common germs, leaves a mild, fresh smell and does not leave sticky marks when it dries. Because it is concentrated, a small amount lasts longer.<br><br><strong>How to use</strong><ul class="desc-list"><li>Dilute: Put one capful of soap oil into half a bucket of water (about 4 litres). Use more for very dirty places.</li><li>Clean: Dip a mop or a clean cloth into the water, wring it and wipe the surface.</li><li>For counters and sinks: Pour the diluted solution into a spray bottle or use a wet cloth to clean, then wipe dry with a clean cloth.</li><li>For tough grease: Put a little undiluted soap oil on a cloth, rub the spot gently, then wipe or rinse.</li><li>Dry: Let the surface air dry. Rinsing is not needed in most cases. Keep the bottle closed and store out of reach of children.</li></ul><br><strong>Benefits</strong><ul class="desc-list"><li><b>Multi-purpose cleaning:</b> Can be used on floors, kitchen counters, bathroom tiles, sinks and other hard surfaces.</li><li><b>Sanitizing action:</b> Helps reduce common germs and bacteria when used as directed.</li><li><b>Powerful cleaning:</b> Rich lather cuts through grease, food stains and heavy dirt.</li><li><b>Residue-free finish:</b> Dries quickly without leaving sticky marks or streaks.</li><li><b>Long-lasting fragrance:</b> Gives a mild, fresh scent that stays for some time.</li><li><b>Economical concentrate:</b> A small amount stretches farther, so the bottle lasts longer.</li></ul>',	img:	'CHEMICALS/CHEM-SOAPOIL.png',	price:	10.00	}
 
 
 ];
@@ -1006,20 +1250,22 @@ function buildMailHtmlAndPlain(formData){
     const qty = state.cart[id];
     const price = (p && p.price) ? p.price : 0;
     const lineTotal = price * qty;
-    // Add to grand total
+    totalOrderPrice += lineTotal; // Add to grand total
     
     const noBold = toUnicodeBold(String(idx + 1));
     const qtyLabelBold = toUnicodeBold('Qty:');
     const priceLabelBold = toUnicodeBold('Price:');
     // UPDATED: Added price column
-    return `${noBold} | ${pname} | ${qtyLabelBold} ${qty}`;
+    return `${noBold} | ${pname} | ${qtyLabelBold} ${qty} | ${priceLabelBold} ${lineTotal.toFixed(2)}`;
   }).join('\n');
 
   // header and items header with Unicode bold labels
   const header = toUnicodeBold(`New Order from Website - ${formData.name || '-'}`);
   // UPDATED: Added Price header
   const itemsHeader = `${toUnicodeBold('No')} | ${toUnicodeBold('Product')} | ${toUnicodeBold('Qty')} | ${toUnicodeBold('Price')}`;
-  const totalLine = ``;// customer block with bold labels (Unicode)
+  const totalLine = `${toUnicodeBold('Total Price:')} ${totalOrderPrice.toFixed(2)}`;
+
+  // customer block with bold labels (Unicode)
   function custLine(label, value){
     return `${toUnicodeBold(label + ':')} ${value || '-'}`;
   }
@@ -1030,12 +1276,12 @@ function buildMailHtmlAndPlain(formData){
   ].join('\n');
 
   // UPDATED: Added totalLine
-  const plain = `${header}\n\nOrdered Items from Reinigen\n\n${itemsHeader}\n${itemsLines}\n\n\n\n${toUnicodeBold('Customer Details')}\n${custLines}\n\nPlaced: ${new Date().toLocaleString()}`;
+  const plain = `${header}\n\nOrdered Items from Reinigen\n\n${itemsHeader}\n${itemsLines}\n\n${totalLine}\n\n${toUnicodeBold('Customer Details')}\n${custLines}\n\nPlaced: ${new Date().toLocaleString()}`;
 
   // simple HTML fallback that preserves the same text layout (escaped)
   // UPDATED: Added totalLine
   const htmlBody = `<div>${escapeHtml(header)}</div>
-<pre style="white-space:pre-wrap; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4; margin-top:8px">${escapeHtml(`\nItems:\n${itemsHeader}\n${itemsLines}\n\n\n\nCustomer Details\n${custLines}\n\nPlaced: ${new Date().toLocaleString()}`)}</pre>`;
+<pre style="white-space:pre-wrap; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4; margin-top:8px">${escapeHtml(`\nItems:\n${itemsHeader}\n${itemsLines}\n\n${totalLine}\n\nCustomer Details\n${custLines}\n\nPlaced: ${new Date().toLocaleString()}`)}</pre>`;
 
   return { htmlBody, plainBody: plain };
 }
@@ -1056,16 +1302,20 @@ function buildWhatsAppText(formData){
     const qty = state.cart[id];
     const price = (p && p.price) ? p.price : 0;
     const lineTotal = price * qty;
+    totalOrderPrice += lineTotal;
+    
     // UPDATED: Added price column
     return `*${idx + 1}* | ${p ? p.name : 'Item ' + id} | *Qty:* ${qty} | *Price:* ${lineTotal.toFixed(2)}`;
   }).join('\n');
 
   // UPDATED: Added total line
-  const totalLine = ``;// UPDATED: Removed stray '}' from address
+  const totalLine = `*Total Price:* ${totalOrderPrice.toFixed(2)}`;
+
+  // UPDATED: Removed stray '}' from address
   const cust = `*Customer Details*\n*Name:* ${formData.name || ''}\n*Phone:* ${formData.phone || ''}\n*Address:* ${formData.address || ''}`;
 
   // UPDATED: Added totalLine
-  return `${header}\n\nOrdered Items from Reinigen\n\n\n${itemsHeader}\n${items}\n\n\n\n${cust}\n\nPlaced: ${new Date().toLocaleString()}`;
+  return `${header}\n\nOrdered Items from Reinigen\n\n\n${itemsHeader}\n${items}\n\n${totalLine}\n\n${cust}\n\nPlaced: ${new Date().toLocaleString()}`;
 }
 
 
@@ -1096,120 +1346,155 @@ function renderGrid(list) {
   const grid = $('#grid'); 
   grid.innerHTML = '';
   
+  // Group products by subcategory
+  const grouped = {};
   list.forEach(p => {
-    const card = document.createElement('div'); 
-    card.className = 'card';
+    const subcat = p.subcat || 'Other';
+    if (!grouped[subcat]) grouped[subcat] = [];
+    grouped[subcat].push(p);
+  });
+  
+  // Render each subcategory with a header
+  Object.keys(grouped).sort().forEach(subcat => {
+    // Filter available products for THIS subcategory
+    const availableInSubcat = grouped[subcat].filter(p => p.available !== false);
     
-    if (p.available === false) {
-      card.classList.add('unavailable');
-    }
+    // Skip this subcategory entirely if no available products
+    if (availableInSubcat.length === 0) return;
     
-    const thumb = document.createElement('div'); 
-    thumb.className = 'thumb';
-    if(p.img){
-      const i = document.createElement('img'); 
-      i.src = p.img; 
-      i.alt = p.name; 
-      thumb.appendChild(i);
-    } else {
-      thumb.textContent = 'Image';
-    }
+    // Create a wrapper for subcategory
+    const subcatWrapper = document.createElement('div');
+    subcatWrapper.style.width = '100%';
+    subcatWrapper.style.gridColumn = '1 / -1';
     
-    const name = document.createElement('div'); 
-    name.className = 'pname'; 
-    name.textContent = p.name;
+    // Create subcategory header
+    const header = document.createElement('div');
+    header.className = 'subcat-header';
+    header.textContent = subcat;
+    subcatWrapper.appendChild(header);
     
-    const controls = document.createElement('div'); 
-    controls.className = 'controls';
+    // Create a container for products in this subcategory
+    const subgrid = document.createElement('div');
+    subgrid.className = 'subcat-products';
+    
+    // Render ONLY AVAILABLE products in this subcategory
+    availableInSubcat.forEach(p => {
+      const card = document.createElement('div'); 
+      card.className = 'card';
+      
+      const thumb = document.createElement('div'); 
+      thumb.className = 'thumb';
+      if(p.img){
+        const i = document.createElement('img'); 
+        i.src = p.img; 
+        i.alt = p.name; 
+        thumb.appendChild(i);
+      } else {
+        thumb.textContent = 'Image';
+      }
+      
+      const name = document.createElement('div'); 
+      name.className = 'pname'; 
+      name.textContent = p.name;
+      
+      const info = document.createElement('div'); 
+      info.className = 'pinfo'; 
+      info.textContent = p.category;
+      
+      if (p.price) {
+        const priceDiv = document.createElement('div');
+        priceDiv.style.color = 'var(--accent)';
+        priceDiv.style.fontWeight = '700';
+        priceDiv.style.fontSize = '16px';
+        priceDiv.style.marginTop = '4px';
+        priceDiv.textContent = `₹${p.price.toFixed(2)}`;
+        info.appendChild(priceDiv);
+      }
 
-    const infoBtn = document.createElement('button'); 
-    infoBtn.className = 'btn ghost'; 
-    infoBtn.textContent = 'Product Info';
-    infoBtn.onclick = () => openProductModal(p);
+      const controls = document.createElement('div'); 
+      controls.className = 'controls';
 
-    const addBtn = document.createElement('button'); 
-    addBtn.className = 'btn'; 
-    addBtn.textContent = 'Add to Cart';
-    
-    if (p.available === false) {
-      addBtn.disabled = true;
-      addBtn.classList.add('disabled');
-    } else {
+      const infoBtn = document.createElement('button'); 
+      infoBtn.className = 'btn ghost'; 
+      infoBtn.textContent = 'Product Info';
+      infoBtn.onclick = () => openProductModal(p);
+
+      const addBtn = document.createElement('button'); 
+      addBtn.className = 'btn'; 
+      addBtn.textContent = 'Add to Cart';
       addBtn.onclick = () => { 
         state.cart[p.id] = (state.cart[p.id] || 0) + 1; 
-        renderGrid(PRODUCTS); 
+        renderGrid(currentFilteredProducts()); 
         updateCartCount(); 
       };
-    }
 
-    controls.appendChild(infoBtn); 
-    controls.appendChild(addBtn);
+      controls.appendChild(infoBtn); 
+      controls.appendChild(addBtn);
 
-    if (state.cart[p.id]) {
-      const qty = document.createElement('div'); 
-      qty.className = 'qty';
-      const minus = document.createElement('button'); 
-      minus.className = 'qbtn'; 
-      minus.textContent = '−';
-      const count = document.createElement('div'); 
-      count.className = 'count'; 
-      count.textContent = state.cart[p.id];
-      const plus = document.createElement('button'); 
-      plus.className = 'qbtn'; 
-      plus.textContent = '+';
-      
-      minus.onclick = () => { 
-        const cur = state.cart[p.id] || 1; 
-        const next = Math.max(1, cur - 1); 
-        state.cart[p.id] = next; 
-        count.textContent = next; 
-        updateCartCount(); 
-        renderGrid(PRODUCTS); 
-      };
-      
-      plus.onclick = () => { 
-        const cur = state.cart[p.id] || 0; 
-        state.cart[p.id] = cur + 1; 
-        count.textContent = state.cart[p.id]; 
-        updateCartCount(); 
-        renderGrid(PRODUCTS); 
-      };
+      if (state.cart[p.id]) {
+        const qty = document.createElement('div'); 
+        qty.className = 'qty';
+        const minus = document.createElement('button'); 
+        minus.className = 'qbtn'; 
+        minus.textContent = '−';
+        const count = document.createElement('div'); 
+        count.className = 'count'; 
+        count.textContent = state.cart[p.id];
+        const plus = document.createElement('button'); 
+        plus.className = 'qbtn'; 
+        plus.textContent = '+';
+        
+        minus.onclick = () => { 
+          const cur = state.cart[p.id] || 1; 
+          const next = Math.max(1, cur - 1); 
+          state.cart[p.id] = next; 
+          count.textContent = next; 
+          updateCartCount(); 
+          renderGrid(currentFilteredProducts()); 
+        };
+        
+        plus.onclick = () => { 
+          const cur = state.cart[p.id] || 0; 
+          state.cart[p.id] = cur + 1; 
+          count.textContent = state.cart[p.id]; 
+          updateCartCount(); 
+          renderGrid(currentFilteredProducts()); 
+        };
 
-      qty.appendChild(minus); 
-      qty.appendChild(count); 
-      qty.appendChild(plus);
-      controls.appendChild(qty);
+        qty.appendChild(minus); 
+        qty.appendChild(count); 
+        qty.appendChild(plus);
+        controls.appendChild(qty);
 
-      const remove = document.createElement('button'); 
-      remove.className = 'remove-btn'; 
-      remove.textContent = 'Remove';
-      remove.onclick = () => { 
-        delete state.cart[p.id]; 
-        renderGrid(PRODUCTS); 
-        updateCartCount(); 
-      };
-      controls.appendChild(remove);
-    }
+        const remove = document.createElement('button'); 
+        remove.className = 'remove-btn'; 
+        remove.textContent = 'Remove';
+        remove.onclick = () => { 
+          delete state.cart[p.id]; 
+          renderGrid(currentFilteredProducts()); 
+          updateCartCount(); 
+        };
+        controls.appendChild(remove);
+      }
 
-    card.appendChild(thumb);
+      card.appendChild(thumb);
+      card.appendChild(name); 
+      card.appendChild(info); 
+      card.appendChild(controls);
+      subgrid.appendChild(card);
+    });
     
-    if (p.available === false) {
-      const outLabel = document.createElement('span');
-      outLabel.className = 'card-outstock-label';
-      outLabel.textContent = 'Out of Stock';
-      card.appendChild(outLabel);
-    }
-    
-    card.appendChild(name); 
-    card.appendChild(controls);
-    grid.appendChild(card);
+    subcatWrapper.appendChild(subgrid);
+    grid.appendChild(subcatWrapper);
   });
 }
-
-
-$$('.chip').forEach(ch => ch.addEventListener('click', () => { $$('.chip').forEach(c => c.classList.remove('active')); ch.classList.add('active'); renderGrid(currentFilteredProducts()); }));
-
-
+  function currentFilteredProducts() {
+    const active = $$('.chip.active')[0];
+    if (!active) return PRODUCTS;
+    const f = active.getAttribute('data-filter');
+    if (f === 'all' || f.toLowerCase() === 'all products') return PRODUCTS;
+    return PRODUCTS.filter(p => p.category === f);
+  }
 
   function updateCartCount() { const total = Object.values(state.cart).reduce((s, n) => s + n, 0); $('#cartCount').textContent = total; }
 
@@ -1228,7 +1513,7 @@ $$('.chip').forEach(ch => ch.addEventListener('click', () => { $$('.chip').forEa
       return;
     }
 
-
+    let totalPrice = 0; // To calculate total
 
     // build sticky header table
     const headerTable = document.createElement('table');
@@ -1237,6 +1522,7 @@ $$('.chip').forEach(ch => ch.addEventListener('click', () => { $$('.chip').forEa
       <th style="font-weight:800; font-size:17px; color:#2b6cb0; padding:10px; text-align:center;"> </th>
       <th style="font-weight:800; font-size:17px; color:#2b6cb0; text-align:center;">Product Name</th>
       <th style="font-weight:800; font-size:17px; color:#2b6cb0; text-align:center;">Quantity</th>
+      <th style="font-weight:800; font-size:17px; color:#2b6cb0; text-align:center;">Price</th>
     </tr></thead>`;
     header.appendChild(headerTable);
 
@@ -1249,6 +1535,9 @@ $$('.chip').forEach(ch => ch.addEventListener('click', () => { $$('.chip').forEa
 
     items.forEach((it, idx) => {
       const p = PRODUCTS.find(x => x.id === it.id);
+      const price = (p && p.price) ? p.price : 0;
+      const lineTotal = price * it.qty;
+      totalPrice += lineTotal; // Add to total
       
       const tr = document.createElement('tr');
 
@@ -1267,18 +1556,29 @@ $$('.chip').forEach(ch => ch.addEventListener('click', () => { $$('.chip').forEa
       
       const tdQty = document.createElement('td'); tdQty.style.padding='8px'; tdQty.style.textAlign='center'; tdQty.innerHTML = `<div style="font-weight:700">${it.qty}</div>`;
       
-      tr.appendChild(tdIndex); 
-      tr.appendChild(tdImg); 
-      tr.appendChild(tdName); 
-      tr.appendChild(tdQty);
+      const tdPrice = document.createElement('td');
+      tdPrice.style.padding = '8px';
+      tdPrice.style.textAlign = 'right';
+      tdPrice.innerHTML = `<div style="font-weight:700">₹${lineTotal.toFixed(2)}</div>`;
+
+      tr.appendChild(tdIndex); tr.appendChild(tdImg); tr.appendChild(tdName); tr.appendChild(tdQty); tr.appendChild(tdPrice);
       tbody.appendChild(tr);
- 
     });
 
     table.appendChild(tbody);
     list.appendChild(table);
 
-  
+    // build sticky total
+    const totalDiv = document.createElement('div');
+    totalDiv.style.textAlign = 'right';
+    totalDiv.style.padding = '10px 8px';
+    totalDiv.style.fontSize = '18px';
+    totalDiv.style.fontWeight = '800';
+    totalDiv.style.color = 'var(--accent)';
+    totalDiv.style.borderTop = '2px solid #eee';
+    totalDiv.style.marginTop = '8px';
+    totalDiv.innerHTML = `Total Price: ₹${totalPrice.toFixed(2)}`;
+    total.appendChild(totalDiv);
   }
 
   function openProductModal(p) {
@@ -1324,7 +1624,7 @@ $$('.chip').forEach(ch => ch.addEventListener('click', () => { $$('.chip').forEa
     if (Object.keys(state.cart).length === 0) { alert('Cart empty. Please add products.'); return; }
     orderMode = 'mail';
     $('#chosenModeLabel').innerHTML =
-  '<img src="SOCIAL MEDIAS/MAIL.png" alt="Reinigen Mail" aria-hidden="true" style="width:18px;height:18px;vertical-align:middle;margin-right:8px">\
+  '<img src="SOCIAL MEDIAS/MAIL.png" alt="" aria-hidden="true" style="width:18px;height:18px;vertical-align:middle;margin-right:8px">\
    <span style="color:#0078d4; font-weight:600; vertical-align:middle">Ordering via Mail</span><br><br><br>';
     showOverlay('#checkoutModal');
     Object.keys(touched).forEach(k=>touched[k]=false);
@@ -1337,7 +1637,7 @@ $$('.chip').forEach(ch => ch.addEventListener('click', () => { $$('.chip').forEa
     if (Object.keys(state.cart).length === 0) { alert('Cart empty. Please add products.'); return; }
     orderMode = 'whatsapp';
     $('#chosenModeLabel').innerHTML =
-  '<img src="SOCIAL MEDIAS/WA.png" alt="Reinigen WhatsApp" aria-hidden="true" style="width:18px;height:18px;vertical-align:middle;margin-right:8px">\
+  '<img src="SOCIAL MEDIAS/WA.png" alt="" aria-hidden="true" style="width:18px;height:18px;vertical-align:middle;margin-right:8px">\
    <span style="color:#25D366; font-weight:600; vertical-align:middle">Ordering via WhatsApp</span><br><br>';
     showOverlay('#checkoutModal');
     Object.keys(touched).forEach(k=>touched[k]=false);
@@ -1413,19 +1713,19 @@ if(!validName(nameInput.value) || !validPhone(phoneInput.value) || !validAddress
   const mailPlain = mailParts.plainBody;
 
   // assemble mailto using encoded components
-  pendingExternalUrl = `mailto:${encodeURIComponent('information.reinigen@gmail.com')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailPlain)}`;
+  pendingExternalUrl = `mailto:${encodeURIComponent('edit.edit.insta@gmail.com')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailPlain)}`;
 
   $('#launchTitle').innerHTML = `
-  <img src="GIFS/Mail.gif" alt="Mail Send Animation" onerror="this.style.display='none'">
+  <img src="GIFS/Mail.gif" alt="Mail send animation" onerror="this.style.display='none'">
   <div>Simply Click "<span style="color:#0072C6;">Send</span>" Button in Your Mail</div>
 `;
   $('#launchDesc').textContent = "You're about to be redirected to your email application to send your order details.";
 } else {
   // whatsapp branch left as before (ensure encodeURIComponent used)
-  const WHATSAPP_NUMBER = '8144744481'; // <-- optional business number
+  const WHATSAPP_NUMBER = '9629563236'; // <-- optional business number
   pendingExternalUrl = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}` : `https://wa.me/?text=${encodeURIComponent(waText)}`;
   $('#launchTitle').innerHTML = `
-    <img src="GIFS/WhatsApp.gif" alt="WhatsApp Send Animation" onerror="this.style.display='none'">
+    <img src="GIFS/WhatsApp.gif" alt="WhatsApp send animation" onerror="this.style.display='none'">
     <div>Simply click "<span style="color:#25D366;">Send</span>" Button in Your WhatsApp</div>
   `;
   $('#launchDesc').textContent = "You're about to be redirected to WhatsApp to send your order details.";
@@ -1997,12 +2297,12 @@ setTimeout(function() {
         <h3>Connect With Us</h3>
         <br>
         <ul>
-          <li><a href="tel:+918144744481" rel="noopener" aria-label="Phone"><img src="SOCIAL MEDIAS/PHONE.png" alt="Reinigen Phone"></a></li>
-          <li><a href="https://wa.me/918144744481" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="SOCIAL MEDIAS/WA.png" alt="Reinigen WhatsApp"></a></li>
-          <li><a href="mailto:information.reinigen@gmail.com " rel="noopener" aria-label="Mail"><img src="SOCIAL MEDIAS/MAIL.png" alt="Reinigen Mail"></a></li>
-          <li><a href="https://www.instagram.com/reinigen.cleaning.chemicals/" target="_blank" rel="noopener" aria-label="Instagram"><img src="SOCIAL MEDIAS/INSTA.png" alt="Reinigen Instagram"></a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=61581408448137" target="_blank" rel="noopener" aria-label="Facebook"><img src="SOCIAL MEDIAS/FACEBOOK.png" alt="Reinigen Facebook"></a></li>
-          <li><a href=" " target="_blank" rel="noopener" aria-label="Facebook"><img src="SOCIAL MEDIAS/YOUTUBE.png" alt="Reinigen YouTube"></a></li>
+          <li><a href="tel:+918144744481" rel="noopener" aria-label="Phone"><img src="SOCIAL MEDIAS/PHONE.png" alt="Phone"></a></li>
+          <li><a href="https://wa.me/918144744481" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="SOCIAL MEDIAS/WA.png" alt="WhatsApp"></a></li>
+          <li><a href="mailto:information.reinigen@gmail.com " rel="noopener" aria-label="Mail"><img src="SOCIAL MEDIAS/MAIL.png" alt="Mail"></a></li>
+          <li><a href="https://www.instagram.com/reinigen.cleaning.chemicals/" target="_blank" rel="noopener" aria-label="Instagram"><img src="SOCIAL MEDIAS/INSTA.png" alt="Instagram"></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61581408448137" target="_blank" rel="noopener" aria-label="Facebook"><img src="SOCIAL MEDIAS/FACEBOOK.png" alt="Facebook"></a></li>
+          <li><a href=" " target="_blank" rel="noopener" aria-label="Facebook"><img src="SOCIAL MEDIAS/YOUTUBE.png" alt="YouTube"></a></li>
 
 
         </ul>
@@ -2014,7 +2314,7 @@ setTimeout(function() {
     <div class="footer2-inner">
       <div class="footer-2-col-1">
         <div class="footer2-logo-wrap">
-          <img class="footer2-logo-image" src="LOGO/REINIGENLOGO.png" alt="Reinigen Cleaning Chemicals and Supplies logo">
+          <img class="footer2-logo-image" src="LOGO/REINIGENLOGO.png" alt="Reinigen logo">
         </div>
       </div>
 
@@ -2159,12 +2459,12 @@ setTimeout(function() {
 </div>
 
 <div class="certificates-float">
-  <img src="CERTIFICATES/CERTIFICATE1.png" alt="ISO Certificate" title="Certificate">
-  <img src="CERTIFICATES/CERTIFICATE2.png" alt="HACCP Certificate" title="Certificate">
-  <img src="CERTIFICATES/CERTIFICATE3.png" alt="GMP Certificate" title="Certificate">
-  <img src="CERTIFICATES/CERTIFICATE4.png" alt="Zed Certificate" title="Certificate">
-  <img src="CERTIFICATES/CERTIFICATE5.png" alt="100% Safe Certificate" title="Certificate">
-  <img src="CERTIFICATES/CERTIFICATE6.png" alt="Eco Friendly Certificate" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE1.png" alt="Certificate 1" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE2.png" alt="Certificate 2" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE3.png" alt="Certificate 3" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE4.png" alt="Certificate 4" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE5.png" alt="Certificate 5" title="Certificate">
+  <img src="CERTIFICATES/CERTIFICATE6.png" alt="Certificate 6" title="Certificate">
 </div>
 
 </body>
