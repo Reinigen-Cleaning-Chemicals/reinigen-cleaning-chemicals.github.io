@@ -8,7 +8,7 @@
 
 <meta charset="utf-8" >
 <meta name="viewport" content="width=device-width,initial-scale=1" >
-<meta name="description" content="Discover expert best practices for industrial cleaning. Learn how to optimize schedules, use the right chemicals and ensure cleanliness with safety in factories and warehouses.">
+<meta name="description" content="Discover expert best practices for industrial cleaning. Learn how to optimize cleaning schedules, use the right cleaning chemicals and ensure cleanliness with safety in factories and warehouses.">
 <meta property="og:title" content="REINIGEN | Best Practices for Industrial Cleaning">
 <meta property="og:description" content="A clean industrial workplace is safer and more productive. Explore our top 5 tips for industrial cleaning, from planning schedules to handling waste properly.">
 <meta property="og:image" content="https://reinigen.co.in/LOGO/REINIGEN.png">
@@ -33,7 +33,7 @@
       "headline": "Best Practices for Industrial Cleaning",
       "name": "Best Practices for Industrial Cleaning",
       "url": "https://reinigen.co.in/best-practices-for-industrial-cleaning.html",
-      "description": "Discover expert best practices for industrial cleaning. Learn how to optimize schedules, use the right chemicals, and ensure safety in factories and warehouses.",
+      "description": "Discover expert best practices for industrial cleaning. Learn how to optimize cleaning schedules, use the right cleaning chemicals and ensure cleanliness with safety in factories and warehouses.",
       "datePublished": "2025-11-21",
       "dateModified": "2025-11-21",
       "author": {
@@ -78,6 +78,18 @@
     }
   ]
 }
+</script>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N5QX9R8X93"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N5QX9R8X93');
 </script>
 
 
@@ -199,111 +211,41 @@ body{margin:0; background:var(--bg); color:#111; font-family:-apple-system,Blink
 
 
 /* Tips Container */
-.tips {
-  margin-top: 20px;
-  padding: 0;
-}
+.tips { margin-top: 20px; padding: 0;}
 
 /* Individual Tip Item */
-.tip-item {
-  margin-bottom: 20px;
-padding-bottom: 20px;
-  display: flow-root; /* Clearfix for floats */
-}
-.tip-item:last-child {
-  border-bottom: none;
-}
+.tip-item { margin-bottom: 20px; padding-bottom: 20px; display: flow-root;}
+.tip-item:last-child { border-bottom: none;}
 
 /* Tip Heading (Subheading) */
-.tip-heading {
-  font-size: 26px; 
-  color: var(--accent);
-  margin: 0 0 20px 0;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-  clear: both;
-}
+.tip-heading { font-size: 26px;  color: var(--accent); margin: 0 0 20px 0; font-weight: 700; line-height: 1.5; text-align: center; clear: both;}
 
 /* Container for Image and Text */
-.tip-columns {
-  display: block; /* Standard block to allow wrapping */
-  width: 100%;
-}
+.tip-columns { display: block; width: 100%;}
 
 /* Image Column - Floated Left */
-.tip-col-image {
-  float: left;
-  width: 40%; /* Image takes 40% width */
-  margin-right: 30px; /* Gap between image and text */
-  margin-bottom: 15px; /* Gap below image for wrapped text */
-}
-
-.tip-col-image img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 2 / 1; /* Forces 2:1 Width:Height Ratio */
-  object-fit: cover; /* Ensures image covers area without squishing */
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+.tip-col-image { float: left; width: 40%; margin-right: 30px; margin-bottom: 15px;}
+.tip-col-image img { display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);}
 
 /* Text Column */
-.tip-col-text {
-  display: block;
-  /* Text naturally flows around the floated image */
-}
-
-.tip-col-text p {
-  margin: 0 0 15px 0;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #333;
-}
+.tip-col-text { display: block;}
+.tip-col-text p { margin: 0 0 15px 0; font-size: 16px; line-height: 1.7; color: #333;}
 
 /* Bullet list styling */
-.tip-col-text ul {
-    margin: 0;
-    padding-left: 20px;
-    list-style-type: disc;
-    
-    list-style-position: outside;
-}
-
-.tip-col-text li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-    color: #444;
-}
-
-.tip-col-text li strong {
-    color: var(--accent);
-}
+.tip-col-text ul { margin: 0; padding-left: 20px; list-style-type: disc; list-style-position: outside;}
+.tip-col-text li { margin-bottom: 10px; line-height: 1.6; color: #444;}
+.tip-col-text li strong { color: var(--accent);}
 
 /* Tablet & Mobile Responsive */
 @media (max-width: 768px) {
-  /* On mobile/tablet, un-float the image so it stacks on top */
-  .tip-col-image {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  
-  .tip-heading {
-    text-align: center;
-    font-size: 22px;
-  }
-  
-  .tip-col-text p {
-    font-size: 15px;
-  }
+.tip-col-image { float: none; width: 100%; margin-right: 0; margin-bottom: 20px; }
+.tip-heading { text-align: center; font-size: 22px; }  
+.tip-col-text p { font-size: 15px;}
 }
 
-@media (max-width: 480px) {
-  .tip-heading {
-    font-size: 20px;
-  }
+@media (max-width: 480px) 
+{
+.tip-heading { font-size: 20px;}
 }
 
 
