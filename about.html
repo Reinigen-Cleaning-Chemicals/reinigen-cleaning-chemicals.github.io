@@ -103,21 +103,42 @@ body{margin:0; background:var(--bg); color:#111; font-family:-apple-system,Blink
 }
 
 
-/* Header Cover */
-.cover-placeholder{ width:100%; height:250px; display:flex; align-items:center; justify-content:center; position: relative; overflow: hidden; background-image: none;}
-.cover-placeholder::before{ content: ""; position: absolute; inset: 0; background-image: url('LOGO/COVERIMAGE.png'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; filter: blur(8px) brightness(0.9); transform: scale(1.03); z-index: 0; pointer-events: none;}
-.cover-placeholder > * { position: relative; z-index: 1;}
-.cover-placeholder .cover-content{ width: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 0 18px; text-align: center; color: #ffffff; pointer-events: auto;}
-.cover-placeholder .cover-content h1{ font-family: Georgia, "Times New Roman", serif; margin: 0; font-size: 45px; line-height: 1.05; font-weight: 800; letter-spacing: -0.01em; text-shadow: 0 0 0 #007ecc, 1px 1px 0 #007ecc, -1px -1px 0 #007ecc, 1px -1px 0 #007ecc, -1px 1px 0 #007ecc, 0 0 4px rgba(0,126,204,0.85), 0 0 8px rgba(0,126,204,0.65), 0 0 16px rgba(0,126,204,0.36), 0 0 28px rgba(0,126,204,0.18), 0 0 48px rgba(0,126,204,0.10);}
-.cover-placeholder .cover-content p{ font-family: Georgia, "Times New Roman", serif; margin: 0; font-size: 20px; color: rgba(255,255,255,0.96); text-shadow: 0 4px 10px #00a6ff;}
+/* Image Slider - Full Width, Centered Content 80% */
+.slider-container {width: 100%; background: #ffffff; padding: 0; margin: 0;}
+.slider-wrapper { width: 100%; max-width: 2000px; margin: auto; position: relative; overflow: hidden; border-radius: 8px;}
+.slide { width: 100%; display: none; position: relative;}
+.slide.active { display: block; animation: fadeIn 0.3s ease-in-out;  }
+.slide img { width: 100%; height: auto; display: block;}
+.slide picture { display: block; width: 100%;}
 
-@media (max-width:480px)
+@keyframes fadeIn 
+{from { opacity: 0; }to { opacity: 1; }}
+
+/* Navigation Dots - Outside and Below */
+.slider-dots { position: relative; display: flex; justify-content: center; align-items: center; gap: 6px; padding: 20px 0; margin: 0 auto;}
+.slider-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(0, 115, 255, 0.5); border: 2px solid rgba(0, 123, 255, 0.9); cursor: pointer; transition: all 0.3s ease;}
+.slider-dot.active { background: #00b7ff; transform: scale(1.1); box-shadow: 0 0 20px rgba(111, 255, 0, 0.74);}
+.slider-dot:hover { background: rgba(43, 108, 176, 0.7); transform: scale(1.15);}
+
+/* Responsive */
+@media (max-width: 1200px) 
 {
-.cover-placeholder::before {filter: blur(10px)brightness(1.1);}
-.cover-placeholder{ height: 120px; }
-.cover-placeholder .cover-content{ gap:6px; padding: 0 12px; }
-.cover-placeholder .cover-content h1{ font-size: 25px; }
-.cover-placeholder .cover-content p{font-size: 10px;}
+.slider-wrapper { width: 100%;}
+}
+
+@media (max-width: 768px) 
+{
+.slider-wrapper { width: 100%; margin: auto;}
+.slider-dots { padding: 15px 0; gap: 10px;}
+.slider-dot { width: 10px; height: 10px;}
+}
+
+@media (max-width: 480px) 
+{
+.slider-wrapper { width: 100%; margin: auto;}
+.slider-dots { padding: 12px 0; gap: 8px;}  
+.slider-dot { width: 4px; height: 4px; border-width: 1px;}
+.slide img { min-height: 185px; }
 }
 
 
@@ -131,7 +152,7 @@ html, body { -webkit-overflow-scrolling: touch; overflow-x:hidden; }
 .about-box:hover h2, .about-box:hover h3, .about-box:hover p, .about-box:hover strong { color: #ffffff !important; text-shadow: 10px #1a1a1a; }
 .about-box h2 { font-family:Georgia, 'Times New Roman', Times, serif ; font-size: 28px; color: #2b6cb0; margin-bottom: 20px; text-align: center; }
 .image-container { width: 100%; height: 250px; margin: 0 auto 20px; overflow: hidden; border-radius: 8px; background: #f0f0f0; }
-.image-container img { width: 100%; height: 100%; object-fit: cover; }
+.image-container img { width: 100%; height: 100%; object-fit: fill; }
 .about-box h3 { font-family:Georgia, 'Times New Roman', Times, serif ; font-size: 20px; color: #1a1a1a; margin-bottom: 15px; }
 .about-box p { font-family:Georgia, 'Times New Roman', Times, serif ; font-size: 16px; line-height: 1.6; color: #555; margin-bottom: 12px; text-align: justify; }
 .about-box strong { color: #333; }
@@ -411,7 +432,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 .trust-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 16px 0 32px; box-sizing: border-box;}
 
 .trust-card { flex: 1 1 calc(20% - 20px);  min-width: 220px; background: #fff; border-radius: 12px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.06); padding: 16px 12px; box-sizing: border-box; transition: transform .2s ease, box-shadow .2s ease;}
-.trust-card:hover { transform: translateY(-5px); box-shadow: 0 14px 32px rgba(0,0,0,0.12);}
+.trust-card:hover { color: #ffff; transform: translateY(-5px); background: linear-gradient(180deg, #32adff, #5ed1ff); box-shadow: 0 14px 32px rgba(0,0,0,0.12);}
 
 /* Image area (square on top) */
 .trust-img { width: 80px; height: 80px; margin: 0 auto 10px; border-radius: 10px; background: #f4f7fb; display: flex; align-items: center; justify-content: center; overflow: hidden;}
@@ -419,6 +440,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
 
 /* Text */
 .trust-card p {margin: 0; font-size: 15px; line-height: 1.4; color: #222; font-family: Georgia, "Times New Roman", serif;}
+.trust-card p:hover {color: #ffff;}
 
 /* Tablet: 2–3 per row */
 @media (max-width: 1024px) {
@@ -457,14 +479,46 @@ footer-2 .footer2-logo-image {max-height: 200px; }
       </nav>
     </div>
 
-    <!-- cover placeholder for header image (you will replace this) -->
-    <div class="cover-placeholder" id="coverPlaceholder">
-  <div class="cover-content" role="banner" aria-label="Header content">
-  <h1>Your Trusted Cleaning Chemicals Manufacturer</h1>
-    <p><b>Delivering ISO - Certified, Eco - Friendly Solutions for Homes, Offices &amp; Industries</b></p>
+<!-- Image Slider -->
+<div class="slider-container">
+  <div class="slider-wrapper">
+    
   
-  </div>
+ <!-- Slide 1 -->
+<div class="slide active">
+  <picture>
+    <source media="(max-width: 480px)" srcset="SLIDES/1M.png".png">
+    <source media="(min-width: 481px)" srcset="SLIDES/1.png">
+    <img src="SLIDES/1.png" alt="Reinigen Slide 1">
+  </picture>
 </div>
+
+<!-- Slide 2 -->
+<div class="slide">
+  <picture>
+    <source media="(max-width: 480px)" srcset="SLIDES/2M.png">
+    <source media="(min-width: 481px)" srcset="SLIDES/2.png">
+    <img src="SLIDES/2.png" alt="Reinigen Slide 2">
+  </picture>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide">
+  <picture>
+    <source media="(max-width: 480px)" srcset="SLIDES/3M.png">
+    <source media="(min-width: 481px)" srcset="SLIDES/3.png">
+    <img src="SLIDES/3.png" alt="Reinigen Slide 3">
+  </picture>
+</div>
+
+
+    
+      <!-- Navigation Dots -->
+    <div class="slider-dots"></div>
+    
+  </div>
+ 
+</div>    
 
   </div>
 
@@ -497,7 +551,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
     <div class="about-box">
       <h2>Who We Are</h2>
       <div class="image-container">
-        <img src=" " alt="Reinigen Cleaning Chemicals and Supplies">
+        <img src="ABOUT/ABOUT1.png" alt="Reinigen Cleaning Chemicals and Supplies">
       </div>
       <h3>Reinigen Cleaning Chemicals & Supplies (A Brand of Mrinesh Associates)</h3>
       <p>Reinigen Cleaning Chemicals & Supplies is a home-grown manufacturer of cleaning chemicals and supplies based in Coimbatore, Tamil Nadu, India. Founded in 2010, we make practical, reliable products for homes, offices, hospitals and industrial spaces.</p>
@@ -508,7 +562,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
     <div class="about-box">
       <h2>Our History</h2>
       <div class="image-container">
-        <img src=" " alt="Reinigen cleaning Chemicals journey timeline">
+        <img src="ABOUT/ABOUT3.jpeg " alt="Reinigen cleaning Chemicals journey timeline">
       </div>
       <div class="timeline-item">
         <p><strong>2010 - THE BEGINNING:</strong> Began as a small-scale business with a small manufacturing unit and five basic cleaning items.</p>
@@ -530,7 +584,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
     <div class="about-box full-width">
       <h2>Our Motto & Philosophy</h2>
       <div class="image-container">
-        <img src=" " alt="Reinigen Cleaning Chemicals Motto">
+        <img src="ABOUT/ABOUT2.png " alt="Reinigen Cleaning Chemicals Motto">
       </div>
       <h3>"Clean living, healthy living."</h3>
       <p>Just as a home is incomplete without cooking, a home cannot be truly healthy without regular cleaning. Good hygiene prevents disease, brings peace of mind and improves quality of life.</p>
@@ -541,7 +595,7 @@ footer-2 .footer2-logo-image {max-height: 200px; }
     <div class="about-box full-width">
       <h2>Our Vision & Commitment</h2>
       <div class="image-container">
-        <img src=" " alt="ISO certified Products">
+        <img src="ABOUT/ABOUT4.png " alt="ISO certified Products">
       </div>
       <p>We aim to make trusted hygiene products accessible and affordable across India. Quality and safety are central to everything we do - our ISO certification underlines this commitment.</p>
       <p>We follow documented quality checks from raw material sourcing to final packing to deliver consistent, safe products. We are also committed to eco-friendly practices in our formulations and continually work to improve product performance while keeping people and the environment in mind. We are actively engaged in day-to-day operations, while our R&D team continuously works on innovation through close interaction with customers to understand their needs and pain points.</p>
@@ -1201,7 +1255,53 @@ footer-2 .footer2-logo-image {max-height: 200px; }
   <img src="CERTIFICATES/CERTIFICATE6.png" alt="Eco Friendly Certificate" title="Certificate" draggable="false">
 </div>
 
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.slide');
+  const dotsContainer = document.querySelector('.slider-dots');
+  let currentIndex = 0;
+  let autoPlayTimer;
+  const slideInterval = 5000; // 5 seconds
 
+  // Create dots
+  slides.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.className = 'slider-dot' + (index === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.slider-dot');
+
+  function goToSlide(index) {
+    slides[currentIndex].classList.remove('active');
+    dots[currentIndex].classList.remove('active');
+    currentIndex = index;
+    slides[currentIndex].classList.add('active');
+    dots[currentIndex].classList.add('active');
+    clearInterval(autoPlayTimer);
+    autoPlayTimer = setInterval(nextSlide, slideInterval);
+  }
+
+  function nextSlide() {
+    slides[currentIndex].classList.remove('active');
+    dots[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add('active');
+    dots[currentIndex].classList.add('active');
+  }
+
+  // START IMMEDIATELY
+  autoPlayTimer = setInterval(nextSlide, slideInterval);
+
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  sliderWrapper.addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
+  sliderWrapper.addEventListener('mouseleave', () => {
+    clearInterval(autoPlayTimer);
+    autoPlayTimer = setInterval(nextSlide, slideInterval);
+  });
+});
+</script>
 
 </body>
 </html>
