@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reinigen.co.in/sitemap.xml
