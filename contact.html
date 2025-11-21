@@ -69,7 +69,7 @@
 html,body{height:100%;width:100%;overflow-x:hidden}
 body{margin:0; background:var(--bg); color:#111; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,system-ui; -webkit-font-smoothing:antialiased;}
 .wrap{ width:100%; max-width:calc(100% - 36px); margin:0 auto; padding-left:2px; padding-right: 2px; max-width:var(--maxw);}
-
+* img, img { -webkit-user-select: none !important; -ms-user-select: none !important; user-select: none !important; -webkit-user-drag: none !important; user-drag: none !important;}
 
 /* Menubar */
 .topbar{display:flex; align-items:center; height:100px; justify-content:space-between; gap:10px; background: linear-gradient(180deg, #32adff, #8fdfff, #b7ebff);}
@@ -100,22 +100,136 @@ body{margin:0; background:var(--bg); color:#111; font-family:-apple-system,Blink
 }
 
 
-/* Header Cover */
-.cover-placeholder{ width:100%; height:250px; display:flex; align-items:center; justify-content:center; position: relative; overflow: hidden; background-image: none;}
-.cover-placeholder::before{ content: ""; position: absolute; inset: 0; background-image: url('LOGO/COVERIMAGE.png'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; filter: blur(8px) brightness(0.9); transform: scale(1.03); z-index: 0; pointer-events: none;}
-.cover-placeholder > * { position: relative; z-index: 1;}
-.cover-placeholder .cover-content{ width: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 0 18px; text-align: center; color: #ffffff; pointer-events: auto;}
-.cover-placeholder .cover-content h1{ font-family: Georgia, "Times New Roman", serif; margin: 0; font-size: 45px; line-height: 1.05; font-weight: 800; letter-spacing: -0.01em; text-shadow: 0 0 0 #007ecc, 1px 1px 0 #007ecc, -1px -1px 0 #007ecc, 1px -1px 0 #007ecc, -1px 1px 0 #007ecc, 0 0 4px rgba(0,126,204,0.85), 0 0 8px rgba(0,126,204,0.65), 0 0 16px rgba(0,126,204,0.36), 0 0 28px rgba(0,126,204,0.18), 0 0 48px rgba(0,126,204,0.10);}
-.cover-placeholder .cover-content p{ font-family: Georgia, "Times New Roman", serif; margin: 0; font-size: 20px; color: rgba(255,255,255,0.96); text-shadow: 0 4px 10px #00a6ff;}
 
-@media (max-width:480px)
-{
-.cover-placeholder::before {filter: blur(10px)brightness(1.1);}
-.cover-placeholder{ height: 120px; }
-.cover-placeholder .cover-content{ gap:6px; padding: 0 12px; }
-.cover-placeholder .cover-content h1{ font-size: 25px; }
-.cover-placeholder .cover-content p{font-size: 10px;}
+/* Image Slider - Full Width, Centered Content 80% */
+.slider-container {
+  width: 100%;
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
 }
+
+.slider-wrapper {
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+ 
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  position: relative;
+}
+
+.slide.active {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+  
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide picture {
+  display: block;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Navigation Dots - Outside and Below */
+.slider-dots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.slider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 115, 255, 0.5);
+  border: 2px solid rgba(0, 123, 255, 0.9);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-dot.active {
+  background: #00b7ff;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(111, 255, 0, 0.74);
+}
+
+.slider-dot:hover {
+  background: rgba(43, 108, 176, 0.7);
+  transform: scale(1.15);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .slider-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .slider-dots {
+    padding: 15px 0;
+    gap: 10px;
+  }
+  
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) 
+{
+  
+  .slider-wrapper {
+    width: 100%;
+    margin: auto;
+    
+
+  }
+  
+  .slider-dots {
+    padding: 12px 0;
+    gap: 8px;
+  }
+  
+  .slider-dot {
+    width: 4px;
+    height: 4px;
+    border-width: 1px;
+  }
+  .slide img {
+    min-height: 185px; /* Mobile height - adjust this value */
+  }
+}
+
+
+
 
 
 html, body { -webkit-overflow-scrolling: touch; overflow-x:hidden; }
@@ -295,7 +409,7 @@ form.clean-form { display:flex; flex-direction:column; gap:12px; width:100%; box
 
 
 
-<body>
+<body oncontextmenu="return false">
   <div class="wrap">
     <!-- topbar: logo left, menu right -->
     <div class="topbar">
@@ -308,18 +422,51 @@ form.clean-form { display:flex; flex-direction:column; gap:12px; width:100%; box
       </nav>
     </div>
 
-    <!-- cover placeholder for header image (you will replace this) -->
-    <div class="cover-placeholder" id="coverPlaceholder">
-  <div class="cover-content" role="banner" aria-label="Header content">
-  <h1>Partner with Reinigen</h1>
-    <p><b>Serving Wholesalers, Retailers &amp; B2B Clients</b></p>
+
+<!-- Image Slider -->
+<div class="slider-container">
+  <div class="slider-wrapper">
+    
   
-  </div>
+ <!-- Slide 1 -->
+<div class="slide active">
+  <picture>
+    <source media="(max-width: 480px)" srcset="SLIDES/1M.png".png">
+    <source media="(min-width: 481px)" srcset="SLIDES/1.png">
+    <img src="SLIDES/1.png" alt="Reinigen Slide 1">
+  </picture>
 </div>
 
+<!-- Slide 2 -->
+<div class="slide">
+  <picture>
+    <source media="(max-width: 480px)" srcset="SLIDES/2M.png">
+    <source media="(min-width: 481px)" srcset="SLIDES/2.png">
+    <img src="SLIDES/2.png" alt="Reinigen Slide 2">
+  </picture>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide">
+  <picture>
+    <source media="(max-width: 480px)" srcset="SLIDES/3M.png">
+    <source media="(min-width: 481px)" srcset="SLIDES/3.png">
+    <img src="SLIDES/3.png" alt="Reinigen Slide 3">
+  </picture>
+</div>
+
+
+    
+      <!-- Navigation Dots -->
+    <div class="slider-dots"></div>
+    
+  </div>
+ 
+</div>    
   </div>
 
 
+ 
     
 <main>
   <section class="contact-section" aria-label="Contact section">
@@ -479,7 +626,7 @@ form.clean-form { display:flex; flex-direction:column; gap:12px; width:100%; box
 <script>
 (function(){
   // <<<<<<< Replace this only if you re-deployed Apps Script with a different URL >>>>>>>>
-  const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwfnlqRrIG89dlFR6eUkCLj76Ak2LlbkP7q48cC-rpkJ5DBmVGnGqV2YhkfErqg_IdyTg/exec";
+  const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxz2Q9FCCCznS-LtKfGuhjlVMpZEf1JDmOurRUWnGf92YW0s6NdakD3IpShl9FPUryHAA/exec";
   // ------------------------------------------------------------------------------------
 
   const form = document.getElementById('contactForm');
@@ -666,6 +813,56 @@ form.clean-form { display:flex; flex-direction:column; gap:12px; width:100%; box
 
 
 
+
+
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.slide');
+  const dotsContainer = document.querySelector('.slider-dots');
+  let currentIndex = 0;
+  let autoPlayTimer;
+  const slideInterval = 5000; // 5 seconds
+
+  // Create dots
+  slides.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.className = 'slider-dot' + (index === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.slider-dot');
+
+  function goToSlide(index) {
+    slides[currentIndex].classList.remove('active');
+    dots[currentIndex].classList.remove('active');
+    currentIndex = index;
+    slides[currentIndex].classList.add('active');
+    dots[currentIndex].classList.add('active');
+    clearInterval(autoPlayTimer);
+    autoPlayTimer = setInterval(nextSlide, slideInterval);
+  }
+
+  function nextSlide() {
+    slides[currentIndex].classList.remove('active');
+    dots[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add('active');
+    dots[currentIndex].classList.add('active');
+  }
+
+  // START IMMEDIATELY
+  autoPlayTimer = setInterval(nextSlide, slideInterval);
+
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  sliderWrapper.addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
+  sliderWrapper.addEventListener('mouseleave', () => {
+    clearInterval(autoPlayTimer);
+    autoPlayTimer = setInterval(nextSlide, slideInterval);
+  });
+});
+</script>
 
 
 
