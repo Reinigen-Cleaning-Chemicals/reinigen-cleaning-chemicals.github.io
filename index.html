@@ -1645,7 +1645,7 @@ if(!validName(nameInput.value) || !validPhone(phoneInput.value) || !validAddress
   const mailPlain = mailParts.plainBody;
 
   // assemble mailto using encoded components
-  pendingExternalUrl = `mailto:${encodeURIComponent('edit.edit.insta@gmail.com')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailPlain)}`;
+  pendingExternalUrl = `mailto:${encodeURIComponent('information.reinigen@gmail.com')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailPlain)}`;
 
   $('#launchTitle').innerHTML = `
   <img src="GIFS/Mail.gif" alt="Mail send animation" onerror="this.style.display='none'">
@@ -1654,7 +1654,7 @@ if(!validName(nameInput.value) || !validPhone(phoneInput.value) || !validAddress
   $('#launchDesc').textContent = "You're about to be redirected to your email application to send your order details.";
 } else {
   // whatsapp branch left as before (ensure encodeURIComponent used)
-  const WHATSAPP_NUMBER = '9629563236'; // <-- optional business number
+  const WHATSAPP_NUMBER = '8144744481'; // <-- optional business number
   pendingExternalUrl = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}` : `https://wa.me/?text=${encodeURIComponent(waText)}`;
   $('#launchTitle').innerHTML = `
     <img src="GIFS/WhatsApp.gif" alt="WhatsApp send animation" onerror="this.style.display='none'">
